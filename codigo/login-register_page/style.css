@@ -1,8 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27'); 
+
+.container-fluid {
+  font-family: 'Anton';
+  background-color: #151C35;
+}
+
+.nav-item{
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.logo-image {
+  width: 80px;
+  top: 0px;
+}
+
+.bg {
+  background-color: #151C35;
+}
+
 #form {
-  margin: 120px 30%;
-  background-color: rgb(78, 78, 78);
+  margin: 120px 37%;
+  background-color: #151C35;
   color: white;
-  
+  width: 450px;
+  height: 500px;
 }
 
 .options p {
@@ -29,7 +51,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
+#buttonlogin {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -53,8 +75,8 @@ button:hover {
 
 /* Center the avatar image inside this container */
 .imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+  text-align:left;
+  margin: 24px 0 12px 25px;
 }
 
 /* Avatar image */

@@ -11,66 +11,73 @@
   </head>
   <body>
      <!-- Header -->
-     <header class="navbar-expand-lg">
-      <div class="row navbar-brand">
-        <div class="header_logo col-2">
-          <a href="./index.html" class="header_logo">
-            <img src="./imagens/logo-site.png" alt="logo_games_gudie" class="logo_image">
-          </a>
-        </div>
-
-        <div id="header_options" class="col-6 text-center">
-          <ul id="ul_header">
-            <li>
-              <a class="header_options_items" href="../home_page/index.html">Home</a>
+     <nav class="navbar navbar-expand-lg navbar-light bg">
+      <div class="container-fluid">
+        <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide" class="logo-image" />
+        <a class="navbar-brand text-warning">Games Guide</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="../home_page/index.html">Home</a>
             </li>
-            <li>
-              <a class="header_options_items" href="../catalogo_page/index.html">Catálogo</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../catalogo_page/index.html">Catálogo</a>
             </li>
-            <li>
-              <a class="header_options_items" href="../rpg_mesa_page/index.html">RPG de mesa</a>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="../rpg_mesa_page/index.html">RPG de Mesa</a>
             </li>
-            <li>
-              <a class="header_options_items" href="../about_us_page/index.html">Sobre nós</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Sobre Nós</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link disabled"></a>
             </li>
           </ul>
-        </div>
-
-        <div class="col-3">
-          <form>
-            <input class="header_searchbar" type="search" placeholder="Pesquisar Jogos" aria-label="Search">
-          </form>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar Jogos" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+          </form> 
         </div>
       </div>
-    </header>
+    </nav>
     <!-- Fim do header -->
     <div class="title">
-      <h1 class="text-center">Sobre Nós</h1>
+      <h1 class="text-center" style="font-family: 'anton';"><span class="letra">S</span>obre <span class="letra">N</span>ós</h1>
     </div>
     <div class="about_us_content">
       <p class="md-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu accumsan mauris. Suspendisse convallis velit mi. Cras eleifend nisl sit amet nisl laoreet ullamcorper. Fusce rhoncus quis erat quis molestie. Sed sit amet neque auctor, hendrerit nunc non, pharetra massa. Curabitur vel pellentesque elit. Duis mi justo, congue vel est et, fringilla interdum arcu. Fusce gravida tortor semper purus varius luctus vitae at erat. Nunc magna neque, sodales vitae leo quis, suscipit ullamcorper orci. Sed consectetur, felis ac efficitur aliquet, quam mi mollis felis, scelerisque porttitor arcu neque et elit. Duis semper ipsum velit, id ullamcorper dolor porttitor in. Ut laoreet orci in diam efficitur, et aliquet quam tincidunt. Vestibulum luctus sem sed lectus tincidunt dapibus. Quisque vestibulum erat vel turpis iaculis pretium. Maecenas eget sem dapibus nisl vehicula ullamcorper. Vivamus bibendum tellus lacinia vehicula tempus. Cras venenatis sagittis mauris, sit amet iaculis justo luctus ut. Donec lobortis magna at.
-      </p>
+        Em 2022, a Mechanics Guide Chanel foi fundada por Heitor Freitas, Leonardo Oliveira, Maria Luisa, Matheus
+        Gabriel, Mayara Kimura e Víctor Cutrim. A MECG criou o Games Guide, plataforma para recomendações de jogos. </p>
 
       <img class="imagem_centro mt-5 mx-auto d-block img-fluid" src="./imagens/imagem3.jpg" alt="sobre_nos_imagem">
 
       <div class="row mt-5">
         <div class="col-2">
-          <img class="imagem_sobre_nos img-fluid" src="./imagens/imagem1.jpg" alt="sobre_nos_imagem">
+          <img class="imagem_sobre_nos img-fluid" src="../utils/imagens/persona.png" alt="sobre_nos_imagem">
         </div>
         <div class="col-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida nisl nec aliquet imperdiet. Aliquam erat volutpat. Maecenas consectetur euismod sagittis. Nulla id leo dui. Nullam interdum erat sed tellus varius, eget iaculis neque pellentesque. Maecenas dictum erat id enim tempor, et pretium libero facilisis. In vestibulum eros vitae purus convallis, eget pretium metus efficitur. Etiam et nunc dignissim, aliquam massa ac, porttitor odio. Donec faucibus leo non pulvinar placerat. Sed eu venenatis nunc. Quisque in eros sit amet tortor auctor dapibus nec condimentum sapien. Donec at purus lectus. Vivamus mollis tempor maximus. Phasellus ut viverra arcu, id sodales orci.
-        </div>
+          Após um mapeamento ao entrevistar diversas pessoas, decidimos criar o Games Guide para você, gamer, 
+          que precisa de uma ajudinha porque está em dúvida ao decidir qual jogo é melhor de acordo com os seus interesses pessoais.</div>
       </div>  
 
       <div class="row mt-5">
         <div class="col-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et bibendum nulla. Morbi feugiat imperdiet lorem, vel fringilla metus fermentum nec. In eu neque et augue sodales lacinia non ac nibh. Phasellus id dapibus leo. Donec venenatis nisl sapien, vitae sodales mi ornare ut. Donec ultricies nisi in convallis consectetur. Morbi sit amet eros orci. Suspendisse tincidunt blandit gravida. Suspendisse sodales in tellus vel convallis. Nulla malesuada convallis mauris a vestibulum. Suspendisse diam neque, lacinia non ex nec, ullamcorper auctor sapien. Nullam a lorem posuere eros posuere posuere. Mauris eleifend leo eu metus ultrices euismod. Etiam viverra elit a tristique.
-        </div>
+          O nosso catálogo oferece diversas categorias de jogos como: FPS, MOBA, RPG, Terror. Os jogos possuem descrições,
+           avaliações, fotos, requisitos mínimos e recomendados para que você possa usufruir de uma boa gameplay.     </div>
         <div class="col-2">
-          <img class="imagem_sobre_nos img-fluid" src="./imagens/imagem2.jpg" alt="sobre_nos_imagem">
+          <img class="imagem_sobre_nos img-fluid" src="../utils/imagens/logo.png" alt="sobre_nos_imagem">
         </div>
       </div>
     </div>
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #0c1020; color: white;">
+        Copyright © 2022 | Disciplina de Trabalho Interdisciplinar: Aplicações WEB | <b>PUC Minas Betim </b>| Mechanics Guide
+      </div>
+      <!-- Copyright -->
   </body>
 </html>
