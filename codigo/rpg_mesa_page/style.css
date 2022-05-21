@@ -1,16 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27'); 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@900&display=swap');
+
+.container-fluid {
+  font-family: 'Anton';
+  background-color: #151C35;
+}
+.nav-item{
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.logo-image {
+  width: 80px;
+  top: 0px;
+}
+
+.bg {
+  background-color: #151C35;
+}
+
+#nome{
+  color: white;
+}
+
+.text-center{
+  color: white;
+}
+
 .title {
+  font-family: 'Anton';
   margin-top: 40px;
 }
 
 .title h1 {
+  font-family: 'Anton';
   font-size: 55px;
 }
 
 .rpg_mesa_content {
+  text-align: justify;
+  font-size: 20px;
   margin: 30px 110px;
   padding: 50px 40px;
-  background-color: rgb(78, 78, 78);
-  color: white;
+  background-color: #151C35;
+  font-family: 'Lato';
+  color: rgba(255, 255, 255, 0.938);
 }
 
 .imagem_rpg_mesa {
@@ -22,19 +56,41 @@
 }
 
 .btn-comece-aqui {
-  color: white;
+  color: rgba(255, 255, 255, 0.863);
   padding: 7px 20px 0;
   margin: 40px 0 0 120px;
   border: 1px solid transparent;
   height: 45px;
   text-decoration: none;
-  background-color: rgb(104, 104, 104);
+  background-color: #293049;
   cursor: pointer;
+  font-family: 'Anton';
 }
 
 .btn-comece-aqui:hover {
-  color: white;
+  color: rgba(255, 255, 255, 0.863);
   background-color: rgb(133, 133, 133);
   border: 1px solid transparent;
   text-decoration: none;
+}
+
+.persona {
+  width: 500px;
+}
+
+.agora {
+  font-size: 60px;
+  font-family: 'Anton';
+}
+
+.letra{
+  color: orange;
+}
+
+.oque-e-titulo {
+  font-family: 'Anton';
+}
+
+.como-funciona-titulo {
+  font-family: 'Anton';
 }

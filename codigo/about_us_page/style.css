@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27'); 
+
+.container-fluid {
+  font-family: 'Anton';
+  background-color: #151C35;
+}
+.nav-item{
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.logo-image {
+  width: 80px;
+  top: 0px;
+}
+
+.bg{
+  background-color: #151C35;
+}
+
+#nome {
+  color: white;
+}
+
 .title {
   margin-top: 40px;
 }
@@ -7,10 +31,12 @@
 }
 
 .about_us_content {
+  text-align: justify;
+  font-size: 20px;
   margin: 30px 110px;
   padding: 50px 40px;
-  background-color: rgb(78, 78, 78);
-  color: white;
+  background-color: #151C35;
+  color: rgba(255, 255, 255, 0.863);
 }
 
 .imagem_sobre_nos {
@@ -19,4 +45,13 @@
 
 .imagem_centro {
   width: 600px
+}
+
+.text-center{
+  font-family: 'Anton';
+  color: white;
+}
+
+.letra{
+  color: orange;
 }

@@ -3,3 +3,9 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("imagens/background.png");
+}

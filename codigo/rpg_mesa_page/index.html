@@ -11,79 +11,79 @@
   </head>
   <body>
      <!-- Header -->
-     <header class="navbar-expand-lg">
-      <div class="row navbar-brand">
-        <div class="header_logo col-2">
-          <a href="./index.html" class="header_logo">
-            <img src="./imagens/logo-site.png" alt="logo_games_gudie" class="logo_image">
-          </a>
-        </div>
-
-        <div id="header_options" class="col-6 text-center">
-          <ul id="ul_header">
-            <li>
-              <a class="header_options_items" href="../home_page/index.html">Home</a>
+     <nav class="navbar navbar-expand-lg navbar-light bg">
+      <div class="container-fluid">
+        <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide" class="logo-image" />
+        <a class="navbar-brand text-warning">Games Guide</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="../home_page/index.html">Home</a>
             </li>
-            <li>
-              <a class="header_options_items" href="../catalogo_page/index.html">Catálogo</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../catalogo_page/index.html">Catálogo</a>
             </li>
-            <li>
-              <a class="header_options_items" href="../rpg_mesa_page/index.html">RPG de mesa</a>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="index.html">RPG de Mesa</a>
             </li>
-            <li>
-              <a class="header_options_items" href="../about_us_page/index.html">Sobre nós</a>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../about_us_page/index.html">Sobre Nós</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link disabled"></a>
             </li>
           </ul>
-        </div>
-
-        <div class="col-3">
-          <form>
-            <input class="header_searchbar" type="search" placeholder="Pesquisar Jogos" aria-label="Search">
-          </form>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar Jogos" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+          </form> 
         </div>
       </div>
-    </header>
+    </nav>
     <!-- Fim do header -->
-    <!-- APGAR ESSE SCRIPT KKKKKKKK  -->
-    <script>
-      function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
-    </script>
-    <!-- FIM DO SCRIPT PARA APAGAR -->
     <div class="title">
       <div class="position-relative">
         <a class="btn-comece-aqui position-absolute top-0 start-0 translate-middle" href="../catalogo_rpg_page/index.html">Comece aqui</a>
       </div>
-      <h1 class="text-center">RPG de mesa</h1>
+      <h1 class="text-center"><span class="letra">R</span>PG de <span class="letra">M</span>esa</h1>
     </div>
     <div class="rpg_mesa_content">
-      <div class="oque_e">
-        <h2 class="mb-4">O que é?</h2>
+      <div class="oque-e">
+        <h2 class="oque-e-titulo mb-4"><span class="letra">O</span> que é<span class="letra"> ?</span></h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu accumsan mauris. Suspendisse convallis velit mi. Cras eleifend nisl sit amet nisl laoreet ullamcorper. Fusce rhoncus quis erat quis molestie. Sed sit amet neque auctor, hendrerit nunc non, pharetra massa. Curabitur vel pellentesque elit. Duis mi justo, congue vel est et, fringilla interdum arcu. Fusce gravida tortor semper purus varius luctus vitae at erat. Nunc magna neque, sodales vitae leo quis, suscipit ullamcorper orci. Sed consectetur, felis ac efficitur aliquet, quam mi mollis felis, scelerisque porttitor arcu neque et elit. Duis semper ipsum velit, id ullamcorper dolor porttitor in. Ut laoreet orci in diam efficitur, et aliquet quam tincidunt. Vestibulum luctus sem sed lectus tincidunt dapibus. Quisque vestibulum erat vel turpis iaculis pretium. Maecenas eget sem dapibus nisl vehicula ullamcorper. Vivamus bibendum tellus lacinia vehicula tempus. Cras venenatis sagittis mauris, sit amet iaculis justo luctus ut. Donec lobortis magna at.
+          RPG é uma sigla em inglês que pode ser traduzida como “Jogo de Interpretação de Papéis” . 
+          Nele um grupo de amigos se reúne para construir uma história, como se fosse um teatro de improviso. Existe um diretor, 
+          chamado de “narrador” ou “mestre”, que ambienta o desenrolar da trama; e existem os jogadores, que modificam a história à medida que 
+          interpretam seus personagens e como eles agiriam em determinadas situações.
         </p>
-        <img class="imagem_centro mt-5 mx-auto d-block img-fluid" src="./imagens/imagem3.jpg" alt="sobre_nos_imagem">
+        <img class="imagem_centro mt-5 mx-auto d-block img-fluid" src="../utils/imagens/rpg1.png" alt="tabuleirorpg">
   
       </div>
-      <div class="mt-5 como_funciona">
-        <h2 class="mb-4">Como funciona?</h2>
+      <div class="como-funciona mt-5">
+        <h2 class="como-funciona-titulo mb-4"><span class="letra">C</span>omo funciona<span class="letra"> ?</span></h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu accumsan mauris. Suspendisse convallis velit mi. Cras eleifend nisl sit amet nisl laoreet ullamcorper. Fusce rhoncus quis erat quis molestie. Sed sit amet neque auctor, hendrerit nunc non, pharetra massa. Curabitur vel pellentesque elit. Duis mi justo, congue vel est et, fringilla interdum arcu. Fusce gravida tortor semper purus varius luctus vitae at erat. Nunc magna neque, sodales vitae leo quis, suscipit ullamcorper orci. Sed consectetur, felis ac efficitur aliquet, quam mi mollis felis, scelerisque porttitor arcu neque et elit. Duis semper ipsum velit, id ullamcorper dolor porttitor in. Ut laoreet orci in diam efficitur, et aliquet quam tincidunt. Vestibulum luctus sem sed lectus tincidunt dapibus. Quisque vestibulum erat vel turpis iaculis pretium. Maecenas eget sem dapibus nisl vehicula ullamcorper. Vivamus bibendum tellus lacinia vehicula tempus. Cras venenatis sagittis mauris, sit amet iaculis justo luctus ut. Donec lobortis magna at.
+          A primeira escolha que jogadores precisam definir é qual sistema irão jogar, pois há uma infinidade deles. Cada sistema é o seu próprio jogo,
+          com seu próprio mundo e regras. Escolher o sistema seria uma decisão equivalente ao grupo decidir se pretende jogar Xadrez, Damas, Jogo da Vida
+          ou Banco Imobiliário. Cada sistema costuma ter seus próprios livros. 
+          Para começar a jogar é preciso ter um livro do Mestre, que ensinará as regras do mundo e de suas possibilidades para o mestre, e um livro do jogador, que 
+          ensinará aos jogadores quem eles podem ser e o que podem fazer nesse mundo. Em algumas ocasiões, o mesmo livro prepara tanto mestre quanto jogador. 
+          Os dados são usados na maioria dos sistemas para adicionar aleatoriedade quando os jogadores decidem fazer algo, ou quando algo vai acontecer a eles, como tentar
+          saltar sobre um abismo ou cair em uma armadilha.
         </p>
-        <img class="imagem_centro mt-5 mx-auto d-block img-fluid" src="./imagens/imagem3.jpg" alt="sobre_nos_imagem">
+        <img class="imagem_centro mt-5 mx-auto d-block img-fluid" src="../utils/imagens/rpg2.png" alt="dadosrpg">
       </div>
 
       <div class="row mt-5">
-        <div class="col-6 text-center">
-          <h5 class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu accumsan mauris. Suspendisse convallis velit mi.</h5>
+        <div class="agora col-6 text-center"><br>
+          <h3>Agora que você já sabe o que é e como funciona o RPG, dê uma olhada nos nossos  <i><a href="../catalogo_rpg_page/index.html">livros sugeridos! </i></h3></a>
         </div>
-        <div class="col-6 text-center">
-          <img onclick="play()" src="../utils/imagens/persona_default.png" alt="persona_rpg" class="img-fluid">
-          <!-- apagar audio kkkkkk -->
-          <audio id="audio" src="./APAGAR/X2Download.com - Uêpa! (128 kbps).mp3"></audio>
-        </div>
+        <div class="col-6"> <br><br><br>
+          <img src="../utils/imagens/persona.png" alt="persona_rpg" class="persona">
+       </div>
       </div>
     </div>
   </body>

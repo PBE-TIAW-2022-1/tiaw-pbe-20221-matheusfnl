@@ -1,21 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27'); 
+
+.container-fluid {
+  font-family: 'Anton';
+  background-color: #151C35;
+}
+.nav-item{
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.logo-image {
+  width: 80px;
+  top: 0px;
+}
+
+.bg {
+  background-color: #151C35;
+}
+
 #main_content {
   margin: 50px 140px;
 }
 
-#card {
+#nome{
   color: white;
-  background-color: rgb(148, 148, 148);
+}
+
+.card {
+  color: white;
+  font-family: 'Anton';
+  background-color: #38405F;
   padding: 10px 10px 5px;
 }
 
 #rec_section {
-  background-color: rgb(78, 78, 78);
+  background-color: #151C35;
   padding: 1px 30px 30px;
 }
 
 .rec {
   color: white;
+  font-family: 'Anton';
+  font-size: 20px;
+  text-align: justify;
   margin-top: 30px;
-  background-color: rgb(44, 44, 44);
+  background-color: #0A0E1D;
   padding: 20px;
+  
+}
+
+.letra{
+  color: orange;
 }
