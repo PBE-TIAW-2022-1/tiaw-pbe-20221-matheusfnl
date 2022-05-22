@@ -30,11 +30,11 @@ const criaComentario = (nome, comentario, jogo, id) => {
           </div>
 
           <div class="col-1">
-          <a onclick="editComentario(${id})" class="icon"> <img id="${id}_img" src="../../../utils/imagens/edit-icon.png" /> </a>
+          <a onclick="editComentario(${id})" class="icon"> <img id="${id}_img" src="../utils/imagens/edit-icon.png" /> </a>
           </div>
 
           <div class="col-2">
-            <a onclick="removeComentario('${jogo}', ${id})" class="icon"> <img src="../../../utils/imagens/deletar-icon.png" /> </a>
+            <a onclick="removeComentario('${jogo}', ${id})" class="icon"> <img src="../utils/imagens/deletar-icon.png" /> </a>
           </div>
         <div>
         <p id="${id}" class="coment_desc"> ${comentario} </p>
@@ -100,12 +100,12 @@ const editComentario = (id) => {
 
   if(editing) {
     comentario.contentEditable = true;
-    imagem.src = "../../../utils/imagens/confirm-icon.png"
+    imagem.src = "../utils/imagens/confirm-icon.png"
     comentario.focus();
   }
   else {
     comentario.contentEditable = false;
-    imagem.src = "../../../utils/imagens/edit-icon.png"
+    imagem.src = "../utils/imagens/edit-icon.png"
 
     const comentariosLocalStorage = getComentario();
 

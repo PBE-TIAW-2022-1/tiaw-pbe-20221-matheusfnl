@@ -108,44 +108,23 @@
 
             <!-- comentário -->
             <div class="col-8">
-              <div class="row">
-                
-                <div class="col-6">
-                  <div class="area_comentarios">
-                    <div class="comentarios">
-                      <h4><span class="letra">V</span>inicius</h4>
-                      <p class="coment_desc">O título adota a rota mais moderna e recente, com áreas grandes que
-                        incorporam a exploração orgânica que a FromSoftware faz tão bem, implementando um
-                        mapa orientado à curiosidade do jogador. Saia da área inicial e se aventure onde a vista
-                        parecer mais apetitosa.  <br> <br></p>
-                    </div>
-                  </div>
-                </div>
-                <!-- fim comentário -->
-
-                <!-- comentário -->
-                <div class="col-6">
-                  <div class="area_comentarios">
-                    <div class="comentarios">
-                      <h4><span class="letra">M</span>ayara</h4>
-                      <p class="coment_desc">É o jogo mais acessível da From Software
-                        em relação a dificuldade, o jogo te dá muita liberdade para melhorar o personagem. Tem
-                        uma infinidade de itens, armas, armaduras, magias. A direção de arte é perfeita, o jogo é
-                        belíssimo, o design de personagens e cenários são exuberantes!</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- fim comentário -->
-
+              <div class="row" id="lista_comentarios">
+                <!-- comentarios criados -->
               </div>
             </div>
             <div class="escrever_comentario col-4">
                 <h4>Escreva um comentário</h4>
-                <textarea class="escrever_coment" rows="5"></textarea>
-                <button class="btn btn-primary enviar_coment">Enviar</button>
+                <input id="nomeInput" class="escrever_coment mb-2" type="text" placeholder="Nome">
+                <textarea id="comentarioInput" class="escrever_coment" rows="5" placeholder="Comentário"></textarea>
+                <button onclick="inserirComentario('halo')" class="btn btn-primary enviar_coment">Enviar</button>
             </div>
           </div>
         </div>
       </div>
+
+      <script src="../utils/scripts/adicionarComentario.js"></script>
+      <script>
+        atualizarTela('halo');
+      </script>
   </body>
 </html>

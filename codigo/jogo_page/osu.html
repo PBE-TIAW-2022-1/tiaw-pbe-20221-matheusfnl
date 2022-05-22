@@ -109,44 +109,23 @@
 
             <!-- comentário -->
             <div class="col-8">
-              <div class="row">
-                
-                <div class="col-6">
-                  <div class="area_comentarios">
-                    <div class="comentarios">
-                      <h4><span class="letra">V</span>ictor</h4>
-                      <p class="coment_desc">O jogo é sensacional!
-                        Há 4 modos de jogo no total, sendo eles: “classic”, “catch”, “mania” e “taiko”. 
-                        Cada um deles desafia seu reflexo e sua coordenação motora de formas diferentes,
-                         sendo sempre acompanhado de uma trilha sonora fantástica e coordenada com seus 
-                         movimentos.  
-                          <br></p>
-                    </div>
-                  </div>
-                </div>
-                <!-- fim comentário -->
-
-                <!-- comentário -->
-                <div class="col-6">
-                  <div class="area_comentarios">
-                    <div class="comentarios">
-                      <h4><span class="letra">H</span>enrique</h4>
-                      <p class="coment_desc">O único ponto negativo no jogo, em minha opinião, é a ausência de trilhas sonoras latinas, visto que a comunidade de criação de mapas sul-americanas dentro do OSU! não é muito ativa se comparada às demais. 
-                        Recomendo fortemente que dê uma chance a esse game, pois é cativante, divertido e desafiador.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- fim comentário -->
-
+              <div class="row" id="lista_comentarios">
+                <!-- comentarios criados -->
               </div>
             </div>
             <div class="escrever_comentario col-4">
                 <h4>Escreva um comentário</h4>
-                <textarea class="escrever_coment" rows="5"></textarea>
-                <button class="btn btn-primary enviar_coment">Enviar</button>
+                <input id="nomeInput" class="escrever_coment mb-2" type="text" placeholder="Nome">
+                <textarea id="comentarioInput" class="escrever_coment" rows="5" placeholder="Comentário"></textarea>
+                <button onclick="inserirComentario('osu')" class="btn btn-primary enviar_coment">Enviar</button>
             </div>
           </div>
         </div>
       </div>
+
+      <script src="../utils/scripts/adicionarComentario.js"></script>
+      <script>
+        atualizarTela('osu');
+      </script>
   </body>
 </html>

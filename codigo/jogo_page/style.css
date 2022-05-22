@@ -85,6 +85,8 @@
 .escrever_coment {
   width: 100%;
   background-color: #0c0d22;
+  border: 1px solid black;
+  color: white;
 }
 
 .enviar_coment {

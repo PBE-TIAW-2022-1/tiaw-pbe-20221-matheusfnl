@@ -106,43 +106,23 @@
 
             <!-- comentário -->
             <div class="col-8">
-              <div class="row">
-                
-                <div class="col-6">
-                  <div class="area_comentarios">
-                    <div class="comentarios">
-                      <h4><span class="letra">M</span>atheus</h4>
-                      <p class="coment_desc">Rainbow Six Siege é sem dúvida nenhuma um jogo muito táctico, portanto acaba por 
-                        de certa forma ser ideal para jogar com os amigos. Isto porque, a comunicação num jogo como 
-                        este é fundamental para o sucesso.  <br> <br> <br></p>
-                    </div>
-                  </div>
-                </div>
-                <!-- fim comentário -->
-
-                <!-- comentário -->
-                <div class="col-6">
-                  <div class="area_comentarios">
-                    <div class="comentarios">
-                      <h4><span class="letra">L</span>eonardo</h4>
-                      <p class="coment_desc">O jogo R6 (Rainbow Six Siege) é um jogo que pode ser 
-                        jogado tanto como casualmente com os amigos ou em campeonatos competitivos. <br>
-                        Se você pensa que é um jogo fácil de ser jogado, está enganado, é preciso ter táticas, para conseguir
-                        desfrutar o que o jogo oferece para você.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- fim comentário -->
-
+              <div class="row" id="lista_comentarios">
+                <!-- comentarios criados -->
               </div>
             </div>
             <div class="escrever_comentario col-4">
                 <h4>Escreva um comentário</h4>
-                <textarea class="escrever_coment" rows="5"></textarea>
-                <button class="btn btn-primary enviar_coment">Enviar</button>
+                <input id="nomeInput" class="escrever_coment mb-2" type="text" placeholder="Nome">
+                <textarea id="comentarioInput" class="escrever_coment" rows="5" placeholder="Comentário"></textarea>
+                <button onclick="inserirComentario('fortnite')" class="btn btn-primary enviar_coment">Enviar</button>
             </div>
           </div>
         </div>
       </div>
+
+      <script src="../utils/scripts/adicionarComentario.js"></script>
+      <script>
+        atualizarTela('fortnite');
+      </script>
   </body>
 </html>
