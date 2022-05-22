@@ -10,6 +10,15 @@
     <script src="../login-register_page/login.js"></script>
     <script src="../utils//scripts/logout.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      // Verifica se o usuário já esta logado e se negativo, redireciona para tela de login        
+      if (!usuarioCorrente.login) {
+           window.location.href = LOGIN_URL;
+       }
+
+        // Associa ao evento de carga da página a função para verificar se o usuário está logado
+        window.addEventListener('load', initPage);
+    </script>
   </head>
   <body>
      <!-- Header -->
