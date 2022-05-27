@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../utils/header_style.css">
     <link rel="stylesheet" href="../utils/background_style.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../utils/styles/pesquisarJogos.css">
     <script src="../login-register_page/login.js"></script>
     <script src="../utils//scripts/logout.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,10 +40,10 @@
               <a class="nav-link disabled"></a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar Jogos" aria-label="Search">
-            <button class="btn btn-outline-primary me-2" type="submit">Pesquisar</button>
-          </form> 
+          <div class="d-flex">
+            <input autocomplete="off" id="pesquisa" onfocus="pesquisarJogos()" onblur="removerJogos()" class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos" aria-label="Search" on>
+            <div class="row position-absolute mt-5" id="previewJogos"></div>
+          </div> 
           <button class="btn btn-outline-danger" onclick="logoutUser()">Sair</button>
         </div>
       </div>
@@ -169,5 +170,7 @@ para viver uma aventura épica e explorar a vastidão do anel Halo. <br><br></p>
         </div>
       </div>
     </div>
+
+    <script src="../utils//scripts/pesquisarJogos.js"></script>
   </body>
 </html>
