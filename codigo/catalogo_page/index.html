@@ -63,17 +63,17 @@
       <div class="row">
         <div class="col-2 mx-auto gap-2">
           <br><br><br><br><br>
-          <a href="em-alta.html"><button class="categorias" type="button">Em alta</button></a>
+          <a onclick="aplicaFiltro('em-alta')"><button class="categorias" type="button">Em alta</button></a>
           <br>
-          <a href="fps.html"><button class="categorias">FPS</button></a>
+          <a onclick="aplicaFiltro('fps')"><button class="categorias">FPS</button></a>
           <br>
-          <a href="moba.html"><button class="categorias">MOBA</button></a>
+          <a onclick="aplicaFiltro('moba')"><button class="categorias">MOBA</button></a>
           <br>
-          <a href="rpg.html"><button class="categorias">RPG</button></a>
+          <a onclick="aplicaFiltro('rpg')"><button class="categorias">RPG</button></a>
           <br>
-          <a href="ritmo.html"><button class="categorias">Ritmo</button></a>
+          <a onclick="aplicaFiltro('ritmo')"><button class="categorias">Ritmo</button></a>
           <br>
-          <a href="terror.html"><button class="categorias">Terror</button></a>
+          <a onclick="aplicaFiltro('terror')"><button class="categorias">Terror</button></a>
 
           <img class="mt-5 persona img-fluid" src="../utils/imagens/persona.png" alt="persona">
 
@@ -81,90 +81,14 @@
         <div class="col-10">
         <p class="catalogo">  <span class="letra">C</span>atálogo</p>
          <div id="games_section">
-            <div class="row">
-              <!-- card -->
-              <div class="col-4">
-                <div id="card">
-                  <a href="../jogo_page/rb6.html" class="link">
-                  <div class="card_content text-center">
-                    <img class="game_image mt-3 mb-2 img-fluid" src="../utils/imagens/rb6.png" alt="rainbow-six">
-                    <h3>Tom Clancy's Rainbow Six® Siege</h3>
-                    <p class="descricao">Tom Clancy's Rainbow Six® Siege é um FPS tático online assimétrico de combates 5v5 do gênero first person shooter produzido pela Ubisoft Montreal. </p>
-                    <p class="text-warning estrela">
-                      &starf;&starf;&starf;&starf;&star;
-                  </div>
-                </div>
-              </a>
-              </div>
-              <!-- fim do card -->
-              <!-- card -->
-              <div class="col-4">
-                <div id="card">
-                  <a href="../jogo_page/fallguys.html" class="link">
-                  <div class="card_content text-center">
-                    <img class="game_image mt-3 mb-2 img-fluid" src="../utils/imagens/fallguys.jpg" alt="fallguys">
-                    <h3>Fall Guys: Ultimate Knockout</h3>
-                    <p class="descricao">Fall Guys: Ultimate Knockout é um jogo eletrônico de plataforma battle royale desenvolvido pela Mediatonic e publicado pela Devolver Digital. </p>
-                    <p class="text-warning estrela">
-                      &starf;&starf;&starf;&starf;&starf;
-                  </p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <!-- fim do card -->
-              <!-- card -->
-              <div class="col-4">
-                <div id="card">
-                  <a href="../jogo_page/fortnite.html" class="link">
-                  <div class="card_content text-center">
-                    <img class="game_image mt-3 mb-2 img-fluid" src="../utils/imagens/fortnite.jpg" alt="fortnite">
-                    <h3>Fortnite</h3>
-                    <p class="descricao">Fortnite é um Battle Royale grátis com vários modos de jogo para todo tipo de jogador. Assista a um show, construa uma ilha ou entre em uma batalha.
-                    </p>
-                    <p class="text-warning estrela">
-                      &starf;&starf;&starf;&starf;&star;
-                  </div>
-                </div>
-                </a>
-              </div>
-              <!-- fim do card -->
-              <!-- card -->
-              <div class="col-4">
-                <div id="card">
-                  <a href="../jogo_page/eldenring.html" class="link">
-                  <div class="card_content text-center">
-                    <img class="game_image mt-3 mb-2 img-fluid" src="../utils/imagens/eldenring.jpg" alt="elden ring">
-                    <h3>Elden Ring</h3>
-                    <p class="descricao">Elden Ring é um jogo eletrônico de RPG de ação desenvolvido pela FromSoftware e publicado pela Bandai Namco Entertainment. <br></p>
-                    <p class="text-warning estrela">
-                      &starf;&starf;&starf;&starf;&starf;
-                  </div>
-                </div>
-                </a>
-              </div>
-              <!-- fim do card -->
-              <!-- card -->
-              <div class="col-4">
-                <div id="card" >
-                  <a href="../jogo_page/osu.html" class="link">
-                  <div class="card_content text-center">
-                    <img class="game_image mt-3 mb-2 img-fluid" src="../utils/imagens/osu.png" alt="">
-                    <h3>osu!</h3>
-                    <p class="descricao">OSU! é um jogo de ritmo desenvolvido e posteriormente publicado gratuitamente por Dean Herbert. <br><br></p>
-                    <p class="text-warning estrela">
-                      &starf;&starf;&starf;&starf;&star;
-                  </div>
-                </div>
-              </a>
-              </div>
-              <!-- fim do card -->
+           <div id="card_row" class="row">
+              <!-- carregar Catálogo -->
             </div>
           </div>
          </div>
          <footer class="bg-light text-center text-lg-start">
           <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: #0c1020; color: white;">
+          <div class="col-12 text-center p-3" style="background-color: #0c1020; color: white;">
             Copyright © 2022 | Disciplina de Trabalho Interdisciplinar: Aplicações WEB | <b>PUC Minas Betim </b>| Mechanics Guide
           </div>
           <!-- Copyright -->
@@ -173,6 +97,7 @@
       </div>
     </div>
 
-    <script src="../utils//scripts/pesquisarJogos.js"></script>
+    <script src="../utils/scripts/pesquisarJogos.js"></script>
+    <script src="../utils/scripts/exibirCatalogo.js"></script>
   </body>
 </html>
