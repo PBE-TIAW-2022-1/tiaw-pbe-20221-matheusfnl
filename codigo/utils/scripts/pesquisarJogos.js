@@ -1,7 +1,7 @@
 let jogos = [
   rainbow_six = {
     nome: 'Tom Clancy`s Rainbow Six Siege',
-    descricao: " ",
+    descricao: "Tom Clancy's Rainbow Six® Siege é um FPS tático online assimétrico de combates 5v5 do gênero first person shooter produzido pela Ubisoft Montreal Tom Clancy's Rainbow Six® Siege é um FPS tático online assimétrico de combates 5v5 do gênero first person shooter produzido pela Ubisoft Montreal",
     avaliacao: './jogos/stay_close/stay_close_rate.png',
     img: '../jogo_page/imagens/cards_image/rb6.png',
     tag: ['fps', 'em-alta'],
