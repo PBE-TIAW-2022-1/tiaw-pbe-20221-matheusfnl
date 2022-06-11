@@ -175,6 +175,46 @@ let jogos = [
     tag: ['ritmo'],
     link: '../jogo_page/taiko-no-tatsujin.html',
   },
+  hollow_knight = {
+    nome: "Hollow Knight",
+    descricao: " ",
+    avaliacao: './jogos/stay_close/phasmophobia.png',
+    img: '../jogo_page/imagens/cards_image/hollow_knight.jpg',
+    tag: ['metroidvania', 'rpg'],
+    link: '../jogo_page/hollow_knight.html',
+  },
+  bloodstained = {
+    nome: "Bloodstained: Ritual of the Night",
+    descricao: " ",
+    avaliacao: './jogos/stay_close/phasmophobia.png',
+    img: '../jogo_page/imagens/cards_image/bloodstained.jpg',
+    tag: ['metroidvania', 'rpg'],
+    link: '../jogo_page/bloodstained.html',
+  },
+  ori = {
+    nome: "Ori and the Will of the Wisps",
+    descricao: " ",
+    avaliacao: './jogos/stay_close/phasmophobia.png',
+    img: '../jogo_page/imagens/cards_image/ori.jpg',
+    tag: ['metroidvania'],
+    link: '../jogo_page/ori.html',
+  },
+  blasphemous = {
+    nome: "Blasphemous",
+    descricao: " ",
+    avaliacao: './jogos/stay_close/phasmophobia.png',
+    img: '../jogo_page/imagens/cards_image/blasphemous.jpg',
+    tag: ['metroidvania'],
+    link: '../jogo_page/blasphemous.html',
+  },
+  ender_lilies = {
+    nome: "ENDER LILIES: Quietus of the Knights",
+    descricao: " ",
+    avaliacao: './jogos/stay_close/phasmophobia.png',
+    img: '../jogo_page/imagens/cards_image/ender_lilies.jpg',
+    tag: ['metroidvania', 'rpg'],
+    link: '../jogo_page/ender_lilies.html',
+  },
 ]
 
 const pesquisa = document.getElementById('pesquisa');
