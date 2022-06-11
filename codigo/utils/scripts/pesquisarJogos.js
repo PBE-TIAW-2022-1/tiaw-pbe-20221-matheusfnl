@@ -159,6 +159,22 @@ let jogos = [
     tag: ['terror'],
     link: '../jogo_page/resident_evil_7.html',
   },
+  inscryption = {
+    nome: "Inscryption",
+    descricao: " ",
+    avaliacao: './jogos/stay_close/phasmophobia.png',
+    img: '../jogo_page/imagens/cards_image/inscryption.jpg',
+    tag: ['terror'],
+    link: '../jogo_page/inscryption.html',
+  },
+  taiko_no_tatsujin = {
+    nome: "Taiko no Tatsujin",
+    descricao: " ",
+    avaliacao: './jogos/stay_close/phasmophobia.png',
+    img: '../jogo_page/imagens/cards_image/taiko-no-tatsujin.jpg',
+    tag: ['ritmo'],
+    link: '../jogo_page/taiko-no-tatsujin.html',
+  },
 ]
 
 const pesquisa = document.getElementById('pesquisa');
