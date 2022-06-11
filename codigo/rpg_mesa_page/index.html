@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <div class="loader"></div>
      <!-- Header -->
      <nav class="navbar navbar-expand-lg navbar-light bg">
       <div class="container-fluid">
@@ -113,6 +114,13 @@
     </div>
     <!-- Copyright -->
   </footer>
+
+  <script>
+    window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    });
+  </script> 
 
   <script src="../utils//scripts/pesquisarJogos.js"></script>
 </body>
