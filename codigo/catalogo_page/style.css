@@ -24,6 +24,10 @@
   margin: 10px;
 }
 
+#main_content {
+  margin: 50px 20px;
+}
+
 .catalogo {
   font-size: 55px;
   color: white;
