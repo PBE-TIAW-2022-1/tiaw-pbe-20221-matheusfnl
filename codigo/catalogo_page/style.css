@@ -101,6 +101,10 @@
   -webkit-transition: all 0.3s;
 }
 
+.cursor_ponteiro  {
+  cursor: pointer;
+}
+
 .card_avaliacao {
   background-color: #273257;
   margin: 0px 20px 20px 20px;
