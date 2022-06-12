@@ -9,7 +9,7 @@ function mostraJogos(jogo, card) {
   div_col.innerHTML = `
     <div id="card_efeito">
       <div class="card_instance">
-        <a href="${jogo.link}" class="link">
+        <a onclick="goToPage('${jogo.link}')" class="link">
           <div class="card_content text-center mb-0">
             <img class="game_image mt-3 mb-2 img-fluid" src="${jogo.img}" alt="rainbow-six">
             <h5>${jogo.nome}</h5>
@@ -29,8 +29,28 @@ function mostraJogos(jogo, card) {
   card.appendChild(div_col);
 }
 
+let jogo_page_info = {}
+
 function goToPage(link) {
-  window.location = link;
+  jogos.forEach(jogo => {
+    if(jogo.link === link) {
+      jogo_page_info = {}
+
+      jogo_page_info = {
+        nome: jogo.nome,
+        avaliacao: jogo.avaliacao,
+        descricao: jogo.page.descricao,
+        req_minimos: jogo.page.req_minimos,
+        req_recomendados: jogo.page.req_recomendados,
+        img: jogo.page.img,
+        comentario: jogo.comentario,
+      }
+
+      sessionStorage.setItem("jogo_page_info", JSON.stringify(jogo_page_info));
+    }
+  })
+
+  window.location = '../jogo_page/index.html';
 }
 
 const card = document.getElementById('card_row')

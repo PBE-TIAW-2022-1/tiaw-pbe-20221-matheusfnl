@@ -47,15 +47,17 @@
         </div>
       </div>
     </nav>
-    <div class="loader"></div>
     <!-- Fim do header -->
       <div class="game_page_out">
-        <p class="titulo"><span class="letra">B</span>lasphemous</p>
+        <p id="nome_jogo" class="titulo"></p>
         <div class="game_page p-3 mt-4">
           <div class="row">
             <div class="col-4 text-center">
-              <p class="desc" class="mt-3">
-                <br> Você recebe a missão de viajar para Cvstodia, um mundo maldito, proveniente de uma terrível maldição chamada de O Milagre. O jogo possui uma narrativa profunda e evocativa, junto com uma grande exploração.
+              <p id="descricao_jogo" class="desc" class="mt-3">
+                <!-- DESCRIÇÃO DO JOGOS -->
+                Você recebe a missão de viajar para Cvstodia, um mundo maldito, 
+                proveniente de uma terrível maldição chamada de O Milagre. 
+                O jogo possui uma narrativa profunda e evocativa, junto com uma grande exploração.
               </p>
               <div class="my-5">
                 <p class="text-warning estrela">
@@ -65,19 +67,20 @@
             </div>
             
             <div class="col-8">
-              <img class="mt-3 img-fluid mx-auto d-block" src="./imagens/blasphemous.jpg">
+              <img id="imagem_jogo" class="mt-3 img-fluid mx-auto d-block" src="">
               
               <div class="row">
                 <div class="col-6 mt-3">
                   <br>
                   <h4 class="titulo-requisitos"><span class="letra">R</span>equisitos <span class="letra">M</span>ínimos</h4>
                   <div class="requisitos">
-                    <p>SO: Windows 7 64-bit<br>
-                      Processador: Intel Core2 Duo E8400 or AMD Phenom II x2 550<br>
-                      Memória: 4GB de RAM <br>
-                      Placa de vídeo: GeForce GTX 260 or Radeon HD 4850<br>
-                      Rede: Conexão de internet banda larga <br>
-                      Armazenamento: 4GB de espaço disponível<br>
+                    <p>
+                      SO: <span id="so_jogo_minimos"></span><br>
+                      Processador: <span id="processador_jogo_minimos"></span><br>
+                      Memória: <span id="memoria_jogo_minimos"></span> <br>
+                      Placa de vídeo: <span id="placavideo_jogo_minimos"></span><br>
+                      Rede: <span id="rede_jogo_minimos"></span> <br>
+                      Armazenamento: <span id="armazenamento_jogo_minimos"></span><br>
                     </p>
                   </div>
                 </div>
@@ -86,12 +89,13 @@
                   <br>
                   <h4 class="titulo-requisitos"><span class="letra">R</span>equisitos <span class="letra">R</span>ecomendados</h4>
                   <div class="requisitos">
-                    <p>SO: Windows 10 (64 bit) <br>
-                      Processador: Intel Core i5-750 or AMD Phenom II x4 945<br>
-                      Memória: 8GB de RAM <br>
-                      Placa de vídeo: GeForce GTX 650 or Radeon HD 5770 <br>
-                      Rede: Conexão de internet banda larga <br>
-                      Armazenamento: 4GB de espaço disponível <br>
+                    <p>
+                      SO: <span id="so_jogo_recomendados"></span><br>
+                      Processador: <span id="processador_jogo_recomendados"></span><br>
+                      Memória: <span id="memoria_jogo_recomendados"></span> <br>
+                      Placa de vídeo: <span id="placavideo_jogo_recomendados"></span><br>
+                      Rede: <span id="rede_jogo_recomendados"></span> <br>
+                      Armazenamento: <span id="armazenamento_jogo_recomendados"></span><br>
                     </p>
                   </div>
                 </div>
@@ -114,7 +118,7 @@
                 <h4>Escreva um comentário</h4>
                 <input id="nomeInput" class="escrever_coment mb-2" type="text" placeholder="Nome">
                 <textarea id="comentarioInput" class="escrever_coment" rows="5" placeholder="Comentário"></textarea>
-                <button onclick="inserirComentario('blasphemous')" class="btn btn-primary enviar_coment">Enviar</button>
+                <button onclick="inserirComentario()" class="btn btn-primary enviar_coment">Enviar</button>
             </div>
           </div>
         </div>
@@ -130,14 +134,8 @@
 
       <script src="../utils/scripts/adicionarComentario.js"></script>
       <script>
-        atualizarTela('blasphemous');
+        carregarComentarios();
       </script>
-          <script>
-            window.addEventListener("load", function () {
-            const loader = document.querySelector(".loader");
-            loader.className += " hidden";
-        });
-        </script> 
       <script src="../utils//scripts/pesquisarJogos.js"></script>
   </body>
 </html>
