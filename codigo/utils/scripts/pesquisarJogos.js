@@ -820,7 +820,7 @@ function pesquisarJogos() {
           colDiv.classList.add('zindex1000')
   
           colDiv.innerHTML = `
-            <div class="cardPreview" onclick="goToPage('${jogo}')">
+            <div class="cardPreview" onclick="goToPage('${jogo.link}')">
               <img class="imgPreview" src="${jogo.img}">
               <h5 class="nomePreview">${jogo.nome}</h5>
             </div>
@@ -832,10 +832,27 @@ function pesquisarJogos() {
   }, 450);
 }
 
-var jogo_atual;
 
-function goToPage(Jogo) {
-  window.location = Jogo.link;
+function goToPage(link) {
+  jogos.forEach(jogo => {
+    if(jogo.link === link) {
+      jogo_page_info = {}
+
+      jogo_page_info = {
+        nome: jogo.nome,
+        avaliacao: jogo.avaliacao,
+        descricao: jogo.page.descricao,
+        req_minimos: jogo.page.req_minimos,
+        req_recomendados: jogo.page.req_recomendados,
+        img: jogo.page.img,
+        comentario: jogo.comentario,
+      }
+
+      sessionStorage.setItem("jogo_page_info", JSON.stringify(jogo_page_info));
+    }
+  })
+
+  window.location = '../jogo_page/index.html';
 }
 
 function removerJogos() {
