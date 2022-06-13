@@ -12,6 +12,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+     <div class="loader"></div>
      <!-- Header -->
      <nav class="navbar navbar-expand-lg navbar-light bg">
       <div class="container-fluid">
@@ -137,5 +138,11 @@
         carregarComentarios();
       </script>
       <script src="../utils//scripts/pesquisarJogos.js"></script>
+      <script>
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        });
+      </script> 
   </body>
 </html>
