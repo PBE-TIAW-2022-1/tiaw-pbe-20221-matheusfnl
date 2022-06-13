@@ -18,8 +18,9 @@ const criaComentario = (nome, comentario, jogo, id) => {
   const nomePrimeiraLetra = nome.charAt(0)
   const nomeResto = nome.substring(1)
 
-  caixaComentario.classList.add('col-6');
+  caixaComentario.classList.add('col-md');
   caixaComentario.classList.add('instancia_comentarios');
+  caixaComentario.classList.add('mb-4')
 
   caixaComentario.innerHTML = `
     <div class="area_comentarios">
@@ -89,25 +90,27 @@ const atualizarTela = (jogo) => {
   rede_jogo_recomendados.innerHTML = jogo_info.req_recomendados.rede;
   armazenamento_jogo_recomendados.innerHTML = jogo_info.req_recomendados.armazenamento;
 
-  var words = jogo_info.nome.split(" ");
-  for (var i = 0; i < words.length - 1; i++) {
-      words[i] += " ";
+  if(nome_jogo.childNodes.length === 0) {
+    var words = jogo_info.nome.split(" ");
+    for (var i = 0; i < words.length - 1; i++) {
+        words[i] += " ";
+    }
+
+    words.forEach(palavra => {
+      console.log(palavra)
+      let primeira_letra = palavra.charAt(0);
+  
+      let span = document.createElement('span');
+      nome_jogo.appendChild(span);
+      span.classList.add('letra');
+  
+      span.innerHTML = primeira_letra;
+  
+      let resto_palavra = palavra.substring(1);
+      resto_palavra = resto_palavra.replace(/`/g, "'")
+      nome_jogo.innerHTML += resto_palavra + ' ';
+    });
   }
-
-  words.forEach(palavra => {
-    console.log(palavra)
-    let primeira_letra = palavra.charAt(0);
-
-    let span = document.createElement('span');
-    nome_jogo.appendChild(span);
-    span.classList.add('letra');
-
-    span.innerHTML = primeira_letra;
-
-    let resto_palavra = palavra.substring(1);
-    resto_palavra = resto_palavra.replace(/`/g, "'")
-    nome_jogo.innerHTML += resto_palavra + ' ';
-  });
 
   limparComentarios();
   const comentario = getComentario();

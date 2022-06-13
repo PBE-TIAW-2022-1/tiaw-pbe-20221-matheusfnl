@@ -72,6 +72,10 @@
   padding: 15px;
 }
 
+.instancia_comentarios {
+  min-width: 320px;
+}
+
 .coment_desc {
   margin: 0;
   font-family: 'lato';
