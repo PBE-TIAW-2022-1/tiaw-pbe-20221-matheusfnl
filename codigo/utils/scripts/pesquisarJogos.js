@@ -815,7 +815,7 @@ function pesquisarJogos() {
   timeout = setTimeout(() => {
     if(inputBox.value.replace(/\s/g, '').length) {
       jogos.forEach(jogo => {
-        if(jogo.nome.toLowerCase().split(' ')[0] === inputBox.value.toLowerCase().split(' ')[0] && jogo.nome.toLowerCase().includes(inputBox.value.toLowerCase()) && jogos_exibidos < 4) {
+        if(jogo.nome.toLowerCase().charAt(0) === inputBox.value.toLowerCase().charAt(0) && jogo.nome.toLowerCase().includes(inputBox.value.toLowerCase()) && jogos_exibidos < 4 && jogo.nome.toLowerCase().split(' ')[0].includes(inputBox.value.toLowerCase().split(' ')[0])) {
           const colDiv = document.createElement('div');
           colDiv.classList.add('col-12')
           colDiv.classList.add('pointer')
@@ -833,7 +833,7 @@ function pesquisarJogos() {
       });
 
       jogos.forEach(jogo => {
-        if(!(jogo.nome.toLowerCase().split(' ')[0] === inputBox.value.toLowerCase().split(' ')[0])) {
+        if(!(jogo.nome.toLowerCase().charAt(0) === inputBox.value.toLowerCase().charAt(0) && jogo.nome.toLowerCase().includes(inputBox.value.toLowerCase()) && jogo.nome.toLowerCase().split(' ')[0].includes(inputBox.value.toLowerCase().split(' ')[0]))) {
           if(jogo.nome.toLowerCase().includes(inputBox.value.toLowerCase()) && jogos_exibidos < 4) {
             const colDiv = document.createElement('div');
             colDiv.classList.add('col-12')
