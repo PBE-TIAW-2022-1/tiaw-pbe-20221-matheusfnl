@@ -107,6 +107,7 @@
 
 .cursor_ponteiro  {
   cursor: pointer;
+  min-width: 300px;
 }
 
 .card_avaliacao {

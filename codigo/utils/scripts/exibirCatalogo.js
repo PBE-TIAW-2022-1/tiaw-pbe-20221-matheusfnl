@@ -4,7 +4,7 @@ let filtro = null;
 // criando os jogos do catálogo
 function mostraJogos(jogo, card) {
   let div_col = document.createElement('div');
-  div_col.classList.add('col-4')
+  div_col.classList.add('col-md')
 
   div_col.innerHTML = `
     <div id="card_efeito" class="cursor_ponteiro">
