@@ -1,0 +1,52 @@
+html {
+  overflow: hidden;
+}
+
+#carouselExampleSlidesOnly {
+  position: fixed;
+  top: 0;
+  left: 55%;
+  width: 45%;
+  height: 100%;
+  box-shadow: 0px 0px 20px 1px rgb(15, 15, 39);
+  min-width: 700px;
+}
+
+.text-color {
+  color:white
+}
+
+#login {
+  padding-top: 60px;
+  margin-left: 100px;
+}
+
+.bem_vindo {
+  font-size: 46px;
+}
+
+.modal-content {
+  background-color: #151C35;
+}
+
+.login-form {
+  background-color: #151C35;
+  min-width: 450px;
+  padding: 60px 20px 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px rgb(15, 15, 39);
+}
+
+.background_login {
+  left: 0;
+  top: 0;
+}
+
+.carousel_image {
+  filter: brightness(80%)
+}
+
+.feedback_message {
+  padding-left: 10px;
+  padding-top: 6px;
+}
