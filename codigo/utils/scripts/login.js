@@ -1,5 +1,5 @@
 
-const LOGIN_URL = "./index.html";
+const LOGIN_URL = "../index.html";
 
 // Objeto para o banco de dados de usuários baseado em JSON
 var db_usuarios = {};
