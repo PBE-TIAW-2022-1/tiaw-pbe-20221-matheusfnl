@@ -434,6 +434,35 @@ let jogos = [
       img: '../jogo_page/imagens/fortnite.jpg',
     }
   },
+  infernax = {
+    nome: 'Infernax',
+    descricao: " ",
+    avaliacao: './jogos/stay_close/stay_close_rate.png', //não alterar por enquanto
+    img: '../jogo_page/imagens/cards_image/infernax.jpg',
+    tag: ['metroidvania'],
+    link: '../jogo_page/infernax.html',
+    comentario: 'infernax',
+    page: {
+      descricao: "Infernax apresenta as aventuras de um poderoso cavaleiro que regressa a uma pátria atormentada por magia negra. Desvende os mistérios em torno da maldição e enfrente as consequências das tuas ações. Vários finais dependentes das decisões dos jogadores.",
+      req_minimos: {
+        so: 'Windows 7',
+        processador: 'Intel Core i3-540 or AMD Phenom II X2 550',
+        memoria: '4 GB de RAM',
+        video: 'Nvidia GeForce GT 320, 1GB or AMD Radeon HD 6570, 1GB',
+        rede: 'Conexão de internet não necessária',
+        armazenamento: '500 MB de espaço disponível',
+      },
+      req_recomendados: {
+        so: 'Windows 7',
+        processador: 'Intel Core i3-540 or AMD Phenom II X2 550',
+        memoria: '4 GB de RAM',
+        video: 'Nvidia GeForce GT 320, 1GB or AMD Radeon HD 6570, 1GB',
+        rede: 'Conexão de internet não necessária',
+        armazenamento: '500 MB de espaço disponível',
+      },
+      img: '../jogo_page/imagens/infernax.jpeg',
+    }
+  },
   inscryption = {
     nome: "Inscryption",
     descricao: " ",

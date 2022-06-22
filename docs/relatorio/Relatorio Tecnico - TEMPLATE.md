@@ -129,6 +129,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| Nosso site oferecerá recomendações de peças para computador de acordo com cada jogo | ALTA | 
 |RF-004| Nossos usuários terão a opção de se cadastrar no site, com o intuito de receber benefícios | MÉDIA | 
 |RF-005| Nossos usuários poderão filtrar os jogos por categorias | ALTA | 
+|RF-006| Também ofertaremos o espaço para que nossos usuários também opinem e recomendem seus jogos favoritos | MÉDIA | 
+|RF-007| Nosso site oferecerá também uma categoria especial voltada apenas aos RPG’s de Mesa, onde será disponibilizado uma introdução sobre o que são e uma aba com os principais livros | ALTA | 
+|RF-008| O site possuirá alguns Easter Egg’s, que ficarão escondidos em diversos elementos do mesmo | MÉDIA | 
+|RF-009| Categoria “Em Alta”, onde serão separados os principais títulos em alta do momento | ALTA | 
+|RF-010| Opção para que os jogos sejam procurados através de uma barra de pesquisa | ALTA | 
+|RF-011| Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site | ALTA | 
+|RF-012| Os usuários poderão testar seus conhecimentos sobre RPG de Mesa através de um mini Quiz | MÉDIA | 
+|RF-013| O site possuirá a opção de alterar seus temas de cores padrão, caso assim o usuário desejar | MÉDIA | 
 
 ### Requisitos não Funcionais
 
@@ -216,48 +224,47 @@ Em relação às branchs, seguiremos o padrão estabelecido.
 
 # Projeto da Solução
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-## Tecnologias Utilizadas
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
-> problema, ou seja, implementar a sua solução. Liste todas as
-> tecnologias envolvidas, linguagens a serem utilizadas, serviços web,
-> frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-> Apresente também uma figura explicando como as tecnologias estão
-> relacionadas ou como uma interação do usuário com o sistema vai ser
-> conduzida, por onde ela passa até retornar uma resposta ao usuário.
-> 
-> Inclua os diagramas de User Flow, esboços criados pelo grupo
-> (stoyboards), além dos protótipos de telas (wireframes). Descreva cada
-> item textualmente comentando e complementando o que está apresentado
-> nas imagens.
+A seção de implementação da solução visa mostrar os detalhes técnicos da solução criada pela equipe, abrangendo a arquitetura da solução, estruturas de dados e telas implementadas.
 
 ## Arquitetura da solução
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+Os elementos que constituem a solução criada são apresentados na figura a seguir:
 
-> Inclua um diagrama da solução e descreva os módulos e as tecnologias
-> que fazem parte da solução. Discorra sobre o diagrama.
-> 
-> **Exemplo do diagrama de Arquitetura**:
-> 
-> ![Exemplo de Arquitetura](images/arquitetura-exemplo.png)
+![Exemplo de UserFlow](images/arquitetura-solução.png)
 
+ A solução implementada conta com os seguintes módulos:
+- **Navegador** - Interface básica do sistema
+ -- **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que compõem o projeto.
+ -- **Local Storage** - armazenamento mantido no Navegador que contém:
+  --- **Página de Jogos** – seção de categoria e páginas de jogos
+  --- **Comentários** – opiniões de usuários sobre os jogos
+  --- **Login** – página para registro e login de usuários
+ - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador.
+
+# Hospedagem
+
+Para o ambiente de hospedagem do site do projeto, foi utilizada a plataforma do GitHub Pages, conforme a URL: https://mayara-aya-kimura.github.io/TIAW.github.io/
 
 # Avaliação da Aplicação
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
+O processo de realização dos testes da solução desenvolvida está documentado na
+seção que se segue e traz os planos de testes de software e de usabilidade, na
+sequência, o registro dos testes realizados.
 
 ## Plano de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+- Requisitos para realização do teste:
+Site publicado na Internet;
+- Navegador da Internet - Chrome, Firefox ou Edge;
+- Conectividade de Internet para acesso à nossa Aplicação Web.
+
+Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
+
+|Caso de Teste| CT-01 Fazer registro no site|
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-11 - Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site. |
+| Objetivo do Teste | Verificar se é possível realizar o registro de novos usuários. |
+| Passos | 1. Acessar o navegado; \n 2. Informar o endereço do site. |
 
 > Enumere quais cenários de testes foram selecionados para teste. Neste
 > tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
@@ -268,16 +275,6 @@ Em relação às branchs, seguiremos o padrão estabelecido.
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
 > -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-
-## Ferramentas de Testes (Opcional)
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Comente sobre as ferramentas de testes utilizadas.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
 
 ## Registros de Testes
 
