@@ -234,11 +234,11 @@ Os elementos que constituem a solução criada são apresentados na figura a seg
 
  A solução implementada conta com os seguintes módulos:
 - **Navegador** - Interface básica do sistema
- -- **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que compõem o projeto.
- -- **Local Storage** - armazenamento mantido no Navegador que contém:
-  --- **Página de Jogos** – seção de categoria e páginas de jogos
-  --- **Comentários** – opiniões de usuários sobre os jogos
-  --- **Login** – página para registro e login de usuários
+ - - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que compõem o projeto.
+ - - **Local Storage** - armazenamento mantido no Navegador que contém:
+  - - - **Página de Jogos** – seção de categoria e páginas de jogos
+  - - - **Comentários** – opiniões de usuários sobre os jogos
+  - - - **Login** – página para registro e login de usuários
  - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador.
 
 # Hospedagem
