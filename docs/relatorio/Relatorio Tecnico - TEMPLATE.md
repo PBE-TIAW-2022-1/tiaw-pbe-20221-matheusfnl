@@ -288,7 +288,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |--|-------------------------------------------------------|
 | Requisitos Associados | RF-05 - Nossos usuários poderão filtrar os jogos por categoria. <br/> RF-09 - Também disponibilizamos uma categoria “Em Alta”, onde será disponibilizado os principais títulos em alta do momento. |
 | Objetivo do Teste | Verificar se o filtro de categorias está funcionando corretamente. |
-| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a aba do “Catálogo” de jogos. <br/> 4. Clicar nos filtros que se localizam na lateral esquerda da página |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a aba do “Catálogo” de jogos. <br/> 4. Clicar nos filtros que se localizam na lateral esquerda da página. |
 | Critérios de Êxito | * Após passar pela parte do login, o usuário deve ser redirecionado para a aba de catálogo de jogos. |
 
 
@@ -306,6 +306,70 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Objetivo do Teste | Verificar se os detalhes dos jogos estão sendo apresentados corretamente. |
 | Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar o catálogo de jogos ou digitar o nome do jogo na barra de pesquisa. <br/> 4. Clicar no card contendo o jogo. <br/> 5. Visualizar os detalhes do jogo selecionado. |
 | Critérios de Êxito | * Após clicar no card de algum jogo, seja no catálogo ou na barra de pesquisa, o usuário será redirecionado para uma aba contendo detalhes do jogo selecionado. <br/> * A aba de detalhes deve conter o nome, imagem, descrição, requisitos mínimos, requisitos recomendados e nota do jogo selecionado |
+
+
+|Caso de Teste| CT-07 - Adicionar comentários |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-06 - Ofertamos um espaço para que nossos usuários opinem sobre seus jogos favoritos. |
+| Objetivo do Teste | Verificar se é possível adicionar, editar e excluir comentários sobre os jogos. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar o catálogo de jogos ou digitar o nome do jogo na barra de pesquisa. <br/> 4. Clicar no card contendo o jogo. <br/> 5. Visualizar os detalhes do jogo selecionado. <br/> 6. Inserir informações na aba “Escreva um comentário”, localizada no canto inferior direito da página. |
+| Critérios de Êxito | * Deverá ser possível adicionar, excluir e editar comentários sobre o jogo selecionado. |
+
+
+|Caso de Teste| CT-08 - Visualizar a página do RPG de Mesa |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-07 - Nosso site oferecerá uma categoria especial voltada apenas aos RPG’s de Mesa, onde será disponibilizado uma introdução sobre o que são e uma aba com os principais livros. |
+| Objetivo do Teste | Verificar se as informações estão sendo apresentadas corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ítem “RPG de Mesa”, localizado no header da página. |
+| Critérios de Êxito | * Após clicar em “RPG de Mesa”, o usuário será redirecionado para uma aba contendo uma breve introdução a esse gênero. |
+
+
+|Caso de Teste| CT-09 - Mini-quiz RPG de Mesa |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RNF-06 - Os usuários poderão testar seus conhecimentos sobre RPG de Mesa através de um mini Quiz. |
+| Objetivo do Teste | Verificar se o mini-quiz está funcional. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ítem “RPG de Mesa”, localizado no header da página. <br/> 4. Clicar no botão “Quiz RPG”, localizado no canto inferior direito da página. <br/> 5. Realizar o Quiz. |
+| Critérios de Êxito | * Após a realização do mini-quiz, o usuário será informado sobre sua pontuação. <br/> * Será possível refazê-lo ou retornar para a aba de RPG de Mesa através dos botões “Refazer Quiz” e ”Retornar” |
+
+
+|Caso de Teste| CT-10 - Visualizar os títulos do Catálogo de livros para RPG de Mesa |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-07 - Nosso site oferecerá uma categoria especial voltada apenas aos RPG’s de Mesa, onde será disponibilizado uma introdução sobre o que são e uma aba com os principais livros. |
+| Objetivo do Teste | Verificar se os títulos ofertados estão sendo apresentados corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ítem “RPG de Mesa”, localizado no header da página. <br/> 4. Clicar no botão “Comece aqui”, localizado no canto superior esquerdo da página. |
+| Critérios de Êxito | * Após clicar no botão “Comece aqui”, o usuário deverá ser redirecionado para uma página contendo recomendações dos principais títulos do RPG de mesa. <br/> * Cada título precisa apresentar uma imagem, breve descrição e um botão que possibilite ao usuário comprar o livro através da Amazon. |
+
+
+|Caso de Teste| CT-11 - - Visualizar os títulos do Catálogo de livros para RPG de Mesa a venda na Amazon |
+|--|-------------------------------------------------------|
+| Requisitos Associados |RF-07 - Nosso site oferecerá uma categoria especial voltada apenas aos RPG’s de Mesa, onde será disponibilizado uma introdução sobre o que são e uma aba com os principais livros. |
+| Objetivo do Teste | Verificar se o redirecionamento para o site da Amazon está de acordo com o livro selecionado. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ítem “RPG de Mesa”, localizado no header da página. <br/> 4. Clicar no botão “Comece aqui”, localizado no canto superior esquerdo da página. <br/> 5. Escolher um dos títulos ofertados e clicar no botão “Compre aqui” |
+| Critérios de Êxito | * Após clicar no botão “Compre aqui”, o usuário deve ser redirecionado para o site da Amazon br, com o intuito de visualizar o preço e/ou comprar o livro selecionado. |
+
+
+|Caso de Teste| CT-12 - Mini-games escondidos no site |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RNF-07 - O site possuirá alguns Easter Egg’s, cujos quais ficarão escondidos em diversos elementos do mesmo. |
+| Objetivo do Teste | Verificar se os mini-games estão funcionais. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar em algumas imagens da nossa persona que estão espalhadas por todo o site. <br/> 4. Jogar o mini-game encontrado. |
+| Critérios de Êxito | * Após clicar nas personas espalhadas pelo site, o usuário será redirecionado para uma página que contém um mini-game de algum jogo retrô. <br/> * Serão 3 jogos espalhados pelo site, sendo eles: Space invaders, Snake game e Dinossaur game. |
+
+
+|Caso de Teste| CT-13 - Dark/Light -mode |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RNF-08 - O site possuirá a opção de alterar seus temas de cores padrão, caso assim o usuário desejar. |
+| Objetivo do Teste | Verificar se é possível alterar o tema de cores do site. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ícone do sol/lua que se encontra no header da página. |
+| Critérios de Êxito | * Após clicar no ícone do sol/lua, as cores das letras devem ser alteradas, bem como a cor do header e background-image. <br/> * Mesmo atualizando a página, o modo alterado deve se manter, devido a utilização de um LocalStorage. |
+
+
+|Caso de Teste| CT-14 - Preloader |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RNF-09 - Disponibilizaremos um preloader nas principais páginas do site. |
+| Objetivo do Teste | Verificar se há um preloader (gif do pacman) ao carregar as páginas. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Carregar qualquer uma das abas disponíveis (Com exceção da home page e registro/login de usuário). <br/> 4. Observar o gif animado ao carregar as páginas. |
+| Critérios de Êxito | * Após carregar as páginas mencionadas, deve ser possível observar um gif animado do pacman como preloader. |
 
 ## Registros de Testes
 
