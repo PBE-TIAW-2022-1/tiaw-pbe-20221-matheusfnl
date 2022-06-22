@@ -264,7 +264,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |--|-------------------------------------------------------|
 | Requisitos Associados | RF-11 - Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site. |
 | Objetivo do Teste | Verificar se é possível realizar o registro de novos usuários. |
-| Passos | 1. Acessar o navegado; <br/> 2. Informar o endereço do site. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a home page; <br/> 4. Clicar em "Comece Agora"; <br/> 5. Clicar em "Novo usuário"; <br/> 6. Inserir os dados para o registro e clicar em "Confirmar". |
 
 > Enumere quais cenários de testes foram selecionados para teste. Neste
 > tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
