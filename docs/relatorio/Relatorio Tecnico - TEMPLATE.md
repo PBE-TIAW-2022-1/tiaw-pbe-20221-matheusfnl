@@ -267,12 +267,21 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a home page; <br/> 4. Clicar em "Comece Agora"; <br/> 5. Clicar em "Novo usuário"; <br/> 6. Inserir os dados para o registro e clicar em "Confirmar". |
 | Critérios de Êxito | Após a realização do registro do novo usuário, o site deve apresentar um alerta informando que o usuário foi salvo com sucesso. |
 
+
 |Caso de Teste| CT-02 Fazer login no site|
 |--|-------------------------------------------------------|
 | Requisitos Associados | RF-11 - Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site. |
 | Objetivo do Teste | Verificar se é possível realizar o login de usuários já cadastrados. |
 | Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a home page; <br/> 4. Clicar em "Comece Agora"; <br/> 5. Informar o usuário e senha que foram utilizados durante o registro de usuário; <br/> 6. Clicar em "Logar". |
 | Critérios de Êxito | Após inserir os dados registrados e clicar no botão “Logar”, o usuário deve ser redirecionado para a aba do catálogo de jogos. |
+
+
+|Caso de Teste| CT-02 Fazer login no site|
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-01 - Nosso site oferecerá recomendações de jogos. <br/> RF-02 - Todos os jogos terão avaliações de acordo com uma média retirada das principais mídias de crítica Geek. |
+| Objetivo do Teste | Verificar se os títulos estão sendo apresentados corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a aba do “Catálogo” de jogos. |
+| Critérios de Êxito | * Após passar pela parte do login, o usuário deve ser redirecionado para a aba de catálogo de jogos. <br/> * Os jogos disponibilizados devem apresentar uma imagem, nome, breve descrição e nota (estrelas). |
 
 ## Registros de Testes
 
