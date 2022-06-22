@@ -265,16 +265,14 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Requisitos Associados | RF-11 - Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site. |
 | Objetivo do Teste | Verificar se é possível realizar o registro de novos usuários. |
 | Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a home page; <br/> 4. Clicar em "Comece Agora"; <br/> 5. Clicar em "Novo usuário"; <br/> 6. Inserir os dados para o registro e clicar em "Confirmar". |
+| Critérios de Êxito | Após a realização do registro do novo usuário, o site deve apresentar um alerta informando que o usuário foi salvo com sucesso. |
 
-> Enumere quais cenários de testes foram selecionados para teste. Neste
-> tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
-> de usuários que foi escolhido para participar do teste e as
-> ferramentas utilizadas.
-> 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
+|Caso de Teste| CT-02 Fazer login no site|
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-11 - Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site. |
+| Objetivo do Teste | Verificar se é possível realizar o login de usuários já cadastrados. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a home page; <br/> 4. Clicar em "Comece Agora"; <br/> 5. Informar o usuário e senha que foram utilizados durante o registro de usuário; <br/> 6. Clicar em "Logar". |
+| Critérios de Êxito | Após inserir os dados registrados e clicar no botão “Logar”, o usuário deve ser redirecionado para a aba do catálogo de jogos. |
 
 ## Registros de Testes
 
