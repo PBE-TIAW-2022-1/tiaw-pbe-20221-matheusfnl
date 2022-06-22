@@ -265,7 +265,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Requisitos Associados | RF-11 - Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site. |
 | Objetivo do Teste | Verificar se é possível realizar o registro de novos usuários. |
 | Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a home page; <br/> 4. Clicar em "Comece Agora"; <br/> 5. Clicar em "Novo usuário"; <br/> 6. Inserir os dados para o registro e clicar em "Confirmar". |
-| Critérios de Êxito | Após a realização do registro do novo usuário, o site deve apresentar um alerta informando que o usuário foi salvo com sucesso. |
+| Critérios de Êxito | * Após a realização do registro do novo usuário, o site deve apresentar um alerta informando que o usuário foi salvo com sucesso. |
 
 
 |Caso de Teste| CT-02 Fazer login no site|
@@ -273,15 +273,39 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Requisitos Associados | RF-11 - Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site. |
 | Objetivo do Teste | Verificar se é possível realizar o login de usuários já cadastrados. |
 | Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a home page; <br/> 4. Clicar em "Comece Agora"; <br/> 5. Informar o usuário e senha que foram utilizados durante o registro de usuário; <br/> 6. Clicar em "Logar". |
-| Critérios de Êxito | Após inserir os dados registrados e clicar no botão “Logar”, o usuário deve ser redirecionado para a aba do catálogo de jogos. |
+| Critérios de Êxito | * Após inserir os dados registrados e clicar no botão “Logar”, o usuário deve ser redirecionado para a aba do catálogo de jogos. |
 
 
-|Caso de Teste| CT-02 Fazer login no site|
+|Caso de Teste| CT-03 Visualizar os títulos do Catálogo de jogos|
 |--|-------------------------------------------------------|
 | Requisitos Associados | RF-01 - Nosso site oferecerá recomendações de jogos. <br/> RF-02 - Todos os jogos terão avaliações de acordo com uma média retirada das principais mídias de crítica Geek. |
 | Objetivo do Teste | Verificar se os títulos estão sendo apresentados corretamente. |
 | Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a aba do “Catálogo” de jogos. |
 | Critérios de Êxito | * Após passar pela parte do login, o usuário deve ser redirecionado para a aba de catálogo de jogos. <br/> * Os jogos disponibilizados devem apresentar uma imagem, nome, breve descrição e nota (estrelas). |
+
+
+|Caso de Teste| CT-04 - Filtro de jogos funcional |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-05 - Nossos usuários poderão filtrar os jogos por categoria. <br/> RF-09 - Também disponibilizamos uma categoria “Em Alta”, onde será disponibilizado os principais títulos em alta do momento. |
+| Objetivo do Teste | Verificar se o filtro de categorias está funcionando corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a aba do “Catálogo” de jogos. <br/> 4. Clicar nos filtros que se localizam na lateral esquerda da página |
+| Critérios de Êxito | * Após passar pela parte do login, o usuário deve ser redirecionado para a aba de catálogo de jogos. |
+
+
+|Caso de Teste| CT-05 - Função “Pesquisar jogos |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-10 - Disponibilizamos a opção para que os jogos sejam procurados através de uma barra de pesquisa |
+| Objetivo do Teste | Verificar se é possível pesquisar os jogos presentes no site pelo nome. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Digitar o nome de algum jogo na barra de pesquisa. <br/> 4. Clicar na miniatura do jogo desejado. |
+| Critérios de Êxito | * Ao digitar o nome de algum jogo na barra de pesquisa, caso o mesmo esteja em nosso site, aparecerá uma miniatura, contendo imagem e nome, referente ao que fora digitado. <br/> * Após clicar na miniatura, o usuário será direcionado para a página com detalhes do jogo |
+
+
+|Caso de Teste| CT-06 - Visualizar os detalhes dos jogos |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-01 - Nosso site oferecerá recomendações de jogos <br/> RF-02 - Todos os jogos terão avaliações de acordo com uma média retirada das principais mídias de crítica Geek. <br/> RF-03 - Nosso site oferecerá recomendações de peças para computador de acordo com os requisitos de cada jogo. |
+| Objetivo do Teste | Verificar se os detalhes dos jogos estão sendo apresentados corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar o catálogo de jogos ou digitar o nome do jogo na barra de pesquisa. <br/> 4. Clicar no card contendo o jogo. <br/> 5. Visualizar os detalhes do jogo selecionado. |
+| Critérios de Êxito | * Após clicar no card de algum jogo, seja no catálogo ou na barra de pesquisa, o usuário será redirecionado para uma aba contendo detalhes do jogo selecionado. <br/> * A aba de detalhes deve conter o nome, imagem, descrição, requisitos mínimos, requisitos recomendados e nota do jogo selecionado |
 
 ## Registros de Testes
 
