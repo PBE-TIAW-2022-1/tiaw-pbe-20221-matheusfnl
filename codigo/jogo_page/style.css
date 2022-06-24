@@ -100,3 +100,7 @@
 .letra{
   color: orange;
 }
+
+#descricao_jogo {
+  font-size: 16px;
+}
