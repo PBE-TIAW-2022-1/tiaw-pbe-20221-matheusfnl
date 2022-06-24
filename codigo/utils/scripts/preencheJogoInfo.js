@@ -126,8 +126,6 @@ function preencheData(jogo) {
     atualizarTela(jogo.id)
   });
 
-  console.log(jogo)
-
   let muito_bom = document.getElementById('muito-bom')
   let bom = document.getElementById('bom')
   let meh = document.getElementById('meh')

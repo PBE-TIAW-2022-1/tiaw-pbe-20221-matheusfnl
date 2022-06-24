@@ -122,7 +122,6 @@ const editComentario = (id) => {
     const comentariosLocalStorage = getComentario();
 
     comentariosLocalStorage[id].comentario = comentario.textContent;
-    console.log(comentariosLocalStorage[id]);
 
     setComentario(comentariosLocalStorage);
   }

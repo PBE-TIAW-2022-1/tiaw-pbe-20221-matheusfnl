@@ -39,7 +39,6 @@ getJogosData({getJogos})
 
 // criando os jogos do catálogo
 function mostraJogos(jogo, card) {
-  console.log(jogo)
   let div_col = document.createElement('div');
   div_col.classList.add('col-md')
 
