@@ -19,7 +19,7 @@ function getJogosData({id, genre_id = false, getJogos, search = false}) {
   }
   else if(search) {
     // Pesquisa jogos
-    url = `https://api.rawg.io/api/games?key=15ce59a57be74a5faa1a5987fbbf1a4d&search=${search}"`
+    url = `https://api.rawg.io/api/games?key=15ce59a57be74a5faa1a5987fbbf1a4d&search=${search}`
   }
 
   let xhr = new XMLHttpRequest();
@@ -32,6 +32,7 @@ function getJogos(data) {
   data = data.target.response;
   data = JSON.parse(data);
 
+  jogos = [];
   jogos = data.results;
 }
 
@@ -39,6 +40,7 @@ getJogosData({getJogos})
 
 // criando os jogos do catálogo
 function mostraJogos(jogo, card) {
+  console.log(jogo)
   let div_col = document.createElement('div');
   div_col.classList.add('col-md')
 
@@ -71,8 +73,44 @@ function mostraJogos(jogo, card) {
   image.style.backgroundImage = `url('${jogo.background_image}')`
 }
 
+function aplicaFiltro(btn_id) {
+  if(btn_id === 'btn-em-alta') {
+    getJogosData({getJogos})
+  }
+  else if(btn_id === 'btn-fps') {
+    getJogosData({getJogos, genre_id: 2})
+  }
+  else if(btn_id === 'btn-rpg') {
+    getJogosData({getJogos, genre_id: 5})
+  }
+  else if(btn_id === 'btn-luta') {
+    getJogosData({getJogos, genre_id: 6})
+  }
+  else if(btn_id === 'btn-indie') {
+    getJogosData({getJogos, genre_id: 51})
+  }
+  else if(btn_id === 'btn-casual') {
+    getJogosData({getJogos, genre_id: 40})
+  }
+  else if(btn_id === 'btn-corrida') {
+    getJogosData({getJogos, genre_id: 1})
+  }
+  else if(btn_id === 'btn-simulacao') {
+    getJogosData({getJogos, genre_id: 14})
+  }
+
+  while (card.firstChild) {
+    card.removeChild(card.lastChild);
+  }
+
+  jogos.forEach(jogo => {
+    window.addEventListener('load', mostraJogos(jogo, card));
+  });
+}
+
 const card = document.getElementById('card_row')
 
 jogos.forEach(jogo => {
   window.addEventListener('load', mostraJogos(jogo, card));
 });
+

@@ -61,13 +61,14 @@
       <p class="catalogo">  <span class="letra">C</span>atálogo</p>
       <div class="row">
         <div class="col-2 gap-2" style="margin-top: 9px;">
-          <a onclick="aplicaFiltro('em-alta')"><button id="em-alta" class="categorias" type="button">Em alta</button></a>
-          <a onclick="aplicaFiltro('fps')"><button  id="fps" class="categorias">FPS</button></a>
-          <a onclick="aplicaFiltro('moba')"><button id="moba" class="categorias">MOBA</button></a>
-          <a onclick="aplicaFiltro('rpg')"><button id="rpg"  class="categorias">RPG</button></a>
-          <a onclick="aplicaFiltro('ritmo')"><button id="ritmo"  class="categorias">Ritmo</button></a>
-          <a onclick="aplicaFiltro('terror')"><button id="terror" class="categorias">Terror</button></a>
-          <a onclick="aplicaFiltro('metroidvania')"><button id="metroidvania" class="categorias">Metroidvania</button></a>
+          <a onclick="aplicaFiltro(this.id)" id="btn-em-alta" ><button id="em-alta" class="categorias" type="button">Em alta</button></a>
+          <a onclick="aplicaFiltro(this.id)" id="btn-fps" ><button  id="fps" class="categorias">Shooter</button></a>
+          <a onclick="aplicaFiltro(this.id)" id="btn-rpg" ><button id="rpg"  class="categorias">RPG</button></a>
+          <a onclick="aplicaFiltro(this.id)" id="btn-luta" ><button id="moba" class="categorias">Luta</button></a>
+          <a onclick="aplicaFiltro(this.id)" id="btn-indie" ><button id="metroidvania" class="categorias">Indie</button></a>
+          <a onclick="aplicaFiltro(this.id)" id="btn-casual" ><button id="ritmo"  class="categorias">Casual</button></a>
+          <a onclick="aplicaFiltro(this.id)" id="btn-corrida" ><button id="terror" class="categorias">Corrida</button></a>
+          <a onclick="aplicaFiltro(this.id)" id="btn-simulacao" ><button id="terror" class="categorias">Simulação</button></a>
 
           <img class="mt-5 persona img-fluid" src="../utils/imagens/persona.png" alt="persona">
         </div>
