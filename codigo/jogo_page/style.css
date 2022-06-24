@@ -44,8 +44,25 @@
 
 .desc {
   text-align: justify;
-  font-size: 20px;
   margin: 15px;
+}
+
+.info_title {
+  font-weight: bold;
+  font-size: 14px;
+  color: orange;
+}
+
+.bg-success {
+  margin-left: 15px;
+}
+
+.avaliacoes {
+  margin-right: 5px;
+}
+
+.data-lancamento {
+  margin-left: 15px;
 }
 
 .persona {

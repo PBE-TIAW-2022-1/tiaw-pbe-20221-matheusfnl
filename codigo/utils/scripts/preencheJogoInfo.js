@@ -67,8 +67,6 @@ function preencheData(jogo) {
   const req_minimos = document.getElementById('req_minimos');
   const req_recomendados = document.getElementById('req_recomendados');
 
-
-  // Converte string em coisa legal quando ela possui \n
   jogo.platforms.forEach(platform => {
     if(platform.platform.name == 'PC') {
       // ESPECIFICAÇÕES MÍNIMAS
@@ -125,6 +123,31 @@ function preencheData(jogo) {
       }
     }
   });
+
+  console.log(jogo)
+
+  let muito_bom = document.getElementById('muito-bom')
+  let bom = document.getElementById('bom')
+  let meh = document.getElementById('meh')
+  let podre = document.getElementById('podre')
+
+  jogo.ratings.forEach(rating => {
+    if(rating.title === 'exceptional') {
+      muito_bom.innerHTML = rating.percent + '%'
+    }
+    else if(rating.title === 'recommended') {
+      bom.innerHTML = rating.percent + '%'
+    }
+    else if(rating.title === 'meh') {
+      meh.innerHTML = rating.percent + '%'
+    }
+    else if(rating.title === 'skip') {
+      podre.innerHTML = rating.percent + '%'
+    }
+  });
+
+  let data_lancamento = document.getElementById('data-lancamento')
+  data_lancamento.innerHTML = jogo.released
 }
 
 function replaceIndex(index, replacement, string) {
