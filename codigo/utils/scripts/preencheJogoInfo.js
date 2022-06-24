@@ -122,6 +122,8 @@ function preencheData(jogo) {
         req_recomendados.innerHTML = 'Sem informação...'
       }
     }
+
+    atualizarTela(jogo.id)
   });
 
   console.log(jogo)
