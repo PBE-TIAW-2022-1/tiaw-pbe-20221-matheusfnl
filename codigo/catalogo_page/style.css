@@ -28,6 +28,11 @@
   margin: 50px 20px;
 }
 
+.avaliacoes {
+  font-size: 13px;
+  margin: 0px 1px 12px
+}
+
 .catalogo {
   font-size: 55px;
   color: white;

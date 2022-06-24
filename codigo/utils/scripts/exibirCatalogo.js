@@ -56,7 +56,10 @@ function mostraJogos(jogo, card) {
           
         <div class="card_avaliacao">
           <p class="text-warning estrela">
-            ${jogo.ratings[0].percent}
+            <span id="muito-bom" class="avaliacoes badge bg-success">${jogo.ratings[0].percent}%</span>
+            <span id="bom" class="avaliacoes badge bg-warning text-black">${jogo.ratings[1].percent}%</span>
+            <span id="meh" class="avaliacoes badge bg-danger">${jogo.ratings[2].percent}%</span>
+            <span id="podre" class="avaliacoes badge bg-secondary">${jogo.ratings[3].percent}%</span>
           </p>
         </div>
       </a>
