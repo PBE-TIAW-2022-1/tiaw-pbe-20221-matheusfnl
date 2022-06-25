@@ -1,5 +1,5 @@
-//definindo o filtro do catálogo
-// let filtro = null;
+const params = new URLSearchParams(window.location.search);
+const search = params.get('search');
 
 let jogos = []
 
@@ -36,7 +36,12 @@ function getJogos(data) {
   jogos = data.results;
 }
 
-getJogosData({getJogos})
+if(!search) {
+  getJogosData({getJogos})
+}
+else {
+  getJogosData({getJogos, search})
+}
 
 // criando os jogos do catálogo
 function mostraJogos(jogo, card) {

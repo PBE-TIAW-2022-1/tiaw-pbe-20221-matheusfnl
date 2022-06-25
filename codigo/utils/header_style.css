@@ -27,6 +27,10 @@ margin-left: 10px;
   color: rgb(194, 194, 194);
 }
 
+.search_button {
+  margin-right: 8px;
+}
+
 .header_searchbar {
   width: 120%;
   padding: 0 0 0 10px;

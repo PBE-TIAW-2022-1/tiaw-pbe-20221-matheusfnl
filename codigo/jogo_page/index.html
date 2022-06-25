@@ -13,9 +13,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-     <div class="loader"></div>
-     <!-- Header -->
-     <nav class="navbar navbar-expand-lg navbar-light bg">
+    <div class="loader"></div>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg">
       <div class="container-fluid">
         <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide" class="logo-image" />
         <a class="navbar-brand text-warning">Games Guide</a>
@@ -42,8 +42,8 @@
             </li>
           </ul>
           <div class="d-flex">
-            <input autocomplete="off" id="pesquisa" onfocus="pesquisarJogos()" onblur="removerJogos()" class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos" aria-label="Search" on>
-            <div class="row position-absolute mt-5" id="previewJogos"></div>
+            <input autocomplete="off" id="pesquisa" class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos" aria-label="Search" on>
+            <button class="btn btn-outline-primary search_button" onclick="pesquisarJogos()">Pesquisar</button>
           </div> 
           <button class="btn btn-outline-danger" onclick="logoutUser()">Sair</button>
         </div>
@@ -132,7 +132,7 @@
       <script>
         carregarComentarios();
       </script>
-      <script src="../utils//scripts/pesquisarJogos.js"></script>
+      <script src="../utils//scripts/pesquisarJogos2.js"></script>
       <script>
         window.addEventListener("load", function () {
             const loader = document.querySelector(".loader");
