@@ -40,37 +40,57 @@ getJogosData({getJogos})
 
 // criando os jogos do catálogo
 function mostraJogos(jogo, card) {
-  console.log(jogo)
   let div_col = document.createElement('div');
   div_col.classList.add('col-md')
 
-  div_col.innerHTML = `
-    <div id="card_efeito" class="cursor_ponteiro">
-      <a href="../jogo_page/index.html?id=${jogo.id}" class="link">
-        <div class="card_instance">
-          <div class="card_content text-center mb-0 pt-3">
-            <div id="gameImage-${jogo.id}" class="game_image_div"></div>
-            <h5 class="mt-2">${jogo.name}</h5>
-            <p class="descricao"></p>
+  if(jogo.ratings.length !== 0 && jogo.background_image) {
+    div_col.innerHTML = `
+      <div id="card_efeito" class="cursor_ponteiro">
+        <a href="../jogo_page/index.html?id=${jogo.id}" class="link">
+          <div class="card_instance">
+            <div class="card_content text-center mb-0 pt-3">
+              <div id="gameImage-${jogo.id}" class="game_image_div"></div>
+              <h5 class="mt-2">${jogo.name}</h5>
+              <p class="descricao"></p>
+            </div>
           </div>
-        </div>
-          
-        <div class="card_avaliacao">
-          <p class="text-warning estrela">
-            <span id="muito-bom" class="avaliacoes badge bg-success">${jogo.ratings[0].percent}%</span>
-            <span id="bom" class="avaliacoes badge bg-warning text-black">${jogo.ratings[1].percent}%</span>
-            <span id="meh" class="avaliacoes badge bg-danger">${jogo.ratings[2].percent}%</span>
-            <span id="podre" class="avaliacoes badge bg-secondary">${jogo.ratings[3].percent}%</span>
-          </p>
-        </div>
-      </a>
-    </div>
-  `;
+            
+          <div class="card_avaliacao">
+            <p id="estrela-${jogo.id}" class="text-warning estrela"></p>
+          </div>
+        </a>
+      </div>
+    `;
+    
+      card.appendChild(div_col);
+    
+      let aval = document.getElementById(`estrela-${jogo.id}`)
+    
+      if(jogo.ratings[0] !== undefined) {
+        aval.innerHTML += `
+          <span id="muito-bom" class="avaliacoes badge bg-success">${jogo.ratings[0].percent}%</span>
+        `
+      }
+      if(jogo.ratings[1] !== undefined) {
+        aval.innerHTML += `
+          <span id="bom" class="avaliacoes badge bg-warning text-black">${jogo.ratings[1].percent}%</span>
+        `
+      }
+      if(jogo.ratings[2] !== undefined) {
+        aval.innerHTML += `
+          <span id="meh" class="avaliacoes badge bg-danger">${jogo.ratings[2].percent}%</span>
+        `
+      }
+      if(jogo.ratings[3] !== undefined) {
+        aval.innerHTML += `
+          <span id="podre" class="avaliacoes badge bg-secondary">${jogo.ratings[3].percent}%</span>
+        `
+      }
 
-  card.appendChild(div_col);
+      let image = document.getElementById(`gameImage-${jogo.id}`)
+      image.style.backgroundImage = `url('${jogo.background_image}')`
+  }
 
-  let image = document.getElementById(`gameImage-${jogo.id}`)
-  image.style.backgroundImage = `url('${jogo.background_image}')`
 }
 
 function aplicaFiltro(btn_id) {
@@ -104,7 +124,7 @@ function aplicaFiltro(btn_id) {
   }
 
   jogos.forEach(jogo => {
-    window.addEventListener('load', mostraJogos(jogo, card));
+    mostraJogos(jogo, card)
   });
 }
 

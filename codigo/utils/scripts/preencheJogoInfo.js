@@ -147,7 +147,12 @@ function preencheData(jogo) {
   });
 
   let data_lancamento = document.getElementById('data-lancamento')
-  data_lancamento.innerHTML = jogo.released
+  if(jogo.released) {
+    data_lancamento.innerHTML = jogo.released
+  }
+  else {
+    data_lancamento.innerHTML = 'Não lançado'
+  }
 }
 
 function replaceIndex(index, replacement, string) {

@@ -15,6 +15,10 @@
   top: 0px;
 }
 
+.search_button {
+  margin-right: 8px;
+}
+
 .bg {
   background-color: #151C35;
 }
