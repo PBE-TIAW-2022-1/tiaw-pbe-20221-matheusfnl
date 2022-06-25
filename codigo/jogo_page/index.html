@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="./style.css">
       <script src="../utils//scripts/logout.js"></script>
       <link rel="stylesheet" href="../utils/styles/pesquisarJogos.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -50,7 +51,8 @@
     </nav>
     <!-- Fim do header -->
       <div class="game_page_out">
-        <p id="nome_jogo" class="titulo"></p>
+        <font size="8"> <span id="jogo_favorito" onclick="adicionarFavorito()" class="fa fa-star jogo_favorito d-inline"></span> </font>
+        <p id="nome_jogo" class="titulo d-inline"></p>
         <div class="game_page p-3 mt-4">
           <div class="row">
             <div class="col-4">
@@ -126,6 +128,7 @@
 
       <script src="../utils/scripts/adicionarComentario.js"></script>
       <script src="../utils/scripts/preencheJogoInfo.js"></script>
+      <script src="../utils/scripts/adicionarJogoFavorito.js"></script>
       <script>
         carregarComentarios();
       </script>

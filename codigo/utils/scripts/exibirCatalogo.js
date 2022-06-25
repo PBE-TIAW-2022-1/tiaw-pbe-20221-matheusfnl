@@ -7,7 +7,7 @@ let jogos = []
 function getJogosData({id, genre_id = false, getJogos, search = false}) {
   let url;
 
-  url = `https://api.rawg.io/api/games?key=15ce59a57be74a5faa1a5987fbbf1a4d`
+  url = `https://api.rawg.io/api/games?key=15ce59a57be74a5faa1a5987fbbf1a4d&metacritic=80,100`
 
   if(!genre_id && !search && id) {
     // Procura um jogo pelo ID

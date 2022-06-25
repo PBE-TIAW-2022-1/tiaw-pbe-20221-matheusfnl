@@ -26,8 +26,8 @@ function generateUUID() {
 
 const dadosIniciais = {
     usuarios: [
-        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema"},
-        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum"},
+        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "jogos_favoritos": []},
+        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "jogos_favoritos": []},
     ]
 };
 
@@ -55,8 +55,6 @@ function initLoginApp () {
 
 
 function loginUser (login, senha) {
-    
-
     for (var i = 0; i < db_usuarios.usuarios.length; i++) {
         var usuario = db_usuarios.usuarios[i];
         
@@ -64,7 +62,8 @@ function loginUser (login, senha) {
             usuarioCorrente.id = usuario.id;
             usuarioCorrente.login = usuario.login;
             usuarioCorrente.nome = usuario.nome;
-            
+            usuarioCorrente.jogos_favoritos = usuario.jogos_favoritos;
+
             sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
 
             return true;
@@ -77,7 +76,7 @@ function loginUser (login, senha) {
 function addUser (nome, login, senha) {
     
     let newId = generateUUID ();
-    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome};
+    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "jogos_favoritos": []};
     
     db_usuarios.usuarios.push (usuario);
 
