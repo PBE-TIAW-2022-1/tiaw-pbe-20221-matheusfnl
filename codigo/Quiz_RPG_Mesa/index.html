@@ -18,7 +18,7 @@
 <body>
     <div class="loader"></div>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg" style="margin-top: -8px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg header_quiz">
         <div class="container-fluid">
             <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide" class="logo-image" />
             <a class="navbar-brand text-warning">Games Guide</a>
@@ -46,8 +46,9 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <input autocomplete="off" style="width: 200px;" id="pesquisa" onfocus="pesquisarJogos()" onblur="removerJogos()" class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos" aria-label="Search" on>
+                    <input autocomplete="off" style="width: 200px;" id="pesquisa" class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos" aria-label="Search" on>
                     <div class="row position-absolute mt-5" id="previewJogos"></div>
+                    <button class="btn btn-outline-primary search_button" onclick="pesquisarJogos()">Pesquisar</button>
                     <button class="btn btn-outline-danger" onclick="logoutUser()">Sair</button>
                 </div> 
             </div>
@@ -102,7 +103,7 @@
 
     <!--Script para configurar o quiz em JS-->
     <script src="./quiz.js"></script>
-    <script src="../utils//scripts/pesquisarJogos.js"></script>
+    <script src="../utils//scripts/pesquisarJogos2.js"></script>
 </body>
 
 </html>

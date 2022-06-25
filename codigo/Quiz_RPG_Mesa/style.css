@@ -18,6 +18,9 @@
     top: 0px;
 }
 
+.header_quiz {
+    margin: 0;
+}
 
 /*Configuração do layout da página do quiz*/
 * {

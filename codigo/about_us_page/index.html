@@ -43,8 +43,8 @@
             </li>
           </ul>
           <div class="d-flex">
-            <input autocomplete="off" id="pesquisa" onfocus="pesquisarJogos()" onblur="removerJogos()" class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos" aria-label="Search" on>
-            <div class="row position-absolute mt-5" id="previewJogos"></div>
+            <input autocomplete="off" id="pesquisa" class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos" aria-label="Search" on>
+            <button class="btn btn-outline-primary search_button" onclick="pesquisarJogos()">Pesquisar</button>
           </div> 
           <button class="btn btn-outline-danger" onclick="logoutUser()">Sair</button>
         </div>
@@ -96,7 +96,7 @@
     <!-- Copyright -->
   </footer>
 
-    <script src="../utils//scripts/pesquisarJogos.js"></script>
+    <script src="../utils//scripts/pesquisarJogos2.js"></script>
     <script>
       window.addEventListener("load", function () {
           const loader = document.querySelector(".loader");
