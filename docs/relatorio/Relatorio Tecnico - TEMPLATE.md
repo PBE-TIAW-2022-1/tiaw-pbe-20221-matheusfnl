@@ -502,6 +502,14 @@ O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso
 | Leandro Henrique | 17 anos | Ensino médio completo |
 | Maria Eduarda  | 21 anos | Ensino médio completo |
 
+### Relatório com Registro dos Testes Feitos
+
+**Rômulo César** <br/>
+- O feedback do sucesso no cadastro de usuário e o de erro na tela de login deve aparecer no html, sem utilizar um alert box.
+- A senha na tela de login não está escondida, deve-se dar a opção para o usuário de visualizar a senha.
+![Testes-de-Usabilidade](images/testes-usabilidade/01-1.png)
+- O Catálogo está interessante e o filtro funcionando corretamente.
+- Ao finalizar o quiz seria interessante aparecer as respostas corretas.
 
 # Referências
 
