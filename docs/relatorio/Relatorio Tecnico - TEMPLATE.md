@@ -436,13 +436,12 @@ Os resultados obtidos nos testes de software realizados são descritos nas Tabel
 | CT-13 - Dark/Light -mode |
 |---------------------------------------------------------|
 | ![Exemplo de UserFlow](images/testes-software/ct13-1.png) |
-| ![Exemplo de UserFlow](images/testes-software/ct13-1.png) |
+| ![Exemplo de UserFlow](images/testes-software/ct13-2.png) |
 | **Resultados:** Dark/Light - mode funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 | CT-14 - Preloader |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct13-1.png) |
-| ![Exemplo de UserFlow](images/testes-software/ct13-1.png) |
+| ![Exemplo de UserFlow](images/testes-software/ct14-1.png) |
 | **Resultados:** Preloader funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Diminuir o tempo do preloader de 2 segundos para 0.5. |
 
 # Referências
