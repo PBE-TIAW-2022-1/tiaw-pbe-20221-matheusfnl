@@ -219,9 +219,6 @@ Em relação às branchs, seguiremos o padrão estabelecido.
 - testing - versão em testes do software
 - dev - versão de desenvolvimento do software
 
-# **############## SPRINT 1 ACABA AQUI #############**
-
-
 # Projeto da Solução
 
 A seção de implementação da solução visa mostrar os detalhes técnicos da solução criada pela equipe, abrangendo a arquitetura da solução, estruturas de dados e telas implementadas.
@@ -251,7 +248,7 @@ O processo de realização dos testes da solução desenvolvida está documentad
 seção que se segue e traz os planos de testes de software e de usabilidade, na
 sequência, o registro dos testes realizados.
 
-## Plano de Testes
+## Plano de Testes de Software
 
 - Requisitos para realização do teste:
 Site publicado na Internet;
@@ -371,15 +368,15 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Carregar qualquer uma das abas disponíveis (Com exceção da home page e registro/login de usuário). <br/> 4. Observar o gif animado ao carregar as páginas. |
 | Critérios de Êxito | * Após carregar as páginas mencionadas, deve ser possível observar um gif animado do pacman como preloader. |
 
-## Registros de Testes
+## Registros de Testes de Software
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Os resultados obtidos nos testes de software realizados são descritos nas Tabelas a seguir.
 
-> Discorra sobre os resultados do teste. Ressaltando pontos fortes e
-> fracos identificados na solução. Comente como o grupo pretende atacar
-> esses pontos nas próximas iterações. Apresente as falhas detectadas e
-> as melhorias geradas a partir dos resultados obtidos nos testes.
-
+| CT-14 - Preloader |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct01-1.png) |
+| ![Exemplo de UserFlow](images/testes-software/ct01-2.png) |
+| Resultados: Cadastro realizado com sucesso. <br/> Bugs encontrados: Nenhum. <br/> Melhorias sugeridas: A mensagem “Conta criada com sucesso” estava aparecendo em forma de alerta, então foi sugerido que aparecesse uma mensagem em HTMl, como mostrado acima. |
 
 # Referências
 
