@@ -40,14 +40,14 @@ Sistemas de Informaçao
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
-- [**############## SPRINT 1 ACABA AQUI #############**](#-sprint-1-acaba-aqui-)
 - [Projeto da Solução](#projeto-da-solução)
-  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
   - [Arquitetura da solução](#arquitetura-da-solução)
+  - [Hospedagem](#hospedagem)
 - [Avaliação da Aplicação](#avaliação-da-aplicação)
-  - [Plano de Testes](#plano-de-testes)
-  - [Ferramentas de Testes (Opcional)](#ferramentas-de-testes-opcional)
-  - [Registros de Testes](#registros-de-testes)
+  - [Plano de Testes de Software](#plano-de-testes-de-software)
+  - [Registros de Testes de Software](#registros-de-testes-de-software)
+  - [Plano de Testes de Usabilidade](#plano-de-testes-de-usabilidade)
+  - [Registros de Testes de Usabilidade](#registros-de-testes-de-usabilidade)
 - [Referências](#referências)
 
 
@@ -129,6 +129,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| Nosso site oferecerá recomendações de peças para computador de acordo com cada jogo | ALTA | 
 |RF-004| Nossos usuários terão a opção de se cadastrar no site, com o intuito de receber benefícios | MÉDIA | 
 |RF-005| Nossos usuários poderão filtrar os jogos por categorias | ALTA | 
+|RF-006| Também ofertaremos o espaço para que nossos usuários também opinem e recomendem seus jogos favoritos | MÉDIA | 
+|RF-007| Nosso site oferecerá também uma categoria especial voltada apenas aos RPG’s de Mesa, onde será disponibilizado uma introdução sobre o que são e uma aba com os principais livros | ALTA | 
+|RF-008| O site possuirá alguns Easter Egg’s, que ficarão escondidos em diversos elementos do mesmo | MÉDIA | 
+|RF-009| Categoria “Em Alta”, onde serão separados os principais títulos em alta do momento | ALTA | 
+|RF-010| Opção para que os jogos sejam procurados através de uma barra de pesquisa | ALTA | 
+|RF-011| Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site | ALTA | 
+|RF-012| Os usuários poderão testar seus conhecimentos sobre RPG de Mesa através de um mini Quiz | MÉDIA | 
+|RF-013| O site possuirá a opção de alterar seus temas de cores padrão, caso assim o usuário desejar | MÉDIA | 
 
 ### Requisitos não Funcionais
 
@@ -211,83 +219,348 @@ Em relação às branchs, seguiremos o padrão estabelecido.
 - testing - versão em testes do software
 - dev - versão de desenvolvimento do software
 
-# **############## SPRINT 1 ACABA AQUI #############**
-
-
 # Projeto da Solução
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-## Tecnologias Utilizadas
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
-> problema, ou seja, implementar a sua solução. Liste todas as
-> tecnologias envolvidas, linguagens a serem utilizadas, serviços web,
-> frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-> Apresente também uma figura explicando como as tecnologias estão
-> relacionadas ou como uma interação do usuário com o sistema vai ser
-> conduzida, por onde ela passa até retornar uma resposta ao usuário.
-> 
-> Inclua os diagramas de User Flow, esboços criados pelo grupo
-> (stoyboards), além dos protótipos de telas (wireframes). Descreva cada
-> item textualmente comentando e complementando o que está apresentado
-> nas imagens.
+A seção de implementação da solução visa mostrar os detalhes técnicos da solução criada pela equipe, abrangendo a arquitetura da solução, estruturas de dados e telas implementadas.
 
 ## Arquitetura da solução
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+Os elementos que constituem a solução criada são apresentados na figura a seguir:
 
-> Inclua um diagrama da solução e descreva os módulos e as tecnologias
-> que fazem parte da solução. Discorra sobre o diagrama.
-> 
-> **Exemplo do diagrama de Arquitetura**:
-> 
-> ![Exemplo de Arquitetura](images/arquitetura-exemplo.png)
+![Exemplo de UserFlow](images/arquitetura-solução.png)
 
+ A solução implementada conta com os seguintes módulos:
+- **Navegador** - Interface básica do sistema
+   - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que compõem o projeto.
+   - **Local Storage** - armazenamento mantido no Navegador que contém:
+      - **Página de Jogos** – seção de categoria e páginas de jogos
+      - **Comentários** – opiniões de usuários sobre os jogos
+      - **Login** – página para registro e login de usuários
+ - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador.
+
+# Hospedagem
+
+Para o ambiente de hospedagem do site do projeto, foi utilizada a plataforma do GitHub Pages, conforme a URL: https://mayara-aya-kimura.github.io/TIAW.github.io/
 
 # Avaliação da Aplicação
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O processo de realização dos testes da solução desenvolvida está documentado na
+seção que se segue e traz os planos de testes de software e de usabilidade, na
+sequência, o registro dos testes realizados.
 
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
+## Plano de Testes de Software
 
-## Plano de Testes
+- Requisitos para realização do teste:
+Site publicado na Internet;
+- Navegador da Internet - Chrome, Firefox ou Edge;
+- Conectividade de Internet para acesso à nossa Aplicação Web.
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
-> Enumere quais cenários de testes foram selecionados para teste. Neste
-> tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
-> de usuários que foi escolhido para participar do teste e as
-> ferramentas utilizadas.
-> 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
+|Caso de Teste| CT-01 Fazer registro no site|
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-11 - Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site. |
+| Objetivo do Teste | Verificar se é possível realizar o registro de novos usuários. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a home page; <br/> 4. Clicar em "Comece Agora"; <br/> 5. Clicar em "Novo usuário"; <br/> 6. Inserir os dados para o registro e clicar em "Confirmar". |
+| Critérios de Êxito | * Após a realização do registro do novo usuário, o site deve apresentar um alerta informando que o usuário foi salvo com sucesso. |
 
-## Ferramentas de Testes (Opcional)
 
-......  COLOQUE AQUI O SEU TEXTO ......
+|Caso de Teste| CT-02 Fazer login no site|
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-11 - Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site. |
+| Objetivo do Teste | Verificar se é possível realizar o login de usuários já cadastrados. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a home page; <br/> 4. Clicar em "Comece Agora"; <br/> 5. Informar o usuário e senha que foram utilizados durante o registro de usuário; <br/> 6. Clicar em "Logar". |
+| Critérios de Êxito | * Após inserir os dados registrados e clicar no botão “Logar”, o usuário deve ser redirecionado para a aba do catálogo de jogos. |
 
-> Comente sobre as ferramentas de testes utilizadas.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
 
-## Registros de Testes
+|Caso de Teste| CT-03 Visualizar os títulos do Catálogo de jogos|
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-01 - Nosso site oferecerá recomendações de jogos. <br/> RF-02 - Todos os jogos terão avaliações de acordo com uma média retirada das principais mídias de crítica Geek. |
+| Objetivo do Teste | Verificar se os títulos estão sendo apresentados corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a aba do “Catálogo” de jogos. |
+| Critérios de Êxito | * Após passar pela parte do login, o usuário deve ser redirecionado para a aba de catálogo de jogos. <br/> * Os jogos disponibilizados devem apresentar uma imagem, nome, breve descrição e nota (estrelas). |
 
-......  COLOQUE AQUI O SEU TEXTO ......
 
-> Discorra sobre os resultados do teste. Ressaltando pontos fortes e
-> fracos identificados na solução. Comente como o grupo pretende atacar
-> esses pontos nas próximas iterações. Apresente as falhas detectadas e
-> as melhorias geradas a partir dos resultados obtidos nos testes.
+|Caso de Teste| CT-04 - Filtro de jogos funcional |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-05 - Nossos usuários poderão filtrar os jogos por categoria. <br/> RF-09 - Também disponibilizamos uma categoria “Em Alta”, onde será disponibilizado os principais títulos em alta do momento. |
+| Objetivo do Teste | Verificar se o filtro de categorias está funcionando corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar a aba do “Catálogo” de jogos. <br/> 4. Clicar nos filtros que se localizam na lateral esquerda da página. |
+| Critérios de Êxito | * Após passar pela parte do login, o usuário deve ser redirecionado para a aba de catálogo de jogos. |
 
+
+|Caso de Teste| CT-05 - Função “Pesquisar jogos |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-10 - Disponibilizamos a opção para que os jogos sejam procurados através de uma barra de pesquisa |
+| Objetivo do Teste | Verificar se é possível pesquisar os jogos presentes no site pelo nome. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Digitar o nome de algum jogo na barra de pesquisa. <br/> 4. Clicar na miniatura do jogo desejado. |
+| Critérios de Êxito | * Ao digitar o nome de algum jogo na barra de pesquisa, caso o mesmo esteja em nosso site, aparecerá uma miniatura, contendo imagem e nome, referente ao que fora digitado. <br/> * Após clicar na miniatura, o usuário será direcionado para a página com detalhes do jogo |
+
+
+|Caso de Teste| CT-06 - Visualizar os detalhes dos jogos |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-01 - Nosso site oferecerá recomendações de jogos <br/> RF-02 - Todos os jogos terão avaliações de acordo com uma média retirada das principais mídias de crítica Geek. <br/> RF-03 - Nosso site oferecerá recomendações de peças para computador de acordo com os requisitos de cada jogo. |
+| Objetivo do Teste | Verificar se os detalhes dos jogos estão sendo apresentados corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar o catálogo de jogos ou digitar o nome do jogo na barra de pesquisa. <br/> 4. Clicar no card contendo o jogo. <br/> 5. Visualizar os detalhes do jogo selecionado. |
+| Critérios de Êxito | * Após clicar no card de algum jogo, seja no catálogo ou na barra de pesquisa, o usuário será redirecionado para uma aba contendo detalhes do jogo selecionado. <br/> * A aba de detalhes deve conter o nome, imagem, descrição, requisitos mínimos, requisitos recomendados e nota do jogo selecionado |
+
+
+|Caso de Teste| CT-07 - Adicionar comentários |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-06 - Ofertamos um espaço para que nossos usuários opinem sobre seus jogos favoritos. |
+| Objetivo do Teste | Verificar se é possível adicionar, editar e excluir comentários sobre os jogos. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Visualizar o catálogo de jogos ou digitar o nome do jogo na barra de pesquisa. <br/> 4. Clicar no card contendo o jogo. <br/> 5. Visualizar os detalhes do jogo selecionado. <br/> 6. Inserir informações na aba “Escreva um comentário”, localizada no canto inferior direito da página. |
+| Critérios de Êxito | * Deverá ser possível adicionar, excluir e editar comentários sobre o jogo selecionado. |
+
+
+|Caso de Teste| CT-08 - Visualizar a página do RPG de Mesa |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-07 - Nosso site oferecerá uma categoria especial voltada apenas aos RPG’s de Mesa, onde será disponibilizado uma introdução sobre o que são e uma aba com os principais livros. |
+| Objetivo do Teste | Verificar se as informações estão sendo apresentadas corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ítem “RPG de Mesa”, localizado no header da página. |
+| Critérios de Êxito | * Após clicar em “RPG de Mesa”, o usuário será redirecionado para uma aba contendo uma breve introdução a esse gênero. |
+
+
+|Caso de Teste| CT-09 - Mini-quiz RPG de Mesa |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RNF-06 - Os usuários poderão testar seus conhecimentos sobre RPG de Mesa através de um mini Quiz. |
+| Objetivo do Teste | Verificar se o mini-quiz está funcional. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ítem “RPG de Mesa”, localizado no header da página. <br/> 4. Clicar no botão “Quiz RPG”, localizado no canto inferior direito da página. <br/> 5. Realizar o Quiz. |
+| Critérios de Êxito | * Após a realização do mini-quiz, o usuário será informado sobre sua pontuação. <br/> * Será possível refazê-lo ou retornar para a aba de RPG de Mesa através dos botões “Refazer Quiz” e ”Retornar” |
+
+
+|Caso de Teste| CT-10 - Visualizar os títulos do Catálogo de livros para RPG de Mesa |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RF-07 - Nosso site oferecerá uma categoria especial voltada apenas aos RPG’s de Mesa, onde será disponibilizado uma introdução sobre o que são e uma aba com os principais livros. |
+| Objetivo do Teste | Verificar se os títulos ofertados estão sendo apresentados corretamente. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ítem “RPG de Mesa”, localizado no header da página. <br/> 4. Clicar no botão “Comece aqui”, localizado no canto superior esquerdo da página. |
+| Critérios de Êxito | * Após clicar no botão “Comece aqui”, o usuário deverá ser redirecionado para uma página contendo recomendações dos principais títulos do RPG de mesa. <br/> * Cada título precisa apresentar uma imagem, breve descrição e um botão que possibilite ao usuário comprar o livro através da Amazon. |
+
+
+|Caso de Teste| CT-11 - - Visualizar os títulos do Catálogo de livros para RPG de Mesa a venda na Amazon |
+|--|-------------------------------------------------------|
+| Requisitos Associados |RF-07 - Nosso site oferecerá uma categoria especial voltada apenas aos RPG’s de Mesa, onde será disponibilizado uma introdução sobre o que são e uma aba com os principais livros. |
+| Objetivo do Teste | Verificar se o redirecionamento para o site da Amazon está de acordo com o livro selecionado. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ítem “RPG de Mesa”, localizado no header da página. <br/> 4. Clicar no botão “Comece aqui”, localizado no canto superior esquerdo da página. <br/> 5. Escolher um dos títulos ofertados e clicar no botão “Compre aqui” |
+| Critérios de Êxito | * Após clicar no botão “Compre aqui”, o usuário deve ser redirecionado para o site da Amazon br, com o intuito de visualizar o preço e/ou comprar o livro selecionado. |
+
+
+|Caso de Teste| CT-12 - Mini-games escondidos no site |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RNF-07 - O site possuirá alguns Easter Egg’s, cujos quais ficarão escondidos em diversos elementos do mesmo. |
+| Objetivo do Teste | Verificar se os mini-games estão funcionais. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar em algumas imagens da nossa persona que estão espalhadas por todo o site. <br/> 4. Jogar o mini-game encontrado. |
+| Critérios de Êxito | * Após clicar nas personas espalhadas pelo site, o usuário será redirecionado para uma página que contém um mini-game de algum jogo retrô. <br/> * Serão 3 jogos espalhados pelo site, sendo eles: Space invaders, Snake game e Dinossaur game. |
+
+
+|Caso de Teste| CT-13 - Dark/Light -mode |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RNF-08 - O site possuirá a opção de alterar seus temas de cores padrão, caso assim o usuário desejar. |
+| Objetivo do Teste | Verificar se é possível alterar o tema de cores do site. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ícone do sol/lua que se encontra no header da página. |
+| Critérios de Êxito | * Após clicar no ícone do sol/lua, as cores das letras devem ser alteradas, bem como a cor do header e background-image. <br/> * Mesmo atualizando a página, o modo alterado deve se manter, devido a utilização de um LocalStorage. |
+
+
+|Caso de Teste| CT-14 - Preloader |
+|--|-------------------------------------------------------|
+| Requisitos Associados | RNF-09 - Disponibilizaremos um preloader nas principais páginas do site. |
+| Objetivo do Teste | Verificar se há um preloader (gif do pacman) ao carregar as páginas. |
+| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Carregar qualquer uma das abas disponíveis (Com exceção da home page e registro/login de usuário). <br/> 4. Observar o gif animado ao carregar as páginas. |
+| Critérios de Êxito | * Após carregar as páginas mencionadas, deve ser possível observar um gif animado do pacman como preloader. |
+
+## Registros de Testes de Software
+
+Os resultados obtidos nos testes de software realizados são descritos nas Tabelas a seguir.
+
+| CT-01 - Fazer registro no site |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct01-1.png) ![Testes-de-Software](images/testes-software/ct01-2.png) |
+| **Resultados:** Cadastro realizado com sucesso. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** A mensagem “Conta criada com sucesso” estava aparecendo em forma de alerta, então foi sugerido que aparecesse uma mensagem em HTMl, como mostrado acima. |
+
+| CT-02 - Fazer login no site |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct02-1.png) |
+| **Resultados:** Login realizado com sucesso. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-03 - Visualizar os títulos do catálogo de jogos |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct03-1.png) |
+| **Resultados:** Títulos disponibilizados corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Ajustar o tamanho do filtro e dos cards dos jogos. |
+
+| CT-04 - Visualizar os títulos do catálogo de jogos |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct04-1.png) |
+| **Resultados:** Filtro funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-05 - Função "Pesquisar jogos" |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct05-1.png) |
+| **Resultados:** Função “Pesquisar jogos” funcionando corretamente. <br/> **Bugs encontrados:** Ao apagar uma letra o resultado não é exibido. <br/> **Melhorias sugeridas:** Acionar o evento de pesquisa ao apagar uma letra. |
+
+| CT-06 - Visualizar os detalhes dos jogos |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct06-1.png) |
+| **Resultados:** Detalhes dos jogos funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Colocar mais de uma imagem por jogo. |
+
+| CT-07 - Adicionar comentários |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct07-1.png) |
+| ![Testes-de-Software](images/testes-software/ct07-2.png) |
+| **Resultados:** “Adicionar comentários” funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-08 - Visualizar a página do RPG de Mesa |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct08-1.png) |
+| **Resultados:** Informações apresentadas corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-09 - Mini-quiz RPG de Mesa |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct09-1.png) |
+| **Resultados:** Quiz funcionando corretamente. <br/> **Bugs encontrados:** É possível selecionar mais de uma resposta ao mesmo tempo e não há a opção de desmarcar uma resposta escolhida. <br/> **Melhorias sugeridas:** Ajustar os erros mencionados acima. |
+
+| CT-10 - Visualizar os títulos do Catálogo de livros para RPG de Mesa |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct10-1.png) |
+| **Resultados:** Os livros estão sendo apresentados corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-11 - Visualizar os títulos do Catálogo de livros para RPG de Mesa a venda na Amazon |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct11-1.png) |
+| **Resultados:** Redirecionamento acontecendo corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-12 - Mini-games escondidos no site |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct12-1.png) ![Testes-de-Software](images/testes-software/ct12-1.png) |
+| **Resultados:** Mini-games funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-13 - Dark/Light -mode |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct13-1.png) |
+| ![Testes-de-Software](images/testes-software/ct13-2.png) |
+| **Resultados:** Dark/Light - mode funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-14 - Preloader |
+|---------------------------------------------------------|
+| ![Testes-de-Software](images/testes-software/ct14-1.png) |
+| **Resultados:** Preloader funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Diminuir o tempo do preloader de 2 segundos para 0.5. |
+
+## Plano de Testes de Usabilidade
+
+### Identificação de objetivos do teste de usabilidade
+
+O teste de usabilidade efetuado pela equipe tem o objetivo de testar o site da visão do usuário, a fim de descobrir bugs, situações em que o site não se mostra intuitivo, mau design, opiniões sobre aparência, confiabilidade do site e utilidade do site.
+Com os testes, a equipe pretende entender como o usuário utiliza o site, sem ser influenciado pela visão do desenvolvedor, para assim ter um feedback real sobre a utilização do produto. Os resultados serão estudados e posteriormente utilizados para melhorar a aparência, o fluxo e o feedback do site.
+
+### Detalhes do público envolvido nos testes
+
+O público escolhido para realizar os testes de usabilidades são jovens de 14 à 38anos, por serem o público que mais está envolvido no mundo dos jogos, ou seja, que utiliza seu tempo procurando jogos, jogando, vendo vídeos, lendo reviews. A equipe decidiu utilizá-los para obter um resultado real de pessoas que utilizariam o site em seu dia-a-dia, assim obtendo respostas mais precisas, ideias e opiniões coerentes, além de entender como o usuário real reagiria ao feedback do site.
+
+### Roteiro detalhado das tarefas que foram desempenhadas pelos usuários
+
+- **Registrar no site** <br/>
+Ao conectar ao site sem estar logado, deve-se ser requisitado a criação de uma nova conta ou a realização do login, ele deve conseguir se registrar sem nenhuma complicação.
+
+- **Logar no site** <br/>
+O usuário deve poder logar em uma conta criada anteriormente, basta apenasinformar seu nome de usuário, sua senha e selecionar o botão de “Logar”. Essa ação deve redirecionar o usuário para o catálogo do site.
+
+- **Visualizar o catálogo** <br/>
+Após o login, o usuário deve ser redirecionado para o catálogo do site, o catálogo deve exibir para o usuário todos os jogos registrados, contendo seu nome, sua descrição e a avaliação.
+
+- **Filtrar o catálogo** <br/>
+O usuário deve ser capaz de filtrar os jogos por categoria, para assim encontrar o que deseja mais rapidamente, para isso o usuário deve clicar no botão localizado no lado esquerdo da tela.
+
+- **Deslogar no site** <br/>
+Ao clicar no botão de sair, o usuário deve ser redirecionado para a tela de login/registro, para isso é necessário apenas apertar o botão “Sair” localizado no canto superior direito de qualquer aba.
+
+- **Visualizar a aba de RPG de mesa** <br/>
+O usuário deve ser livre para acessar qualquer aba do site, para acessar a aba de RPG de mesa, deve-se clicar no botão “RPG de mesa” localizado na parte superior de qualquer aba do site. Essa ação redireciona o usuário para nosso guia de RPG de mesa.
+
+- **Realizar o quiz sobre RPG de mesa** <br/>
+Ao clicar em “Quiz RPG” localizado na parte inferior direita da tela de RPG de mesa, o usuário deve ser redirecionado para um quiz para testar as informações adquiridas durante a leitura do guia.
+
+- **Ver as recomendações do RPG de mesa** <br/>
+Dentro da aba de RPG de mesa, o usuário pode escolher ver as recomendações de livros propostas pela equipe, para isso basta clicar no botão “Comece aqui” localizado na parte superior esquerda da página, ou clicar em “livros sugeridos” encontrado na parte inferior do site. Ao clicar, o usuário será redirecionado a aba de recomendações, e poderá visualizar informações sobre os livros.
+
+- **Acessar o link para a compra dos livros do RPG** <br/>
+O usuário deve poder acessar o link da Amazon para comprar o livro sugerido, para acessar o link basta clicar em “Compre aqui” dentro da aba de recomendações.
+
+- **Pesquisar jogos de qualquer aba** <br/>
+O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso basta escrever o nome do jogo na caixa de texto localizada na parte superior direita da tela. Ao escrever o nome, o resultado deve aparecer logo abaixo, permitindo o usuário clicar e acessar a página do jogo escolhido.
+
+## Registros de Testes de Usabilidade
+
+### Pessoas Escolhidas Para Testar o Produto
+
+| Nome | Idade | Escolaridade |
+|--|---|---------------------------------------------------|
+| Rômulo César | 36 anos | Superior completo |
+| Jardson Martins | 19 anos | Superior incompleto |
+| David Leati | 17 anos | Ensino médio completo |
+| Matheus Henrique | 17 anos | Ensino médio incompleto |
+| Nathan Neves | 26 anos  | Superior incompleto |
+| Bruna Cristina | 20 anos | Ensino médio completo |
+| Leandro Henrique | 17 anos | Ensino médio completo |
+| Maria Eduarda  | 21 anos | Ensino médio completo |
+
+### Relatório com Registro dos Testes Feitos
+
+**Rômulo César** <br/>
+- O feedback do sucesso no cadastro de usuário e o de erro na tela de login deve aparecer no html, sem utilizar um alert box.
+- A senha na tela de login não está escondida, deve-se dar a opção para o usuário de visualizar a senha. <br/>
+![Testes-de-Usabilidade](images/testes-usabilidade/01-1.png) <br/>
+- O Catálogo está interessante e o filtro funcionando corretamente.
+- Ao finalizar o quiz seria interessante aparecer as respostas corretas.
+
+**Jardson Martins** <br/>
+- Ao apagar uma letra na caixa de pesquisa de jogos, nenhum jogo é pesquisado, portanto ao tentar corrigir uma palavra, nenhum feedback é retornado. <br/>
+![Testes-de-Usabilidade](images/testes-usabilidade/02-1.png) <br/>
+- Iria ser mais interessante permitir o usuário se conectar sem precisar criar uma conta.
+
+**David Leati** <br/>
+- A senha está visível no momento de login, deveria estar escondida.
+- O catálogo deveria ter paginação, pois dependendo da quantidade de jogos podeficar ruim de visualizar.
+
+**Matheus Henrique** <br/>
+- O feedback do cadastro está um pouco estranho, seria melhor uma mensagem de sucesso aparecendo perto do botão de login.
+- Seria melhor ter um botão para visualizar ou não a senha na parte de login.
+- O Sobre nós não possui muita informação sobre a equipe.
+
+**Nathan Neves** <br/>
+- É um pouco estranho a forma que os resultados da pesquisa de jogos estão aparecendo, se eu pesquisar “A” aparecem jogos que começam com a letra “E”.
+- Deveria haver um sistema de páginas na parte do catálogo.
+- O quiz deveria mostrar as respostas corretas no final. <br/>
+![Testes-de-Usabilidade](images/testes-usabilidade/05-1.png) <br/>
+
+**Bruna Cristina** <br/>
+- Não achei necessário realizar um login para acessar o site.
+- A caixa de pesquisa não está pesquisando ao corrigir uma letra.
+- Poderia ter uma página para alterar a senha do meu perfil.
+
+**Leandro Henrique** <br/>
+- A senha está visível na hora do login, não é muito seguro.
+- O catálogo está com os cards muito grandes, seria melhor visivelmente se eles fossem menores.
+- Demorei para achar o quiz de RPG, deveria estar em local mais visível. <br/>
+![Testes-de-Usabilidade](images/testes-usabilidade/07-1.png) <br/>
+- Está aparecendo muitos jogos no momento da pesquisa.
+
+**Maria Eduarda** <br/>
+- É muito massante descer todo o catálogo, poderia adicionar uma opção de paginação.
+- Não entendi o porque é necessário criar uma conta para acessar o site.
+- O sobre nós tem muito pouco conteúdo.
+
+### Relatório com Registro dos Testes Feitos
+
+| Problema | Solução |
+|--|-----------------------------------------------------|
+| Feedback de sucesso de registro aparecendo por um alert box. | Utilizar o html para informar o sucesso de registro |
+| Ao apagar uma letra na caixa de pesquisa de jogos, nenhum jogo é pesquisado. | Melhorar a lógica de pesquisa de jogos, adicionando a pesquisa ao apagar uma letra. |
+| Não existe necessidade de criar uma conta para acessar o site. | Permitir a visualização sem a necessidade de criar uma conta, porém perdendo algumas funcionalidades. |
+| Senha visível durante o login.  | Adicionar um checkbox que habilita e desabilita a visualização da senha. |
+| Catálogo exibindo muitos jogos de uma vez. | Adicionar uma paginação no catálogo. |
+| Aba de “Sobre nós” sem muito conteúdo. | Adicionar mais informações sobre a equipe no “Sobre nós” |
+| O usuário não consegue alterar sua própria senha. | Adicionar uma aba para o usuário poder realizar a troca de senha. |
+| Está aparecendo muitos jogos ao fazer uma pesquisa. | Exibir apenas os 5 melhores resultados da pesquisa. |
+| O Botão para realizar o “Quiz de RPG” está muito escondido. | Colocar o botão no início da página. |
 
 # Referências
 
