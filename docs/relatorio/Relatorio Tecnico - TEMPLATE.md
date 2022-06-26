@@ -487,6 +487,22 @@ O usuário deve poder acessar o link da Amazon para comprar o livro sugerido, pa
 - **Pesquisar jogos de qualquer aba** <br/>
 O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso basta escrever o nome do jogo na caixa de texto localizada na parte superior direita da tela. Ao escrever o nome, o resultado deve aparecer logo abaixo, permitindo o usuário clicar e acessar a página do jogo escolhido.
 
+## Registro de Testes de Usabilidade
+
+### Pessoas Escolhidas Para Testar o Produto
+
+| Nome | Idade | Escolaridade |
+|--|---|---------------------------------------------------|
+| Rômulo César | 36 anos | Superior completo |
+| Jardson Martins | 19 anos | Superior incompleto |
+| David Leati | 17 anos | Ensino médio completo |
+| Matheus Henrique | 17 anos | Ensino médio incompleto |
+| Nathan Neves | 26 anos  | Superior incompleto |
+| Bruna Cristina | 20 anos | Ensino médio completo |
+| Leandro Henrique | 17 anos | Ensino médio completo |
+| Maria Eduarda  | 21 anos | Ensino médio completo |
+
+
 # Referências
 
 ......  COLOQUE AQUI O SEU TEXTO ......
