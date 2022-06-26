@@ -231,11 +231,11 @@ Os elementos que constituem a solução criada são apresentados na figura a seg
 
  A solução implementada conta com os seguintes módulos:
 - **Navegador** - Interface básica do sistema
- - - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que compõem o projeto.
- - - **Local Storage** - armazenamento mantido no Navegador que contém:
-  - - - **Página de Jogos** – seção de categoria e páginas de jogos
-  - - - **Comentários** – opiniões de usuários sobre os jogos
-  - - - **Login** – página para registro e login de usuários
+   - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que compõem o projeto.
+   - **Local Storage** - armazenamento mantido no Navegador que contém:
+      - **Página de Jogos** – seção de categoria e páginas de jogos
+      - **Comentários** – opiniões de usuários sobre os jogos
+      - **Login** – página para registro e login de usuários
  - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador.
 
 # Hospedagem
@@ -446,10 +446,46 @@ Os resultados obtidos nos testes de software realizados são descritos nas Tabel
 
 ## Plano de Testes de Usabilidade
 
-## Identificação de objetivos do teste de usabilidade ##
+### Identificação de objetivos do teste de usabilidade
 
 O teste de usabilidade efetuado pela equipe tem o objetivo de testar o site da visão do usuário, a fim de descobrir bugs, situações em que o site não se mostra intuitivo, mau design, opiniões sobre aparência, confiabilidade do site e utilidade do site.
 Com os testes, a equipe pretende entender como o usuário utiliza o site, sem ser influenciado pela visão do desenvolvedor, para assim ter um feedback real sobre a utilização do produto. Os resultados serão estudados e posteriormente utilizados para melhorar a aparência, o fluxo e o feedback do site.
+
+### Detalhes do público envolvido nos testes
+
+O público escolhido para realizar os testes de usabilidades são jovens de 14 à 38anos, por serem o público que mais está envolvido no mundo dos jogos, ou seja, que utiliza seu tempo procurando jogos, jogando, vendo vídeos, lendo reviews. A equipe decidiu utilizá-los para obter um resultado real de pessoas que utilizariam o site em seu dia-a-dia, assim obtendo respostas mais precisas, ideias e opiniões coerentes, além de entender como o usuário real reagiria ao feedback do site.
+
+### Roteiro detalhado das tarefas que foram desempenhadas pelos usuários
+
+- **Registrar no site**
+Ao conectar ao site sem estar logado, deve-se ser requisitado a criação de uma nova conta ou a realização do login, ele deve conseguir se registrar sem nenhuma complicação.
+
+- **Logar no site**
+O usuário deve poder logar em uma conta criada anteriormente, basta apenasinformar seu nome de usuário, sua senha e selecionar o botão de “Logar”. Essa ação deve redirecionar o usuário para o catálogo do site.
+
+- **Visualizar o catálogo**
+Após o login, o usuário deve ser redirecionado para o catálogo do site, o catálogo deve exibir para o usuário todos os jogos registrados, contendo seu nome, sua descrição e a avaliação.
+
+- **Filtrar o catálogo**
+O usuário deve ser capaz de filtrar os jogos por categoria, para assim encontrar o que deseja mais rapidamente, para isso o usuário deve clicar no botão localizado no lado esquerdo da tela.
+
+- **Deslogar no site**
+Ao clicar no botão de sair, o usuário deve ser redirecionado para a tela de login/registro, para isso é necessário apenas apertar o botão “Sair” localizado no canto superior direito de qualquer aba.
+
+- **Visualizar a aba de RPG de mesa**
+O usuário deve ser livre para acessar qualquer aba do site, para acessar a aba de RPG de mesa, deve-se clicar no botão “RPG de mesa” localizado na parte superior de qualquer aba do site. Essa ação redireciona o usuário para nosso guia de RPG de mesa.
+
+- **Realizar o quiz sobre RPG de mesa**
+Ao clicar em “Quiz RPG” localizado na parte inferior direita da tela de RPG de mesa, o usuário deve ser redirecionado para um quiz para testar as informações adquiridas durante a leitura do guia.
+
+- **Ver as recomendações do RPG de mesa**
+Dentro da aba de RPG de mesa, o usuário pode escolher ver as recomendações de livros propostas pela equipe, para isso basta clicar no botão “Comece aqui” localizado na parte superior esquerda da página, ou clicar em “livros sugeridos” encontrado na parte inferior do site. Ao clicar, o usuário será redirecionado a aba de recomendações, e poderá visualizar informações sobre os livros.
+
+- **Acessar o link para a compra dos livros do RPG**
+O usuário deve poder acessar o link da Amazon para comprar o livro sugerido, para acessar o link basta clicar em “Compre aqui” dentro da aba de recomendações.
+
+- **Pesquisar jogos de qualquer aba**
+O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso basta escrever o nome do jogo na caixa de texto localizada na parte superior direita da tela. Ao escrever o nome, o resultado deve aparecer logo abaixo, permitindo o usuário clicar e acessar a página do jogo escolhido.
 
 # Referências
 
