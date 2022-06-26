@@ -511,6 +511,57 @@ O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso
 - O Catálogo está interessante e o filtro funcionando corretamente.
 - Ao finalizar o quiz seria interessante aparecer as respostas corretas.
 
+**Jardson Martins** <br/>
+- Ao apagar uma letra na caixa de pesquisa de jogos, nenhum jogo é pesquisado, portanto ao tentar corrigir uma palavra, nenhum feedback é retornado.
+![Testes-de-Usabilidade](images/testes-usabilidade/02-1.png)
+- Iria ser mais interessante permitir o usuário se conectar sem precisar criar uma conta.
+
+**David Leati** <br/>
+- A senha está visível no momento de login, deveria estar escondida.
+- O catálogo deveria ter paginação, pois dependendo da quantidade de jogos podeficar ruim de visualizar.
+
+**Matheus Henrique** <br/>
+- O feedback do cadastro está um pouco estranho, seria melhor uma mensagem de sucesso aparecendo perto do botão de login.
+- Seria melhor ter um botão para visualizar ou não a senha na parte de login.
+- O Sobre nós não possui muita informação sobre a equipe.
+
+**Nathan Neves** <br/>
+- É um pouco estranho a forma que os resultados da pesquisa de jogos estão aparecendo, se eu pesquisar “A” aparecem jogos que começam com a letra “E”.
+- Deveria haver um sistema de páginas na parte do catálogo.
+- O quiz deveria mostrar as respostas corretas no final.
+![Testes-de-Usabilidade](images/testes-usabilidade/05-1.png)
+
+**Bruna Cristina** <br/>
+- Não achei necessário realizar um login para acessar o site.
+- A caixa de pesquisa não está pesquisando ao corrigir uma letra.
+- Poderia ter uma página para alterar a senha do meu perfil.
+
+**Leandro Henrique** <br/>
+- A senha está visível na hora do login, não é muito seguro.
+- O catálogo está com os cards muito grandes, seria melhor visivelmente se eles fossem menores.
+- Demorei para achar o quiz de RPG, deveria estar em local mais visível.
+![Testes-de-Usabilidade](images/testes-usabilidade/07-1.png)
+- Está aparecendo muitos jogos no momento da pesquisa.
+
+**Maria Eduarda** <br/>
+- É muito massante descer todo o catálogo, poderia adicionar uma opção de paginação.
+- Não entendi o porque é necessário criar uma conta para acessar o site.
+- O sobre nós tem muito pouco conteúdo.
+
+### Relatório com Registro dos Testes Feitos
+
+| Problema | Solução |
+|--|-----------------------------------------------------|
+| Feedback de sucesso de registro aparecendo por um alert box. | Utilizar o html para informar o sucesso de registro |
+| Ao apagar uma letra na caixa de pesquisa de jogos, nenhum jogo é pesquisado. | Melhorar a lógica de pesquisa de jogos, adicionando a pesquisa ao apagar uma letra. |
+| Não existe necessidade de criar uma conta para acessar o site. | Permitir a visualização sem a necessidade de criar uma conta, porém perdendo algumas funcionalidades. |
+| Senha visível durante o login.  | Adicionar um checkbox que habilita e desabilita a visualização da senha. |
+| Catálogo exibindo muitos jogos de uma vez. | Adicionar uma paginação no catálogo. |
+| Aba de “Sobre nós” sem muito conteúdo. | Adicionar mais informações sobre a equipe no “Sobre nós” |
+| O usuário não consegue alterar sua própria senha. | Adicionar uma aba para o usuário poder realizar a troca de senha. |
+| Está aparecendo muitos jogos ao fazer uma pesquisa. | Exibir apenas os 5 melhores resultados da pesquisa. |
+| O Botão para realizar o “Quiz de RPG” está muito escondido. | Colocar o botão no início da página. |
+
 # Referências
 
 ......  COLOQUE AQUI O SEU TEXTO ......
