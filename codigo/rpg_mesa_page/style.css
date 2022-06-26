@@ -31,11 +31,17 @@
 .title {
   font-family: 'Anton';
   margin-top: 40px;
+
+}
+
+.title .btn-comece-aqui {
+  display: flex;
+  justify-items: flex-start;
 }
 
 .title h1 {
   font-family: 'Anton';
-  font-size: 55px;
+  font-size: clamp(25px, 5vw, 55px);
 }
 
 .rpg_mesa_content {
@@ -66,6 +72,7 @@
   background-color: #293049;
   cursor: pointer;
   font-family: 'Anton';
+  border-radius: 5px
 }
 
 .btn-comece-aqui:hover {
@@ -77,10 +84,13 @@
 
 .persona {
   width: 500px;
+  margin-right: 0px;
+
 }
 
 .agora {
-  font-size: 60px;
+  font-size: clamp(20px, 5vw, 50px);
+  justify-content: space-between;
   font-family: 'Anton';
 }
 
@@ -90,10 +100,20 @@
 
 .oque-e-titulo {
   font-family: 'Anton';
+  font-size: clamp(20px, 5vw, 50px);
+}
+
+.oque-e-titulo p {
+  font-size: clamp(20px, 3vw, 40px);
 }
 
 .como-funciona-titulo {
   font-family: 'Anton';
+  font-size: clamp(20px, 5vw, 50px);
+}
+
+.como-funciona-titulo p {
+  font-size: clamp(20px, 3vw, 40px);
 }
 
 .botao a {
@@ -102,15 +122,57 @@
   padding: 10px 18px;
   text-decoration: none;
   color: white;
-  margin-right: 150px;
+  margin-right: 0px;
   margin-top: 0px;
   border-radius: 5px;
   font-size: 22px;
   font-family: 'Anton';
-  float: right;
+
 }
 
 .botao a:hover {
   background-color: rgb(226, 143, 42);
   color: black;
+}
+
+
+@media(max-width: 1000px) {
+
+
+  .botao a {
+    margin-right: 0px;
+  }
+
+  .btn-comece-aqui {
+    margin: 40px 0 0 120px;
+  }
+
+  .persona {
+    width: 90%;
+    margin-right: 0px;
+  }
+}
+
+
+
+@media(max-width: 850px) {
+  .rpg_mesa_content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .btn-comece-aqui {
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 660px) {
+
+  .botao {
+    display: none;
+  }
+
+  .persona {
+    display: none;
+  }
 }

@@ -9,18 +9,21 @@
   <link rel="stylesheet" href="../utils/header_style.css">
   <link rel="stylesheet" href="../utils/background_style.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="../utils/imagens/logo-black.png">
   <link rel="stylesheet" href="../utils/styles/pesquisarJogos.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <div class="loader"></div>
-     <!-- Header -->
-     <nav class="navbar navbar-expand-lg navbar-light bg">
-      <div class="container-fluid">
-        <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide" class="logo-image" />
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg">
+    <div class="container-fluid">
+      <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide"
+          class="logo-image" />
         <a class="navbar-brand text-warning">Games Guide</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,26 +40,27 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="../about_us_page/index.html">Sobre Nós</a>
             </li>
-           
+
             <li class="nav-item">
               <a class="nav-link disabled"></a>
             </li>
           </ul>
           <div class="d-flex">
-            <input autocomplete="off" id="pesquisa" class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos" aria-label="Search" on>
+            <input autocomplete="off" id="pesquisa" class="form-control me-2 position-relative" type="text"
+              placeholder="Pesquisar Jogos" aria-label="Search" on>
             <button class="btn btn-outline-primary search_button" onclick="pesquisarJogos()">Pesquisar</button>
-          </div> 
+          </div>
           <button class="btn btn-outline-danger" onclick="logoutUser()">Sair</button>
         </div>
-      </div>
-    </nav>
-    <!-- Fim do header -->
+    </div>
+  </nav>
+  <!-- Fim do header -->
   <div class="title">
     <h1 class="text-center" style="font-family: 'anton';"><span class="letra">S</span>obre <span
         class="letra">N</span>ós</h1>
   </div>
   <div class="about_us_content">
-    <p class="md-3">
+    <p class="texto md-3">
       Em 2022, a Mechanics Guide Chanel foi fundada por Heitor Freitas, Leonardo Oliveira, Maria Luisa,
       Matheus
       Gabriel, Mayara Kimura e Víctor Cutrim. A MECG criou o Games Guide, plataforma para recomendações de
@@ -69,7 +73,7 @@
         <a href="../Space_invaders/index.html"><img class="imagem_sobre_nos img-fluid"
             src="../utils/imagens/persona.png" alt="sobre_nos_imagem"></a>
       </div>
-      <div class="col-10">
+      <div class="texto col-10">
         Após um mapeamento ao entrevistar diversas pessoas, decidimos criar o Games Guide para você, gamer,
         que precisa de uma ajudinha porque está em dúvida ao decidir qual jogo é melhor de acordo com os seus
         interesses
@@ -77,7 +81,7 @@
     </div>
 
     <div class="row mt-5">
-      <div class="col-10">
+      <div class="texto col-10">
         O nosso catálogo oferece diversas categorias de jogos como: FPS, MOBA, RPG, Terror. Os jogos possuem
         descrições,
         avaliações, fotos, requisitos mínimos e recomendados para que você possa usufruir de uma boa gameplay.
@@ -91,17 +95,19 @@
   <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: #0c1020; color: white;">
-      Copyright © 2022 | Disciplina de Trabalho Interdisciplinar: Aplicações WEB | <b>PUC Minas Betim </b>| Mechanics Guide
+      Copyright © 2022 | Disciplina de Trabalho Interdisciplinar: Aplicações WEB | <b>PUC Minas Betim </b>| Mechanics
+      Guide
     </div>
     <!-- Copyright -->
   </footer>
 
-    <script src="../utils//scripts/pesquisarJogos2.js"></script>
-    <script>
-      window.addEventListener("load", function () {
-          const loader = document.querySelector(".loader");
-          loader.className += " hidden";
-      });
-    </script> 
+  <script src="../utils//scripts/pesquisarJogos2.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
+    });
+  </script>
 </body>
+
 </html>

@@ -10,18 +10,21 @@
   <link rel="stylesheet" href="../utils/background_style.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="../utils/styles/pesquisarJogos.css">
+  <link rel="shortcut icon" href="../utils/imagens/logo-black.png">
   <script src="../utils//scripts/logout.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <div class="loader"></div>
-     <!-- Header -->
-     <nav class="navbar navbar-expand-lg navbar-light bg">
-      <div class="container-fluid">
-        <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide" class="logo-image" />
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg">
+    <div class="container-fluid">
+      <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide"
+          class="logo-image" />
         <a class="navbar-brand text-warning">Games Guide</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,20 +41,21 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="../about_us_page/index.html">Sobre Nós</a>
             </li>
-           
+
             <li class="nav-item">
               <a class="nav-link disabled"></a>
             </li>
           </ul>
           <div class="d-flex">
-            <input autocomplete="off" id="pesquisa" class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos" aria-label="Search" on>
+            <input autocomplete="off" id="pesquisa" class="form-control me-2 position-relative" type="text"
+              placeholder="Pesquisar Jogos" aria-label="Search" on>
             <button class="btn btn-outline-primary search_button" onclick="pesquisarJogos()">Pesquisar</button>
-          </div> 
+          </div>
           <button class="btn btn-outline-danger" onclick="logoutUser()">Sair</button>
         </div>
-      </div>
-    </nav>
-    <!-- Fim do header -->
+    </div>
+  </nav>
+  <!-- Fim do header -->
 
   <div class="title">
     <div class="position-relative">
@@ -94,11 +98,11 @@
     </div>
 
     <div class="row mt-5">
-      <div class="agora col-6 text-center"><br>
+      <div class="agora text-center"><br>
         <h3>Agora que você já sabe o que é e como funciona o RPG, dê uma olhada nos nossos <i><a
               href="../catalogo_rpg_page/index.html">livros sugeridos! </i></h3></a>
       </div>
-      <div class="col-6"> <br><br><br>
+      <div class=""> <br><br><br>
         <img src="../utils/imagens/persona.png" alt="persona_rpg" class="persona">
         <p class="botao">
           <a href="../Quiz_RPG_Mesa/index.html">Quiz RPG</a>
@@ -110,18 +114,20 @@
   <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: #0c1020; color: white;">
-      Copyright © 2022 | Disciplina de Trabalho Interdisciplinar: Aplicações WEB | <b>PUC Minas Betim </b>| Mechanics Guide
+      Copyright © 2022 | Disciplina de Trabalho Interdisciplinar: Aplicações WEB | <b>PUC Minas Betim </b>| Mechanics
+      Guide
     </div>
     <!-- Copyright -->
   </footer>
 
   <script>
     window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
     });
-  </script> 
+  </script>
 
   <script src="../utils//scripts/pesquisarJogos2.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27'); 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27');
 
 .container-fluid {
   font-family: 'Anton';
@@ -115,7 +115,7 @@
   -webkit-transition: all 0.3s;
 }
 
-.cursor_ponteiro  {
+.cursor_ponteiro {
   cursor: pointer;
   min-width: 300px;
 }
@@ -125,9 +125,10 @@
   margin: 0px 0px 0px 0px;
   transition: all .3s;
   box-shadow: 0px 0px 10px 1px rgba(18, 25, 41, 0.9);
-  border-radius: 0px 0px 5px 5px;}
+  border-radius: 0px 0px 5px 5px;
+}
 
-.link{
+.link {
   text-decoration: none;
 }
 
@@ -136,10 +137,91 @@
   font-size: 13px;
   padding-bottom: 10px;
   margin: 0px;
-  color:  #ebecef;
+  color: #ebecef;
 }
 
-p{
+p {
   text-align: center;
   color: white;
+}
+
+
+@media(max-width:540px) {
+  .categorias {
+    width: 100%;
+  }
+
+  .filtroc a {
+    font-size: clamp(1px, 1.3vw, 15px);
+  }
+
+  #games_section {
+
+    width: 100%;
+    min-width: fit-content;
+  }
+
+  .filtroc button {
+    width: fit-content;
+    margin-top: 4px;
+    margin-left: 0;
+    min-width: 50px;
+    max-width: 50px;
+    letter-spacing: 1px;
+    justify-content: center;
+  }
+}
+
+@media(max-width:475px) {
+
+
+  .filtroc a {
+    font-size: clamp(4px, 0.75vw, 15px);
+  }
+
+  .filtroc button {
+    width: fit-content;
+    margin-top: 4px;
+    min-width: 70px;
+    max-width: 70px;
+    letter-spacing: 1px;
+    justify-content: center;
+  }
+
+  #games_section {
+    width: 100%;
+    min-width: 200px;
+  }
+
+  .cursor_ponteiro {
+    min-width: 150px;
+  }
+
+  .persona {
+    display: none;
+  }
+}
+
+@media(max-width: 390px) {
+  .filtroc a {
+    font-size: clamp(4px, 1vw, 15px);
+  }
+
+  .filtroc button {
+    min-width: 60px;
+  }
+}
+
+
+
+@media(max-width: 280px) {
+  .filtroc a {
+    font-size: clamp(4px, 1vw, 15px);
+  }
+
+  .filtroc button {
+    min-width: 50px;
+    max-width: 50px;
+    margin-left: 0;
+  }
 }

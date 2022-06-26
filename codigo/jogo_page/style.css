@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27'); 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@900&display=swap');
 
 .container-fluid {
@@ -6,7 +6,7 @@
   background-color: #151C35;
 }
 
-.nav-item{
+.nav-item {
   font-size: 20px;
   padding-left: 40px;
 }
@@ -38,7 +38,7 @@
   color: white;
 }
 
-.estrela{
+.estrela {
   font-size: 60px;
 }
 
@@ -65,16 +65,6 @@
   margin-left: 15px;
 }
 
-.jogo_favorito:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-}
-
 .persona {
   width: 500px;
 }
@@ -86,9 +76,10 @@
 .requisitos {
   background-color: #3B5C6E;
   padding: 10px;
+  font-size: clamp(5px, 2vw, 16px);
 }
 
-.coment{
+.coment {
   font-family: 'anton';
 }
 
@@ -108,9 +99,9 @@
   font-family: 'lato';
 }
 
-.escrever_comentario{
+.escrever_comentario {
   color: rgb(116, 146, 180);
-  font-family: 'anton'; 
+  font-family: 'anton';
 }
 
 .escrever_coment {
@@ -124,10 +115,21 @@
   margin-top: 10px;
 }
 
-.letra{
+.letra {
   color: orange;
 }
 
 #descricao_jogo {
-  font-size: 16px;
+  font-size: clamp(5px, 2vw, 16px);
+}
+
+@media(max-width: 820px) {
+
+  .game_page_out {
+    width: 100%;
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 20px;
+
+  }
 }
