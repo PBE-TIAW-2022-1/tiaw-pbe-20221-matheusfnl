@@ -457,34 +457,34 @@ O público escolhido para realizar os testes de usabilidades são jovens de 14 �
 
 ### Roteiro detalhado das tarefas que foram desempenhadas pelos usuários
 
-- **Registrar no site**
+- **Registrar no site** <br/>
 Ao conectar ao site sem estar logado, deve-se ser requisitado a criação de uma nova conta ou a realização do login, ele deve conseguir se registrar sem nenhuma complicação.
 
-- **Logar no site**
+- **Logar no site** <br/>
 O usuário deve poder logar em uma conta criada anteriormente, basta apenasinformar seu nome de usuário, sua senha e selecionar o botão de “Logar”. Essa ação deve redirecionar o usuário para o catálogo do site.
 
-- **Visualizar o catálogo**
+- **Visualizar o catálogo** <br/>
 Após o login, o usuário deve ser redirecionado para o catálogo do site, o catálogo deve exibir para o usuário todos os jogos registrados, contendo seu nome, sua descrição e a avaliação.
 
-- **Filtrar o catálogo**
+- **Filtrar o catálogo** <br/>
 O usuário deve ser capaz de filtrar os jogos por categoria, para assim encontrar o que deseja mais rapidamente, para isso o usuário deve clicar no botão localizado no lado esquerdo da tela.
 
-- **Deslogar no site**
+- **Deslogar no site** <br/>
 Ao clicar no botão de sair, o usuário deve ser redirecionado para a tela de login/registro, para isso é necessário apenas apertar o botão “Sair” localizado no canto superior direito de qualquer aba.
 
-- **Visualizar a aba de RPG de mesa**
+- **Visualizar a aba de RPG de mesa** <br/>
 O usuário deve ser livre para acessar qualquer aba do site, para acessar a aba de RPG de mesa, deve-se clicar no botão “RPG de mesa” localizado na parte superior de qualquer aba do site. Essa ação redireciona o usuário para nosso guia de RPG de mesa.
 
-- **Realizar o quiz sobre RPG de mesa**
+- **Realizar o quiz sobre RPG de mesa** <br/>
 Ao clicar em “Quiz RPG” localizado na parte inferior direita da tela de RPG de mesa, o usuário deve ser redirecionado para um quiz para testar as informações adquiridas durante a leitura do guia.
 
-- **Ver as recomendações do RPG de mesa**
+- **Ver as recomendações do RPG de mesa** <br/>
 Dentro da aba de RPG de mesa, o usuário pode escolher ver as recomendações de livros propostas pela equipe, para isso basta clicar no botão “Comece aqui” localizado na parte superior esquerda da página, ou clicar em “livros sugeridos” encontrado na parte inferior do site. Ao clicar, o usuário será redirecionado a aba de recomendações, e poderá visualizar informações sobre os livros.
 
-- **Acessar o link para a compra dos livros do RPG**
+- **Acessar o link para a compra dos livros do RPG** <br/>
 O usuário deve poder acessar o link da Amazon para comprar o livro sugerido, para acessar o link basta clicar em “Compre aqui” dentro da aba de recomendações.
 
-- **Pesquisar jogos de qualquer aba**
+- **Pesquisar jogos de qualquer aba** <br/>
 O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso basta escrever o nome do jogo na caixa de texto localizada na parte superior direita da tela. Ao escrever o nome, o resultado deve aparecer logo abaixo, permitindo o usuário clicar e acessar a página do jogo escolhido.
 
 # Referências
