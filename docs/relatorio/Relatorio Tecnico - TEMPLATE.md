@@ -506,14 +506,14 @@ O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso
 
 **Rômulo César** <br/>
 - O feedback do sucesso no cadastro de usuário e o de erro na tela de login deve aparecer no html, sem utilizar um alert box.
-- A senha na tela de login não está escondida, deve-se dar a opção para o usuário de visualizar a senha.
-![Testes-de-Usabilidade](images/testes-usabilidade/01-1.png)
+- A senha na tela de login não está escondida, deve-se dar a opção para o usuário de visualizar a senha. <br/>
+![Testes-de-Usabilidade](images/testes-usabilidade/01-1.png) <br/>
 - O Catálogo está interessante e o filtro funcionando corretamente.
 - Ao finalizar o quiz seria interessante aparecer as respostas corretas.
 
 **Jardson Martins** <br/>
-- Ao apagar uma letra na caixa de pesquisa de jogos, nenhum jogo é pesquisado, portanto ao tentar corrigir uma palavra, nenhum feedback é retornado.
-![Testes-de-Usabilidade](images/testes-usabilidade/02-1.png)
+- Ao apagar uma letra na caixa de pesquisa de jogos, nenhum jogo é pesquisado, portanto ao tentar corrigir uma palavra, nenhum feedback é retornado. <br/>
+![Testes-de-Usabilidade](images/testes-usabilidade/02-1.png) <br/>
 - Iria ser mais interessante permitir o usuário se conectar sem precisar criar uma conta.
 
 **David Leati** <br/>
@@ -528,8 +528,8 @@ O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso
 **Nathan Neves** <br/>
 - É um pouco estranho a forma que os resultados da pesquisa de jogos estão aparecendo, se eu pesquisar “A” aparecem jogos que começam com a letra “E”.
 - Deveria haver um sistema de páginas na parte do catálogo.
-- O quiz deveria mostrar as respostas corretas no final.
-![Testes-de-Usabilidade](images/testes-usabilidade/05-1.png)
+- O quiz deveria mostrar as respostas corretas no final. <br/>
+![Testes-de-Usabilidade](images/testes-usabilidade/05-1.png) <br/>
 
 **Bruna Cristina** <br/>
 - Não achei necessário realizar um login para acessar o site.
@@ -539,8 +539,8 @@ O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso
 **Leandro Henrique** <br/>
 - A senha está visível na hora do login, não é muito seguro.
 - O catálogo está com os cards muito grandes, seria melhor visivelmente se eles fossem menores.
-- Demorei para achar o quiz de RPG, deveria estar em local mais visível.
-![Testes-de-Usabilidade](images/testes-usabilidade/07-1.png)
+- Demorei para achar o quiz de RPG, deveria estar em local mais visível. <br/>
+![Testes-de-Usabilidade](images/testes-usabilidade/07-1.png) <br/>
 - Está aparecendo muitos jogos no momento da pesquisa.
 
 **Maria Eduarda** <br/>
