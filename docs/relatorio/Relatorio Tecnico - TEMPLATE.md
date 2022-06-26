@@ -372,15 +372,30 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 Os resultados obtidos nos testes de software realizados são descritos nas Tabelas a seguir.
 
-| CT-14 - Fazer registro no site |
+| CT-01 - Fazer registro no site |
 |---------------------------------------------------------|
 | ![Exemplo de UserFlow](images/testes-software/ct01-1.png) ![Exemplo de UserFlow](images/testes-software/ct01-2.png) |
 | **Resultados:** Cadastro realizado com sucesso. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** A mensagem “Conta criada com sucesso” estava aparecendo em forma de alerta, então foi sugerido que aparecesse uma mensagem em HTMl, como mostrado acima. |
 
-| CT-14 - Fazer login no site |
+| CT-02 - Fazer login no site |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct02-1.png) ![Exemplo de UserFlow](images/testes-software/ct02-2.png) |
+| ![Exemplo de UserFlow](images/testes-software/ct02-1.png) |
 | **Resultados:** Login realizado com sucesso. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-03 - Visualizar os títulos do catálogo de jogos |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct03-1.png) |
+| **Resultados:** Títulos disponibilizados corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Ajustar o tamanho do filtro e dos cards dos jogos. |
+
+| CT-04 - Visualizar os títulos do catálogo de jogos |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct04-1.png) |
+| **Resultados:** Filtro funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-05 - Função "Pesquisar jogos" |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct05-1.png) |
+| **Resultados:** :Função “Pesquisar jogos” funcionando corretamente. <br/> **Bugs encontrados:** Ao apagar uma letra o resultado não é exibido. <br/> **Melhorias sugeridas:** Acionar o evento de pesquisa ao apagar uma letra. |
 
 # Referências
 
