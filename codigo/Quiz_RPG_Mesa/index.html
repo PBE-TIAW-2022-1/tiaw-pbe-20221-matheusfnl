@@ -9,14 +9,17 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../utils/header_style.css">
     <link rel="stylesheet" href="../utils/background_style.css">
+    <link rel="stylesheet" href="../utils/styles/pesquisarJogos.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../utils/imagens/logo-black.png">
+    <script src="../utils//scripts/logout.js"></script>
     <title>Quiz RPG Mesa</title>
 </head>
 
 <body>
-
+    <div class="loader"></div>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg">
+    <nav class="navbar navbar-expand-lg navbar-light bg" style="margin-top: -8px;">
         <div class="container-fluid">
             <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide"
                     class="logo-image" />
@@ -29,8 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="../home_page/index.html">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="../catalogo_page/index.html">Catálogo</a>
@@ -46,11 +48,15 @@
                             <a class="nav-link disabled"></a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar Jogos"
-                            aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
-                    </form>
+                    <div class="d-flex">
+                        <input autocomplete="off" style="width: 200px;" id="pesquisa"
+                            class="form-control me-2 position-relative" type="text" placeholder="Pesquisar Jogos"
+                            aria-label="Search" on>
+                        <div class="row position-absolute mt-5" id="previewJogos"></div>
+                        <button class="btn btn-outline-primary search_button"
+                            onclick="pesquisarJogos()">Pesquisar</button>
+                        <button class="btn btn-outline-danger" onclick="logoutUser()">Sair</button>
+                    </div>
                 </div>
         </div>
     </nav>
@@ -88,17 +94,20 @@
         <button id="submit">Responder</button>
 
     </div>
-
     <!-- Fim do quiz -->
 
-    <p class="botao">
-        <a href="../rpg_mesa_page/index.html">Retornar</a>
-    </p>
 
 
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        });
+    </script>
 
     <!--Script para configurar o quiz em JS-->
     <script src="./quiz.js"></script>
+    <script src="../utils//scripts/pesquisarJogos2.js"></script>
 </body>
 
 </html>

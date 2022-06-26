@@ -1,176 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Games Guide</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../utils/header_style.css" />
-    <link rel="stylesheet" href="../utils/background_style.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="../utils//scripts/logout.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-   <!-- Header -->
-   <nav class="navbar navbar-expand-lg navbar-light bg">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Games Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../utils/header_style.css" />
+  <link rel="stylesheet" href="../utils/background_style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="../utils//scripts/logout.js"></script>
+  <link rel="stylesheet" href="../utils/styles/pesquisarJogos.css">
+  <link rel="shortcut icon" href="../utils/imagens/logo-black.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="loader"></div>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg">
     <div class="container-fluid">
-      <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide" class="logo-image" />
-      <a class="navbar-brand text-warning">Games Guide</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="../home_page/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../catalogo_page/index.html">Catálogo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="../rpg_mesa_page/index.html">RPG de Mesa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../about_us_page/index.html">Sobre Nós</a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link disabled"></a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar Jogos" aria-label="Search">
-          <button class="btn btn-outline-primary me-2" type="submit">Pesquisar</button>
-        </form> 
-        <button class="btn btn-outline-danger" onclick="logoutUser()">Sair</button>
-      </div>
+      <a href="./index.html" class="header_logo"> <img src="../utils/imagens/logo.png" alt="logo_games_guide"
+          class="logo-image" />
+        <a class="navbar-brand text-warning">Games Guide</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../catalogo_page/index.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="../rpg_mesa_page/index.html">RPG de Mesa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../about_us_page/index.html">Sobre Nós</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled"></a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <input autocomplete="off" id="pesquisa" class="form-control me-2 position-relative" type="text"
+              placeholder="Pesquisar Jogos" aria-label="Search" on>
+            <button class="btn btn-outline-primary search_button" onclick="pesquisarJogos()">Pesquisar</button>
+          </div>
+          <button class="btn btn-outline-danger" onclick="logoutUser()">Sair</button>
+        </div>
     </div>
   </nav>
+  <!-- Fim do header -->
 
-  <!-- Fim do Header -->
-
-    <div id="main_content">
-      <div class="row row-cols-1 row-cols-md-6 g-4 text-center">
-        <div class="col">
-          <div class="card">
-            <img src="imagens/d_d.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Dungeons & Dragons</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imagens/cthulhu.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Call of Cthulhu</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imagens/cultos.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Cultos Inomináveis</h5>              
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imagens/m_m.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Mutantes e Malfeitores</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imagens/vampiro.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Vampiro: A Máscara</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imagens/tormenta.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Tormenta 20</h5>
-            </div>
+  <div id="main_content">
+    <div class="loscards row row-cols-3 row-cols-md-6 g-4 text-center">
+      <div class="col">
+        <div class="card">
+          <img src="imagens/d_d.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Dungeons & Dragons</h5>
           </div>
         </div>
       </div>
-
-      <div id="rec_section" class="my-4">
-        <!-- Recomendação -->
-        <div class="rec">
-          <h3><span class="letra">D</span>ungeons & <span class="letra">D</span>ragons</h3>
-          <div class="row mt-3">
-            <div class="col-4">
-              <img class="img-fluid" src="imagens/d_d-capa.png" alt="Capa D&D" />
-            </div>
-            <div class="col-8">
-              <p>
-                Dungeons & Dragons imersa em um mundo de aventura. Explore ruínas antigas e calabouços mortais. 
-                Batalhe contra monstros ao procurar tesouros lendários. Ganhe experiência e poder enquanto você atravessa terras inexploradas com seus companheiros.
-
-                O mundo precisa de heróis. Você responderá à chamada? <br><br><br><br><br><br><br><br><br>
-                <div class="text-center">
-                <a href="https://www.amazon.com.br/Dungeons-Dragons-Players-Handbook-Português/dp/B085S6W8PZ/ref=asc_df_B085S6W8PZ/?tag=googleshopp00-20&linkCode=df0&hvadid=393609811349&hvpos=&hvnetw=g&hvrand=6232206164257829445&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101095&hvtargid=pla-1085670654912&psc=1">
-                <button class="btn btn-outline-warning">Compre aqui</button>
-              </a>
-              </div>
-            </div>
+      <div class="col">
+        <div class="card">
+          <img src="imagens/cthulhu.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Call of Cthulhu</h5>
           </div>
         </div>
-        <!-- Fim da recomendação -->
-        <!-- Recomendação -->
-        <div class="rec">
-          <h3><span class="letra">C</span>all <span class="letra">o</span>f <span class="letra">C</span>thulhu</h3>
-          <div class="row mt-3">
-            <div class="col-4">
-              <img class="img-fluid" src="imagens/cthulhu-capa.png" alt="Capa Cthulhu"/>
-            </div>
-            <div class="col-8">
-              <p>
-                Call of Cthulhu é um RPG de mesa baseado nos mundos de H. P. Lovecraft. É um jogo de segredos,
-                 mistérios e horror. Fazendo o papel de investigadores, você viaja para lugares estranhos
-                  e perigosos, descobre tramas sujas e enfrenta os terrores do Cthulhu Mythos. Você encontra
-                   entidades explosivas, monstros e cultistas insanos. Dentro de estranhos e esquecidos
-                    volumes de conhecimento, você descobre revelações que o homem não deveria conhecer. 
-                    Você e seus companheiros podem muito bem decidir o destino do mundo.</p> <br><br><br><br><br><br>
-              <div class="text-center">
-                <a href="https://www.amazon.com.br/Call-Cthulhu-Keeper-Rulebook-Roleplaying/dp/1568824300/ref=sr_1_1?keywords=call+of+cthulhu&qid=1650330512&s=books&sprefix=call%2Cstripbooks%2C183&sr=1-1&ufe=app_do%3Aamzn1.fos.e05b01e0-91a7-477e-a514-15a32325a6d6">
-                  <button class="btn btn-outline-warning">Compre aqui</button>
-              </a>
-              </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="imagens/cultos.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Cultos Inomináveis</h5>
           </div>
         </div>
-        <!-- Fim da recomendação -->
-          <!-- Recomendação -->
-          <div class="rec">
-            <h3><span class="letra">C</span>ultos <span class="letra">I</span>nomináveis</h3>
-            <div class="row mt-3">
-              <div class="col-4">
-                <img class="img-fluid" src="imagens/cultos-capa.png" alt="Capa Cultos Inominaveis" />
-              </div>
-              <div class="col-8">
-                <p>
-                  Cultos Inomináveis: Postnomicon te oferece possessões, pactos com forças piores que o próprio diabo, festas selvagens, drogas de outro mundo, rituais que necessitam ser completados, 
-                  e muito mais. Desde os frios escritórios das grandes empresas até a Terra dos Sonhos, e desde os claustrofóbicos e assépticos quartos de um hospital psiquiátrico 
-                  até os cantos mais obscuros da deep web, os personagens dos jogadores terão que lidar com grupos sem escrúpulos, maquinações imortais, horrores extra dimensionais 
-                  e o pior monstro possível: eles mesmos, tudo isso repleto de primorosos auxílios visuais, ilustrações belíssimas e tratamento gráfico sem igual em livros de temática
-                   lovecraftiana.                </p> <br><br><br><br><br>
-                <div class="text-center">
-                  <a href="https://www.amazon.com.br/Buró-9786599040900-Cultos-Inomináveis-Postnomicon/dp/659904090X/ref=sr_1_3?__mk_pt_BR=ÅMÅŽÕÑ&crid=4QOATY6E8M0Q&keywords=cultos+inomináveis+rpg&qid=1650330719&sprefix=cultos+inomináveis+rpg%2Caps%2C167&sr=8-3&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74">
-                  <button class="btn btn-outline-warning">Compre aqui</button>
-                </a>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="imagens/m_m.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Mutantes e Malfeitores</h5>
           </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="imagens/vampiro.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Vampiro: A Máscara</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="imagens/tormenta.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Tormenta 20</h5>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+
+    <div id="rec_section" class="my-4">
+      <!-- Recomendação -->
+      <div class="rec">
+        <h3><span class="letra">D</span>ungeons & <span class="letra">D</span>ragons</h3>
+        <div class="row mt-3">
+          <div class="col-4">
+            <img class="img-fluid" src="imagens/d_d-capa.png" alt="Capa D&D" />
+          </div>
+          <div class="col-8">
+            <p>
+              Dungeons & Dragons imersa em um mundo de aventura. Explore ruínas antigas e calabouços mortais.
+              Batalhe contra monstros ao procurar tesouros lendários. Ganhe experiência e poder enquanto você atravessa
+              terras inexploradas com seus companheiros.
+
+              O mundo precisa de heróis. Você responderá à chamada? <br><br><br><br><br><br><br><br><br>
+            <div class="text-center">
+              <a
+                href="https://www.amazon.com.br/Dungeons-Dragons-Players-Handbook-Português/dp/B085S6W8PZ/ref=asc_df_B085S6W8PZ/?tag=googleshopp00-20&linkCode=df0&hvadid=393609811349&hvpos=&hvnetw=g&hvrand=6232206164257829445&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101095&hvtargid=pla-1085670654912&psc=1">
+                <button class="btn btn-outline-warning">Compre aqui</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim da recomendação -->
+      <!-- Recomendação -->
+      <div class="rec">
+        <h3><span class="letra">C</span>all <span class="letra">o</span>f <span class="letra">C</span>thulhu</h3>
+        <div class="row mt-3">
+          <div class="col-4">
+            <img class="img-fluid" src="imagens/cthulhu-capa.png" alt="Capa Cthulhu" />
+          </div>
+          <div class="col-8">
+            <p>
+              Call of Cthulhu é um RPG de mesa baseado nos mundos de H. P. Lovecraft. É um jogo de segredos,
+              mistérios e horror. Fazendo o papel de investigadores, você viaja para lugares estranhos
+              e perigosos, descobre tramas sujas e enfrenta os terrores do Cthulhu Mythos. Você encontra
+              entidades explosivas, monstros e cultistas insanos. Dentro de estranhos e esquecidos
+              volumes de conhecimento, você descobre revelações que o homem não deveria conhecer.
+              Você e seus companheiros podem muito bem decidir o destino do mundo.</p> <br><br><br><br><br><br>
+            <div class="text-center">
+              <a
+                href="https://www.amazon.com.br/Call-Cthulhu-Keeper-Rulebook-Roleplaying/dp/1568824300/ref=sr_1_1?keywords=call+of+cthulhu&qid=1650330512&s=books&sprefix=call%2Cstripbooks%2C183&sr=1-1&ufe=app_do%3Aamzn1.fos.e05b01e0-91a7-477e-a514-15a32325a6d6">
+                <button class="btn btn-outline-warning">Compre aqui</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim da recomendação -->
+      <!-- Recomendação -->
+      <div class="rec">
+        <h3><span class="letra">C</span>ultos <span class="letra">I</span>nomináveis</h3>
+        <div class="row mt-3">
+          <div class="col-4">
+            <img class="img-fluid" src="imagens/cultos-capa.png" alt="Capa Cultos Inominaveis" />
+          </div>
+          <div class="col-8">
+            <p>
+              Cultos Inomináveis: Postnomicon te oferece possessões, pactos com forças piores que o próprio diabo,
+              festas selvagens, drogas de outro mundo, rituais que necessitam ser completados,
+              e muito mais. Desde os frios escritórios das grandes empresas até a Terra dos Sonhos, e desde os
+              claustrofóbicos e assépticos quartos de um hospital psiquiátrico
+              até os cantos mais obscuros da deep web, os personagens dos jogadores terão que lidar com grupos sem
+              escrúpulos, maquinações imortais, horrores extra dimensionais
+              e o pior monstro possível: eles mesmos, tudo isso repleto de primorosos auxílios visuais, ilustrações
+              belíssimas e tratamento gráfico sem igual em livros de temática
+              lovecraftiana. </p> <br><br><br><br><br>
+            <div class="text-center">
+              <a
+                href="https://www.amazon.com.br/Buró-9786599040900-Cultos-Inomináveis-Postnomicon/dp/659904090X/ref=sr_1_3?__mk_pt_BR=ÅMÅŽÕÑ&crid=4QOATY6E8M0Q&keywords=cultos+inomináveis+rpg&qid=1650330719&sprefix=cultos+inomináveis+rpg%2Caps%2C167&sr=8-3&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74">
+                <button class="btn btn-outline-warning">Compre aqui</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #0c1020; color: white;">
+      Copyright © 2022 | Disciplina de Trabalho Interdisciplinar: Aplicações WEB | <b>PUC Minas Betim </b>| Mechanics
+      Guide
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
+    });
+  </script>
+
+  <script src="../utils//scripts/pesquisarJogos2.js"></script>
+</body>
+
 </html>

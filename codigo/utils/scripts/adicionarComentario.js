@@ -18,8 +18,9 @@ const criaComentario = (nome, comentario, jogo, id) => {
   const nomePrimeiraLetra = nome.charAt(0)
   const nomeResto = nome.substring(1)
 
-  caixaComentario.classList.add('col-6');
+  caixaComentario.classList.add('col-md');
   caixaComentario.classList.add('instancia_comentarios');
+  caixaComentario.classList.add('mb-4')
 
   caixaComentario.innerHTML = `
     <div class="area_comentarios">
@@ -60,7 +61,18 @@ const atualizarTela = (jogo) => {
   });
 }
 
-const inserirComentario = (jogo) => {
+const carregarComentarios = () => {
+  let jogo_info = sessionStorage.getItem('jogo_page_info')
+  jogo_info = JSON.parse(jogo_info)
+
+
+  atualizarTela(id);
+}
+
+const inserirComentario = () => {
+  let jogo_info = sessionStorage.getItem('jogo_page_info')
+  jogo_info = JSON.parse(jogo_info)
+
   const instanceNome = document.getElementById('nomeInput');
   const instanceComentario = document.getElementById('comentarioInput');
 
@@ -69,7 +81,7 @@ const inserirComentario = (jogo) => {
   const comentario = {
     nome: instanceNome.value,
     comentario: instanceComentario.value,
-    tela: jogo,
+    tela: id,
   }
 
   instanceNome.value = '';
@@ -78,7 +90,7 @@ const inserirComentario = (jogo) => {
   comentariosLocalStorage.push(comentario);
 
   setComentario(comentariosLocalStorage);
-  atualizarTela(jogo);
+  atualizarTela(id);
 }
 
 const removeComentario = (jogo, id) => {
@@ -110,7 +122,6 @@ const editComentario = (id) => {
     const comentariosLocalStorage = getComentario();
 
     comentariosLocalStorage[id].comentario = comentario.textContent;
-    console.log(comentariosLocalStorage[id]);
 
     setComentario(comentariosLocalStorage);
   }

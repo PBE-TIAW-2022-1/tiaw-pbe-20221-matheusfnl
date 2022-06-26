@@ -257,7 +257,7 @@ function moveInvaderBullets() {
       particlesMaxSize = 4;
       triggerExplosion(tankX + tankWidth / 2, tankY + tankHeight / 2);
       invaderBulletsArray.splice(i, 1);
-      console.log("Pesdeu 1 vida");
+      console.log("Perdeu 1 vida");
       lives--;
       hasLifeDecreased = true;
     }

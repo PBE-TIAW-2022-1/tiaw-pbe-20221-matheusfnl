@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27'); 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27');
 
 .container-fluid {
   font-family: 'Anton';
   background-color: #151C35;
 }
-.nav-item{
+
+.nav-item {
   font-size: 20px;
   padding-left: 40px;
 }
@@ -14,7 +15,7 @@
   top: 0px;
 }
 
-.bg{
+.bg {
   background-color: #151C35;
 }
 
@@ -47,14 +48,25 @@
   width: 600px
 }
 
-.text-center{
+.text-center {
   color: white;
 }
 
-.sobrenos{
+.sobrenos {
   font-family: 'anton';
 }
 
-.letra{
+.letra {
   color: orange;
+}
+
+.texto {
+  font-size: clamp(20px, 3vw, 20px);
+}
+
+@media(max-width: 850px) {
+  .about_us_content {
+    width: 100%;
+    margin: 0;
+  }
 }
