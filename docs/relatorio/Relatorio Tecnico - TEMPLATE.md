@@ -374,75 +374,82 @@ Os resultados obtidos nos testes de software realizados são descritos nas Tabel
 
 | CT-01 - Fazer registro no site |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct01-1.png) ![Exemplo de UserFlow](images/testes-software/ct01-2.png) |
+| ![Testes-de-Software](images/testes-software/ct01-1.png) ![Testes-de-Software](images/testes-software/ct01-2.png) |
 | **Resultados:** Cadastro realizado com sucesso. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** A mensagem “Conta criada com sucesso” estava aparecendo em forma de alerta, então foi sugerido que aparecesse uma mensagem em HTMl, como mostrado acima. |
 
 | CT-02 - Fazer login no site |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct02-1.png) |
+| ![Testes-de-Software](images/testes-software/ct02-1.png) |
 | **Resultados:** Login realizado com sucesso. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 | CT-03 - Visualizar os títulos do catálogo de jogos |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct03-1.png) |
+| ![Testes-de-Software](images/testes-software/ct03-1.png) |
 | **Resultados:** Títulos disponibilizados corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Ajustar o tamanho do filtro e dos cards dos jogos. |
 
 | CT-04 - Visualizar os títulos do catálogo de jogos |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct04-1.png) |
+| ![Testes-de-Software](images/testes-software/ct04-1.png) |
 | **Resultados:** Filtro funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 | CT-05 - Função "Pesquisar jogos" |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct05-1.png) |
+| ![Testes-de-Software](images/testes-software/ct05-1.png) |
 | **Resultados:** Função “Pesquisar jogos” funcionando corretamente. <br/> **Bugs encontrados:** Ao apagar uma letra o resultado não é exibido. <br/> **Melhorias sugeridas:** Acionar o evento de pesquisa ao apagar uma letra. |
 
 | CT-06 - Visualizar os detalhes dos jogos |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct06-1.png) |
+| ![Testes-de-Software](images/testes-software/ct06-1.png) |
 | **Resultados:** Detalhes dos jogos funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Colocar mais de uma imagem por jogo. |
 
 | CT-07 - Adicionar comentários |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct07-1.png) |
-| ![Exemplo de UserFlow](images/testes-software/ct07-2.png) |
+| ![Testes-de-Software](images/testes-software/ct07-1.png) |
+| ![Testes-de-Software](images/testes-software/ct07-2.png) |
 | **Resultados:** “Adicionar comentários” funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 | CT-08 - Visualizar a página do RPG de Mesa |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct08-1.png) |
+| ![Testes-de-Software](images/testes-software/ct08-1.png) |
 | **Resultados:** Informações apresentadas corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 | CT-09 - Mini-quiz RPG de Mesa |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct09-1.png) |
+| ![Testes-de-Software](images/testes-software/ct09-1.png) |
 | **Resultados:** Quiz funcionando corretamente. <br/> **Bugs encontrados:** É possível selecionar mais de uma resposta ao mesmo tempo e não há a opção de desmarcar uma resposta escolhida. <br/> **Melhorias sugeridas:** Ajustar os erros mencionados acima. |
 
 | CT-10 - Visualizar os títulos do Catálogo de livros para RPG de Mesa |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct10-1.png) |
+| ![Testes-de-Software](images/testes-software/ct10-1.png) |
 | **Resultados:** Os livros estão sendo apresentados corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 | CT-11 - Visualizar os títulos do Catálogo de livros para RPG de Mesa a venda na Amazon |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct11-1.png) |
+| ![Testes-de-Software](images/testes-software/ct11-1.png) |
 | **Resultados:** Redirecionamento acontecendo corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 | CT-12 - Mini-games escondidos no site |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct12-1.png) ![Exemplo de UserFlow](images/testes-software/ct12-1.png) |
+| ![Testes-de-Software](images/testes-software/ct12-1.png) ![Testes-de-Software](images/testes-software/ct12-1.png) |
 | **Resultados:** Mini-games funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 | CT-13 - Dark/Light -mode |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct13-1.png) |
-| ![Exemplo de UserFlow](images/testes-software/ct13-2.png) |
+| ![Testes-de-Software](images/testes-software/ct13-1.png) |
+| ![Testes-de-Software](images/testes-software/ct13-2.png) |
 | **Resultados:** Dark/Light - mode funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 | CT-14 - Preloader |
 |---------------------------------------------------------|
-| ![Exemplo de UserFlow](images/testes-software/ct14-1.png) |
+| ![Testes-de-Software](images/testes-software/ct14-1.png) |
 | **Resultados:** Preloader funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Diminuir o tempo do preloader de 2 segundos para 0.5. |
+
+## Plano de Testes de Usabilidade
+
+## Identificação de objetivos do teste de usabilidade ##
+
+O teste de usabilidade efetuado pela equipe tem o objetivo de testar o site da visão do usuário, a fim de descobrir bugs, situações em que o site não se mostra intuitivo, mau design, opiniões sobre aparência, confiabilidade do site e utilidade do site.
+Com os testes, a equipe pretende entender como o usuário utiliza o site, sem ser influenciado pela visão do desenvolvedor, para assim ter um feedback real sobre a utilização do produto. Os resultados serão estudados e posteriormente utilizados para melhorar a aparência, o fluxo e o feedback do site.
 
 # Referências
 
