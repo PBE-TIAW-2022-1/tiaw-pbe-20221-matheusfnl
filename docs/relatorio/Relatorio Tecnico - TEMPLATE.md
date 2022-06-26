@@ -395,7 +395,55 @@ Os resultados obtidos nos testes de software realizados são descritos nas Tabel
 | CT-05 - Função "Pesquisar jogos" |
 |---------------------------------------------------------|
 | ![Exemplo de UserFlow](images/testes-software/ct05-1.png) |
-| **Resultados:** :Função “Pesquisar jogos” funcionando corretamente. <br/> **Bugs encontrados:** Ao apagar uma letra o resultado não é exibido. <br/> **Melhorias sugeridas:** Acionar o evento de pesquisa ao apagar uma letra. |
+| **Resultados:** Função “Pesquisar jogos” funcionando corretamente. <br/> **Bugs encontrados:** Ao apagar uma letra o resultado não é exibido. <br/> **Melhorias sugeridas:** Acionar o evento de pesquisa ao apagar uma letra. |
+
+| CT-06 - Visualizar os detalhes dos jogos |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct06-1.png) |
+| **Resultados:** Detalhes dos jogos funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Colocar mais de uma imagem por jogo. |
+
+| CT-07 - Adicionar comentários |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct07-1.png) |
+| ![Exemplo de UserFlow](images/testes-software/ct07-2.png) |
+| **Resultados:** “Adicionar comentários” funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-08 - Visualizar a página do RPG de Mesa |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct08-1.png) |
+| **Resultados:** Informações apresentadas corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-09 - Mini-quiz RPG de Mesa |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct09-1.png) |
+| **Resultados:** Quiz funcionando corretamente. <br/> **Bugs encontrados:** É possível selecionar mais de uma resposta ao mesmo tempo e não há a opção de desmarcar uma resposta escolhida. <br/> **Melhorias sugeridas:** Ajustar os erros mencionados acima. |
+
+| CT-10 - Visualizar os títulos do Catálogo de livros para RPG de Mesa |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct10-1.png) |
+| **Resultados:** Os livros estão sendo apresentados corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-11 - Visualizar os títulos do Catálogo de livros para RPG de Mesa a venda na Amazon |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct11-1.png) |
+| **Resultados:** Redirecionamento acontecendo corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-12 - Mini-games escondidos no site |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct12-1.png) ![Exemplo de UserFlow](images/testes-software/ct12-1.png) |
+| **Resultados:** Mini-games funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-13 - Dark/Light -mode |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct13-1.png) |
+| ![Exemplo de UserFlow](images/testes-software/ct13-1.png) |
+| **Resultados:** Dark/Light - mode funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
+
+| CT-14 - Preloader |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct13-1.png) |
+| ![Exemplo de UserFlow](images/testes-software/ct13-1.png) |
+| **Resultados:** Preloader funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Diminuir o tempo do preloader de 2 segundos para 0.5. |
 
 # Referências
 
