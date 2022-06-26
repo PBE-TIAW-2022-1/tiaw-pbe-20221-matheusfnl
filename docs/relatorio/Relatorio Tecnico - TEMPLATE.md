@@ -375,7 +375,12 @@ Os resultados obtidos nos testes de software realizados são descritos nas Tabel
 | CT-14 - Fazer registro no site |
 |---------------------------------------------------------|
 | ![Exemplo de UserFlow](images/testes-software/ct01-1.png) ![Exemplo de UserFlow](images/testes-software/ct01-2.png) |
-| Resultados: Cadastro realizado com sucesso. <br/> Bugs encontrados: Nenhum. <br/> Melhorias sugeridas: A mensagem “Conta criada com sucesso” estava aparecendo em forma de alerta, então foi sugerido que aparecesse uma mensagem em HTMl, como mostrado acima. |
+| **Resultados:** Cadastro realizado com sucesso. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** A mensagem “Conta criada com sucesso” estava aparecendo em forma de alerta, então foi sugerido que aparecesse uma mensagem em HTMl, como mostrado acima. |
+
+| CT-14 - Fazer login no site |
+|---------------------------------------------------------|
+| ![Exemplo de UserFlow](images/testes-software/ct02-1.png) ![Exemplo de UserFlow](images/testes-software/ct02-2.png) |
+| **Resultados:** Login realizado com sucesso. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
 # Referências
 
