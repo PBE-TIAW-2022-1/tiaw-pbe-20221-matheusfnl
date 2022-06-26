@@ -40,14 +40,14 @@ Sistemas de Informaçao
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
-- [**############## SPRINT 1 ACABA AQUI #############**](#-sprint-1-acaba-aqui-)
 - [Projeto da Solução](#projeto-da-solução)
-  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
   - [Arquitetura da solução](#arquitetura-da-solução)
+  - [Hospedagem](#hospedagem)
 - [Avaliação da Aplicação](#avaliação-da-aplicação)
-  - [Plano de Testes](#plano-de-testes)
-  - [Ferramentas de Testes (Opcional)](#ferramentas-de-testes-opcional)
-  - [Registros de Testes](#registros-de-testes)
+  - [Plano de Testes de Software](#plano-de-testes-de-software)
+  - [Registros de Testes de Software](#registros-de-testes-de-software)
+  - [Plano de Testes de Usabilidade](#plano-de-testes-de-usabilidade)
+  - [Registros de Testes de Usabilidade](#registros-de-testes-de-usabilidade)
 - [Referências](#referências)
 
 
@@ -487,7 +487,7 @@ O usuário deve poder acessar o link da Amazon para comprar o livro sugerido, pa
 - **Pesquisar jogos de qualquer aba** <br/>
 O usuário deve poder pesquisar no catálogo de jogos de qualquer aba, para isso basta escrever o nome do jogo na caixa de texto localizada na parte superior direita da tela. Ao escrever o nome, o resultado deve aparecer logo abaixo, permitindo o usuário clicar e acessar a página do jogo escolhido.
 
-## Registro de Testes de Usabilidade
+## Registros de Testes de Usabilidade
 
 ### Pessoas Escolhidas Para Testar o Produto
 
