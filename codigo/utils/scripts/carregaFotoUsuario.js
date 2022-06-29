@@ -1,8 +1,14 @@
 const foto_perfil = document.getElementById("image_preview")
+const usuarioCorrenteJSON2 = sessionStorage.getItem('usuarioCorrente');
+let usuarioCorrente2 = {};
 
-let imagem = usuarioCorrente.foto_perfil;
+if (usuarioCorrenteJSON2) {
+  usuarioCorrente2 = JSON.parse(usuarioCorrenteJSON2);
+}
 
-if(usuarioCorrente.foto_perfil) {
+let imagem = usuarioCorrente2.foto_perfil;
+
+if(usuarioCorrente2.foto_perfil) {
   foto_perfil.style.backgroundImage = `url('${imagem}')`;
 }
 else {

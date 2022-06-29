@@ -1,6 +1,7 @@
 const bio = document.getElementById('Bio')
 const botao_bio = document.getElementById('Botao_bio')
 const foto_perfil = document.getElementById("image")
+const foto_perfil_preview = document.getElementById('image_preview')
 
 window.addEventListener('DOMContentLoaded', () => {
   const img = document.getElementById('image');
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // do whatever you want
     let imagem = window.URL.createObjectURL(e.target.files[0])
     foto_perfil.style.backgroundImage = `url('${imagem}')`
+    foto_perfil_preview.style.backgroundImage = `url('${imagem}')`
     salvarFoto(e.target.files[0]);
   });
 })
@@ -49,9 +51,11 @@ function initPage() {
 
   if(usuarioCorrente.foto_perfil) {
     foto_perfil.style.backgroundImage = `url('${imagem}')`;
+    foto_perfil_preview.style.backgroundImage = `url('${imagem}')`;
   }
   else {
     foto_perfil.style.backgroundImage =  `url('./imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
+    foto_perfil_preview.style.backgroundImage = `url('./imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
   }
 }
 
