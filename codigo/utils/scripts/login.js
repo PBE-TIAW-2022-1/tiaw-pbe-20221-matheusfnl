@@ -26,8 +26,8 @@ function generateUUID() {
 
 const dadosIniciais = {
     usuarios: [
-        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "jogos_favoritos": []},
-        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "jogos_favoritos": []},
+        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "jogos_favoritos": [], "foto_perfil": '', "bio": ''},
+        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "jogos_favoritos": [], "foto_perfil": '', "bio": ''},
     ]
 };
 
@@ -63,6 +63,9 @@ function loginUser (login, senha) {
             usuarioCorrente.login = usuario.login;
             usuarioCorrente.nome = usuario.nome;
             usuarioCorrente.jogos_favoritos = usuario.jogos_favoritos;
+            usuarioCorrente.foto_perfil = usuario.foto_perfil;
+            usuarioCorrente.bio = usuario.bio;
+            usuarioCorrente.senha = usuario.senha;
 
             sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
 
@@ -74,10 +77,9 @@ function loginUser (login, senha) {
 }
 
 function addUser (nome, login, senha) {
-    
     let newId = generateUUID ();
-    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "jogos_favoritos": []};
-    
+    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "jogos_favoritos": [], "foto_perfil": '', "bio": ''};
+
     db_usuarios.usuarios.push (usuario);
 
     localStorage.setItem('db_usuarios', JSON.stringify (db_usuarios));

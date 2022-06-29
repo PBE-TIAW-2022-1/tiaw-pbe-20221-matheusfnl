@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap%27');
+
+.container-fluid {
+  font-family: 'Anton';
+  background-color: #151C35;
+}
+
+.nav-item {
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.logo-image {
+  width: 80px;
+  top: 0px;
+}
+
+.bg {
+  background-color: #151C35;
+}
+
+.user_container {
+  background-color: #151C35;
+  margin: 50px;
+  padding: 50px 20%;
+  border-radius: 10px;
+}
+
+.avatar {
+  background-image: url('./imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg');
+  background-position: center;
+  background-color: #cccccc;
+  background-size: cover;
+  width:150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: border 1s;
+  border: 2px solid grey;
+  object-fit: cover;
+
+}
+
+.avatar:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid orange;
+}
+
+.bio_area {
+  border-radius: 5px;
+  resize: none;
+}
+
+.botao_edit {
+  margin-bottom: 30px;
+}
+
+.btn_opc {
+  margin: 10px 10px;
+}
+
+.editing {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  color: rgb(170, 182, 210);
+}
