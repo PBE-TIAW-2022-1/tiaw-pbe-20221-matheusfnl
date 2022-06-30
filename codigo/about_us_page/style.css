@@ -34,8 +34,8 @@
 .about_us_content {
   text-align: justify;
   font-size: 20px;
-  margin: 30px 110px;
-  padding: 50px 40px;
+  margin: 30px 110px 200px 110px;
+  padding: 50px 170px;
   background-color: #151C35;
   color: rgba(255, 255, 255, 0.863);
 }
@@ -64,9 +64,23 @@
   font-size: clamp(20px, 3vw, 20px);
 }
 
+.text-orange {
+  color: orange;
+}
+
+.foto_integrante {
+  width: 90px;
+  border-radius: 50%;
+}
+
+#foto_integrante_1 {
+  background-image: url('./imagens/matheus.jpg');
+}
+
 @media(max-width: 850px) {
   .about_us_content {
     width: 100%;
     margin: 0;
+    padding: 50px 10px;
   }
 }
