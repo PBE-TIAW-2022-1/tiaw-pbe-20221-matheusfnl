@@ -3,6 +3,8 @@ const botao_bio = document.getElementById('Botao_bio')
 const foto_perfil = document.getElementById("image")
 const foto_perfil_preview = document.getElementById('image_preview')
 
+let jogos_favoritos = []
+
 window.addEventListener('DOMContentLoaded', () => {
   const img = document.getElementById('image');
   const file = document.getElementById('input_foto');
@@ -57,6 +59,28 @@ function initPage() {
     foto_perfil.style.backgroundImage =  `url('./imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
     foto_perfil_preview.style.backgroundImage = `url('./imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
   }
+
+  jogos_favoritos.forEach(jogo => {
+    const area_jogos_favorios = document.getElementById('area_jogos_favoritos')
+    const card = document.createElement('div')
+    card.classList.add('col-md-auto')
+    card.classList.add('efeito')
+    card.style.display = 'inline'
+
+    card.innerHTML = `
+      <div class="jogo_favorito_card text-center">
+        <a href="../jogo_page/index.html?id=${jogo.id}" class="link">
+          <div class="jogo_favorito_img" id="jogo_favorito_img-${jogo.id}"></div>
+          <h4 class="mt-2">${jogo.name}</h4>
+        </a>
+      </div>
+    `
+
+    area_jogos_favorios.appendChild(card)
+
+    let imagem = document.getElementById(`jogo_favorito_img-${jogo.id}`)
+    imagem.style.backgroundImage = `url('${jogo.background_image}')`
+  });
 }
 
 function salvaNoLocalStorage() {
@@ -83,5 +107,40 @@ function salvarFoto(imagem) {
 
   reader.readAsDataURL(imagem)
 }
+
+function getJogosData({id, genre_id = false, getJogos, search = false}) {
+  let url;
+
+  url = `https://api.rawg.io/api/games?key=15ce59a57be74a5faa1a5987fbbf1a4d`
+
+  if(!genre_id && !search && id) {
+    // Procura um jogo pelo ID
+    url = `https://api.rawg.io/api/games/${id}?key=15ce59a57be74a5faa1a5987fbbf1a4d`;
+  }
+  else if(genre_id && !search){
+    // Procura jogos pela categoria
+    url = `https://api.rawg.io/api/games?key=15ce59a57be74a5faa1a5987fbbf1a4d&genres=${genre_id}`
+  }
+  else if(search) {
+    // Pesquisa jogos
+    url = `https://api.rawg.io/api/games?key=15ce59a57be74a5faa1a5987fbbf1a4d&search=${search}"`
+  }
+
+  let xhr = new XMLHttpRequest();
+  xhr.onload = getJogos
+  xhr.open('GET', url, false)
+  xhr.send();
+}
+
+function salvaJogo(data) {
+  data = data.target.response
+  data = JSON.parse(data)
+
+  jogos_favoritos.push(data)
+}
+
+usuarioCorrente.jogos_favoritos.forEach(id => {
+  getJogosData({id, getJogos: salvaJogo})
+});
 
 window.addEventListener('load', initPage);
