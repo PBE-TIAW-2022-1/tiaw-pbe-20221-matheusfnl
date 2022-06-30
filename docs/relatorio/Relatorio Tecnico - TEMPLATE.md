@@ -136,7 +136,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-010| Opção para que os jogos sejam procurados através de uma barra de pesquisa | ALTA | 
 |RF-011| Os usuários poderão cadastrar informações de login para acessar o conteúdo presente no site | ALTA | 
 |RF-012| Os usuários poderão testar seus conhecimentos sobre RPG de Mesa através de um mini Quiz | MÉDIA | 
-|RF-013| O site possuirá a opção de alterar seus temas de cores padrão, caso assim o usuário desejar | MÉDIA | 
 
 ### Requisitos não Funcionais
 
