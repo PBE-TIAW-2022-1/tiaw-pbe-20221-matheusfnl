@@ -352,15 +352,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Critérios de Êxito | * Após clicar nas personas espalhadas pelo site, o usuário será redirecionado para uma página que contém um mini-game de algum jogo retrô. <br/> * Serão 3 jogos espalhados pelo site, sendo eles: Space invaders, Snake game e Dinossaur game. |
 
 
-|Caso de Teste| CT-13 - Dark/Light -mode |
-|--|-------------------------------------------------------|
-| Requisitos Associados | RNF-08 - O site possuirá a opção de alterar seus temas de cores padrão, caso assim o usuário desejar. |
-| Objetivo do Teste | Verificar se é possível alterar o tema de cores do site. |
-| Passos | 1. Acessar o navegador; <br/> 2. Informar o endereço do site; <br/> 3. Clicar no ícone do sol/lua que se encontra no header da página. |
-| Critérios de Êxito | * Após clicar no ícone do sol/lua, as cores das letras devem ser alteradas, bem como a cor do header e background-image. <br/> * Mesmo atualizando a página, o modo alterado deve se manter, devido a utilização de um LocalStorage. |
-
-
-|Caso de Teste| CT-14 - Preloader |
+|Caso de Teste| CT-13 - Preloader |
 |--|-------------------------------------------------------|
 | Requisitos Associados | RNF-09 - Disponibilizaremos um preloader nas principais páginas do site. |
 | Objetivo do Teste | Verificar se há um preloader (gif do pacman) ao carregar as páginas. |
@@ -432,13 +424,7 @@ Os resultados obtidos nos testes de software realizados são descritos nas Tabel
 | ![Testes-de-Software](images/testes-software/ct12-1.png) ![Testes-de-Software](images/testes-software/ct12-1.png) |
 | **Resultados:** Mini-games funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
 
-| CT-13 - Dark/Light -mode |
-|---------------------------------------------------------|
-| ![Testes-de-Software](images/testes-software/ct13-1.png) |
-| ![Testes-de-Software](images/testes-software/ct13-2.png) |
-| **Resultados:** Dark/Light - mode funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Nenhuma. |
-
-| CT-14 - Preloader |
+| CT-13 - Preloader |
 |---------------------------------------------------------|
 | ![Testes-de-Software](images/testes-software/ct14-1.png) |
 | **Resultados:** Preloader funcionando corretamente. <br/> **Bugs encontrados:** Nenhum. <br/> **Melhorias sugeridas:** Diminuir o tempo do preloader de 2 segundos para 0.5. |
