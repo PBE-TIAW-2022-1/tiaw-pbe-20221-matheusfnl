@@ -48,7 +48,12 @@ function getbiografia(){
 function initPage() {
   // Informa o nome do usuário logado
   document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
-  bio.value = usuarioCorrente.bio
+  if(usuarioCorrente.bio) {
+    bio.value = usuarioCorrente.bio
+  }
+  else {
+    bio.value = ' ';
+  }
   let imagem = usuarioCorrente.foto_perfil;
 
   if(usuarioCorrente.foto_perfil) {
@@ -56,8 +61,8 @@ function initPage() {
     foto_perfil_preview.style.backgroundImage = `url('${imagem}')`;
   }
   else {
-    foto_perfil.style.backgroundImage =  `url('./imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
-    foto_perfil_preview.style.backgroundImage = `url('./imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
+    foto_perfil.style.backgroundImage =  `url('../utils/imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
+    foto_perfil_preview.style.backgroundImage = `url('../utils/imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
   }
 
   jogos_favoritos.forEach(jogo => {

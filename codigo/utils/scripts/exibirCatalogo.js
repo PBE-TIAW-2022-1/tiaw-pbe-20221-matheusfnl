@@ -56,10 +56,9 @@ function mostraJogos(jogo, card) {
             <div class="card_content text-center mb-0 pt-3">
               <div id="gameImage-${jogo.id}" class="game_image_div"></div>
               <h5 class="mt-2">${jogo.name}</h5>
-              <p class="descricao"></p>
             </div>
           </div>
-            
+
           <div class="card_avaliacao">
             <p id="estrela-${jogo.id}" class="text-warning estrela"></p>
           </div>

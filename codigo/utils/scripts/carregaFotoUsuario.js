@@ -12,5 +12,5 @@ if(usuarioCorrente2.foto_perfil) {
   foto_perfil.style.backgroundImage = `url('${imagem}')`;
 }
 else {
-  foto_perfil.style.backgroundImage =  `url('./imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
+  foto_perfil.style.backgroundImage =  `url('../utils/imagens/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg')`;
 }
