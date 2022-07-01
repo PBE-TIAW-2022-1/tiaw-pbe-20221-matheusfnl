@@ -80,7 +80,26 @@ A elaboração da persona e do mapa de empatia foi realizada com base em pesquis
 
 ## Personas e Mapas de Empatia
 
-![Exemplo de Wireframe](images/persona.png)
+### Persona 1 (BLUWIE) 
+
+![Exemplo de Wireframe](images/persona.png) <br/>
+
+**Idade:** 19 Anos. <br/>
+**Cargo:** Desenvolvedor full-stack. <br/>
+**Hábitos:** Cuidar do fusca. <br/>
+**Frustrações:** TOC por organização. <br/>
+**Desafios:** Ser bom em jogos. <br/>
+**Crenças:** Deus-Sapo. <br/>
+**Hobbies:** Jogar, dançar k-pop no Just Dance 5, cantar. <br/>
+**Estilo de vida:** Gamer, sedentário. <br/>
+**Hábitos de compra:** Itens RGB. <br/>
+**Quais mídias preferem:** Animes isekais. <br/>
+**Quem os influencia:** Alanzoka, Lady Gaga, Casimiro, Goularte. <br/>
+**Quais tecnologias usa:** Sapo Hidetech. <br/>
+**Onde busca informação:** Reddit, 4chan. <br/> 
+**Critérios de decisão na hora da compra:** Impulsivo por itens com LED <br/>
+**Momento da jornada de compra em que se encontra:** Fazendo melhorias no fusca. <br/>
+**Detalhes:** Tem uma amiga rã, ele é tranquilo, mas se frusta com jogos. <br/> É um programador, joga um jogo que tem uma sapo, mas vive em um bug no servidor que o puxou para dentro do jogo. Ele gosta tanto de sapo que quer ser ele. <br/> Ele gosta de recomendar jogos porque é um excelente programador e gosta muito de games.
 
 **O que ele pensa e sente?** Ele quer ser melhor em jogos. O que mais o preocupa é que, apesar 
 de  possuir  uma  excelente  carreira,  não  consegue  se  divertir  o  suficiente  por  não  ser  um  bom 
@@ -105,6 +124,50 @@ desenvolvimento, e onde também não possa mostrar suas competências.
 **Quais são os objetivos?** Ele almeja sempre o sucesso profissional. Consegue se enturmar bem 
 com  seus  colegas  de  equipe,  pretende  ter  uma  estabilidade  financeira  cada  vez  maior  para 
 conhecer alguns países que possuem cultura gamer/geek.
+
+### Persona 2 (DOOFY)
+
+![Exemplo de Wireframe](images/persona2.png) <br/>
+
+**Idade:** 27 Anos. <br/>
+**Cargo:** Atleta, Jogador profissional. <br/>
+**Hábitos:** Fazer flexões, pratica queda de braço regularmente. <br/>
+**Frustrações:** Corpo pequeno. <br/>
+**Desafios:** Conseguir desenvolver seus músculos corporais, já que apenas seus braços são musculosos. <br/>
+**Crenças:** Seus bíceps. <br/>
+**Hobbies:** Jogar Valorant, Malhar. <br/>
+**Estilo de vida:** Gamer. <br/>
+**Hábitos de compra:** Whey protein de Doce de Leite, Creatina, itens de musculação no geral. <br/>
+**Quais mídias preferem:** Campeonatos de Fisiculturismo. <br/>
+**Quem os influencia:** Pato Muzy. <br/>
+**Quais tecnologias usa:** Facebook, aplicativos de musculação, Instagram. <br/>
+**Onde busca informação:** Instagram. <br/> 
+**Critérios de decisão na hora da compra:** Qualidade dos produtos <br/>
+**Momento da jornada de compra em que se encontra:** Buscando auto conhecimento. <br/>
+**Detalhes:** É um pato com fixação por exercícios de membros superiores no geral, Doofy é um jogador profissional de Valorant. Ele gosta de ajudar iniciantes em seu jogo favorito e nunca se estressou em alguma partida.
+
+
+### Persona 3 (GATLIN’)
+
+![Exemplo de Wireframe](images/persona3.png) <br/>
+
+**Idade:** 23 Anos. <br/>
+**Cargo:** : Empresário, Tecnólogo. <br/>
+**Hábitos:** Investir na bolsa de valores mundial. <br/>
+**Frustrações:** Cabeça não-humana. <br/>
+**Desafios:**  Compreender as emoções humanas e se tornar senciente. <br/>
+**Crenças:** Google. <br/>
+**Hobbies:** Buscar informações sobre a tecnologia e jogos. <br/>
+**Estilo de vida:** Minimalista. <br/>
+**Hábitos de compra:** Peças de Hardware no geral. <br/>
+**Quais mídias preferem:** BBC. <br/>
+**Quem os influencia:** Bill Gates, Jeff Bezos e Elon Musk. <br/>
+**Quais tecnologias usa:** O máximo que estiver ao alcance. <br/>
+**Onde busca informação:** Sites de notícias diárias. <br/> 
+**Critérios de decisão na hora da compra:** Tecnologia avançada <br/>
+**Momento da jornada de compra em que se encontra:** Tentando realizar o melhor upgrade possível em sua cabeça. <br/>
+**Detalhes:** Gatlin’ é uma IA completamente autônoma, porém incapaz de compreender os sentimentos humanos. Seus hobbies e interesses principais giram completamente em torno de tecnologias e como aprimorá-las
+
 
 ## Histórias de Usuários
 
